@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  action_type_id: 1
+  reward_id: 1
+  risk_id: 1
+  challenge_id: 1
+
+two:
+  action_type_id: 1
+  reward_id: 1
+  risk_id: 1
+  challenge_id: 1

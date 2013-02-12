@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Action type:</b>
+  <%= @action.action_type_id %>
+</p>
+
+<p>
+  <b>Reward:</b>
+  <%= @action.reward_id %>
+</p>
+
+<p>
+  <b>Risk:</b>
+  <%= @action.risk_id %>
+</p>
+
+<p>
+  <b>Challenge:</b>
+  <%= @action.challenge_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_action_path(@action) %> |
+<%= link_to 'Back', actions_path %>

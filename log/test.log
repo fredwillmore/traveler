@@ -1,0 +1,1308 @@
+  [1m[36m (0.4ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.3ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (2.9ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.5ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (1.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'traveler_test.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36m (83.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (269.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePlaces (20120207023120)
+  [1m[35m (176.3ms)[0m  CREATE TABLE `places` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `external_id` varchar(255), `location_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120207023120')[0m
+Migrating to CreateLocations (20120605190738)
+  [1m[35m (141.7ms)[0m  CREATE TABLE `locations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `lat` decimal, `long` decimal, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120605190738')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 298486374)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (1.7ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+  [1m[36m (0.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (2.8ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:57:19', '2012-06-05 23:57:19', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to CreateLocations (20120605190738)
+  [1m[36m (1.5ms)[0m  [1mDROP TABLE `locations`[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120605190738'
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.7ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to CreatePlaces (20120207023120)
+  [1m[36m (1.3ms)[0m  [1mDROP TABLE `places`[0m
+  [1m[35m (2.4ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120207023120'
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePlaces (20120207023120)
+  [1m[35m (52.4ms)[0m  CREATE TABLE `places` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `external_id` varchar(255), `location_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120207023120')[0m
+Migrating to CreateLocations (20120605190738)
+  [1m[35m (228.1ms)[0m  CREATE TABLE `locations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `lat` decimal, `long` decimal, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120605190738')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (1.4ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 298486374)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.9ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:58:18', '2012-06-05 23:58:18', 980190962)
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 298486374)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (2.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.5ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:27', '2012-06-05 23:59:27', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (1.3ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 980190962)[0m
+  [1m[35mFixture Insert (1.2ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-05 23:59:59', '2012-06-05 23:59:59', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-06 00:00:00', '2012-06-06 00:00:00', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-06 00:00:00', '2012-06-06 00:00:00', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-06 00:00:00', '2012-06-06 00:00:00', 980190962)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `locations` (`lat`, `long`, `created_at`, `updated_at`, `id`) VALUES (9.99, 9.99, '2012-06-06 00:00:00', '2012-06-06 00:00:00', 298486374)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-06 00:00:00', '2012-06-06 00:00:00', 980190962)
+Mysql2::Error: Unknown column 'lat' in 'field list': INSERT INTO `places` (`name`, `external_id`, `lat`, `lng`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 1.5, 1.5, '2012-06-06 00:00:00', '2012-06-06 00:00:00', 980190962)
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.4ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (1, 9.99, 9.99, '2012-06-06 00:06:01', '2012-06-06 00:06:01')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (2, 9.99, 9.99, '2012-06-06 00:06:01', '2012-06-06 00:06:01')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Fred\'s Place', 'abaljfdlasdfj', 1, '2012-06-06 00:06:01', '2012-06-06 00:06:01', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Somewhere Else', 'sadfsdfdasfdsag', 2, '2012-06-06 00:06:01', '2012-06-06 00:06:01', 298486374)[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#create as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:06:01 UTC", "updated_at"=>"2012-06-06 00:06:01 UTC"}}
+  [1m[36m (0.6ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 00:06:01', 'abaljfdlasdfj', 1, 'Fred\'s Place', '2012-06-06 00:06:01')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/places/980190963
+Completed 302 Found in 19ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM `places` 
+  [1m[36m (0.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.8ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `places` WHERE `places`.`id` = 980190962[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places
+Completed 302 Found in 14ms (ActiveRecord: 2.7ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `places` [0m
+  [1m[35m (0.8ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.4ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  Rendered places/_form.html.erb (165.4ms)
+Completed 500 Internal Server Error in 273ms
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.4ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+Completed 500 Internal Server Error in 11ms
+  [1m[35m (1.6ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (16.5ms)
+Completed 500 Internal Server Error in 2545ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mPlace Load (0.6ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Completed 500 Internal Server Error in 32ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mPlace Load (0.7ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#update as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:06:01 UTC", "updated_at"=>"2012-06-06 00:06:01 UTC"}, "id"=>"980190962"}
+  [1m[35mPlace Load (2.1ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places/980190962
+Completed 302 Found in 19ms (ActiveRecord: 2.9ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (1, 9.99, 9.99, '2012-06-06 00:08:01', '2012-06-06 00:08:01')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (2, 9.99, 9.99, '2012-06-06 00:08:01', '2012-06-06 00:08:01')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Fred\'s Place', 'abaljfdlasdfj', 1, '2012-06-06 00:08:01', '2012-06-06 00:08:01', 980190962)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Somewhere Else', 'sadfsdfdasfdsag', 2, '2012-06-06 00:08:01', '2012-06-06 00:08:01', 298486374)[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#create as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:08:01 UTC", "updated_at"=>"2012-06-06 00:08:01 UTC"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 00:08:01', 'abaljfdlasdfj', 1, 'Fred\'s Place', '2012-06-06 00:08:01')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/places/980190964
+Completed 302 Found in 18ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `places` WHERE `places`.`id` = 980190962[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `places` [0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  Rendered places/_form.html.erb (22077.9ms)
+Completed 500 Internal Server Error in 22217ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+Completed 500 Internal Server Error in 15150ms
+  [1m[35m (1.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.7ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (469467.5ms)
+Completed 500 Internal Server Error in 473560ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Completed 500 Internal Server Error in 10ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#update as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:08:01 UTC", "updated_at"=>"2012-06-06 00:08:01 UTC"}, "id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places/980190962
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (1, 9.99, 9.99, '2012-06-06 00:19:42', '2012-06-06 00:19:42')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (2, 9.99, 9.99, '2012-06-06 00:19:42', '2012-06-06 00:19:42')
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Fred\'s Place', 'abaljfdlasdfj', 1, '2012-06-06 00:19:42', '2012-06-06 00:19:42', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Somewhere Else', 'sadfsdfdasfdsag', 2, '2012-06-06 00:19:42', '2012-06-06 00:19:42', 298486374)[0m
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#create as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:19:42 UTC", "updated_at"=>"2012-06-06 00:19:42 UTC"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 00:19:42', 'abaljfdlasdfj', 1, 'Fred\'s Place', '2012-06-06 00:19:42')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/places/980190965
+Completed 302 Found in 20ms (ActiveRecord: 2.7ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.6ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `places` WHERE `places`.`id` = 980190962[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places
+Completed 302 Found in 13ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `places` [0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  Rendered places/_form.html.erb (130837.1ms)
+Completed 500 Internal Server Error in 130917ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.4ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+Completed 500 Internal Server Error in 13ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (14813.1ms)
+Completed 500 Internal Server Error in 41374ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Completed 500 Internal Server Error in 8ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#update as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:19:42 UTC", "updated_at"=>"2012-06-06 00:19:42 UTC"}, "id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places/980190962
+Completed 302 Found in 13ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (1, 9.99, 9.99, '2012-06-06 00:28:10', '2012-06-06 00:28:10')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (2, 9.99, 9.99, '2012-06-06 00:28:10', '2012-06-06 00:28:10')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Fred\'s Place', 'abaljfdlasdfj', 1, '2012-06-06 00:28:10', '2012-06-06 00:28:10', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Somewhere Else', 'sadfsdfdasfdsag', 2, '2012-06-06 00:28:10', '2012-06-06 00:28:10', 298486374)[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#create as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:28:10 UTC", "updated_at"=>"2012-06-06 00:28:10 UTC"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 00:28:10', 'abaljfdlasdfj', 1, 'Fred\'s Place', '2012-06-06 00:28:10')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/places/980190966
+Completed 302 Found in 16ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `places` 
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `places` WHERE `places`.`id` = 980190962[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places
+Completed 302 Found in 8ms (ActiveRecord: 0.8ms)
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM `places` [0m
+  [1m[35m (1.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (1, 9.99, 9.99, '2012-06-06 00:29:00', '2012-06-06 00:29:00')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (2, 9.99, 9.99, '2012-06-06 00:29:00', '2012-06-06 00:29:00')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Fred\'s Place', 'abaljfdlasdfj', 1, '2012-06-06 00:29:00', '2012-06-06 00:29:00', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Somewhere Else', 'sadfsdfdasfdsag', 2, '2012-06-06 00:29:00', '2012-06-06 00:29:00', 298486374)[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#create as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:29:00 UTC", "updated_at"=>"2012-06-06 00:29:00 UTC"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 00:29:00', 'abaljfdlasdfj', 1, 'Fred\'s Place', '2012-06-06 00:29:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/places/980190967
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `places` 
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `places` WHERE `places`.`id` = 980190962[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `places` [0m
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.2ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  Rendered places/_form.html.erb (208.7ms)
+Completed 500 Internal Server Error in 324ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+Completed 500 Internal Server Error in 7ms
+  [1m[35m (1.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (4.0ms)
+Completed 500 Internal Server Error in 6ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mPlace Load (0.8ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Completed 500 Internal Server Error in 6ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#update as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:29:00 UTC", "updated_at"=>"2012-06-06 00:29:00 UTC"}, "id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places/980190962
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (1, 9.99, 9.99, '2012-06-06 00:29:38', '2012-06-06 00:29:38')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (2, 9.99, 9.99, '2012-06-06 00:29:38', '2012-06-06 00:29:38')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Fred\'s Place', 'abaljfdlasdfj', 1, '2012-06-06 00:29:38', '2012-06-06 00:29:38', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Somewhere Else', 'sadfsdfdasfdsag', 2, '2012-06-06 00:29:38', '2012-06-06 00:29:38', 298486374)[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#create as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:29:38 UTC", "updated_at"=>"2012-06-06 00:29:38 UTC"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 00:29:38', 'abaljfdlasdfj', 1, 'Fred\'s Place', '2012-06-06 00:29:38')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/places/980190968
+Completed 302 Found in 15ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (1.5ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `places` WHERE `places`.`id` = 980190962[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places
+Completed 302 Found in 67ms (ActiveRecord: 0.7ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM `places` [0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (2.2ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  Rendered places/_form.html.erb (62637.8ms)
+Completed 500 Internal Server Error in 62714ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.4ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+Completed 500 Internal Server Error in 11ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.5ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (2462.8ms)
+Completed 500 Internal Server Error in 9225ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Completed 500 Internal Server Error in 12ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (2.1ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#update as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:29:38 UTC", "updated_at"=>"2012-06-06 00:29:38 UTC"}, "id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places/980190962
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (1, 9.99, 9.99, '2012-06-06 00:31:15', '2012-06-06 00:31:15')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (2, 9.99, 9.99, '2012-06-06 00:31:15', '2012-06-06 00:31:15')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Fred\'s Place', 'abaljfdlasdfj', 1, '2012-06-06 00:31:15', '2012-06-06 00:31:15', 980190962)
+  [1m[36mFixture Insert (1.3ms)[0m  [1mINSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Somewhere Else', 'sadfsdfdasfdsag', 2, '2012-06-06 00:31:15', '2012-06-06 00:31:15', 298486374)[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#create as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:31:15 UTC", "updated_at"=>"2012-06-06 00:31:15 UTC"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 00:31:15', 'abaljfdlasdfj', 1, 'Fred\'s Place', '2012-06-06 00:31:15')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/places/980190969
+Completed 302 Found in 15ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `places` WHERE `places`.`id` = 980190962[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `places` [0m
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  Rendered places/_form.html.erb (29438.3ms)
+Completed 500 Internal Server Error in 29522ms
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+Completed 500 Internal Server Error in 8ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (1955.6ms)
+Completed 500 Internal Server Error in 18757ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Completed 500 Internal Server Error in 10ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#update as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:31:15 UTC", "updated_at"=>"2012-06-06 00:31:15 UTC"}, "id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places/980190962
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (1, 9.99, 9.99, '2012-06-06 00:34:14', '2012-06-06 00:34:14')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (2, 9.99, 9.99, '2012-06-06 00:34:14', '2012-06-06 00:34:14')
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Fred\'s Place', 'abaljfdlasdfj', 1, '2012-06-06 00:34:14', '2012-06-06 00:34:14', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Somewhere Else', 'sadfsdfdasfdsag', 2, '2012-06-06 00:34:14', '2012-06-06 00:34:14', 298486374)[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#create as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:34:14 UTC", "updated_at"=>"2012-06-06 00:34:14 UTC"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 00:34:14', 'abaljfdlasdfj', 1, 'Fred\'s Place', '2012-06-06 00:34:14')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/places/980190970
+Completed 302 Found in 17ms (ActiveRecord: 0.5ms)
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM `places` 
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM `places` WHERE `places`.`id` = 980190962[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places
+Completed 302 Found in 9ms (ActiveRecord: 1.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `places` [0m
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.4ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.9ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  Rendered places/_form.html.erb (161636.9ms)
+Completed 200 OK in 161730ms (Views: 161724.5ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+Completed 500 Internal Server Error in 36ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (1947.8ms)
+Completed 200 OK in 10340ms (Views: 1954.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mPlace Load (0.6ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Completed 500 Internal Server Error in 10ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#update as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:34:14 UTC", "updated_at"=>"2012-06-06 00:34:14 UTC"}, "id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places/980190962
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (1, 9.99, 9.99, '2012-06-06 00:40:26', '2012-06-06 00:40:26')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (2, 9.99, 9.99, '2012-06-06 00:40:26', '2012-06-06 00:40:26')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Fred\'s Place', 'abaljfdlasdfj', 1, '2012-06-06 00:40:26', '2012-06-06 00:40:26', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Somewhere Else', 'sadfsdfdasfdsag', 2, '2012-06-06 00:40:26', '2012-06-06 00:40:26', 298486374)[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#create as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:40:26 UTC", "updated_at"=>"2012-06-06 00:40:26 UTC"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 00:40:26', 'abaljfdlasdfj', 1, 'Fred\'s Place', '2012-06-06 00:40:26')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/places/980190971
+Completed 302 Found in 14ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+  [1m[36m (0.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `places` WHERE `places`.`id` = 980190962[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places
+Completed 302 Found in 65ms (ActiveRecord: 1.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `places` [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (2.1ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  Rendered places/_form.html.erb (36425.7ms)
+Completed 200 OK in 36514ms (Views: 36508.4ms | ActiveRecord: 2.1ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (1093.9ms)
+Completed 200 OK in 2176ms (Views: 1126.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Completed 500 Internal Server Error in 39ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#update as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:40:26 UTC", "updated_at"=>"2012-06-06 00:40:26 UTC"}, "id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places/980190962
+Completed 302 Found in 13ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (1, 9.99, 9.99, '2012-06-06 00:43:46', '2012-06-06 00:43:46')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (2, 9.99, 9.99, '2012-06-06 00:43:46', '2012-06-06 00:43:46')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Fred\'s Place', 'abaljfdlasdfj', 1, '2012-06-06 00:43:46', '2012-06-06 00:43:46', 980190962)
+  [1m[36mFixture Insert (2.8ms)[0m  [1mINSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Somewhere Else', 'sadfsdfdasfdsag', 2, '2012-06-06 00:43:46', '2012-06-06 00:43:46', 298486374)[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#create as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:43:46 UTC", "updated_at"=>"2012-06-06 00:43:46 UTC"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 00:43:46', 'abaljfdlasdfj', 1, 'Fred\'s Place', '2012-06-06 00:43:46')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/places/980190972
+Completed 302 Found in 15ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `places` WHERE `places`.`id` = 980190962[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places
+Completed 302 Found in 69ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `places` [0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  Rendered places/_form.html.erb (92881.6ms)
+Completed 200 OK in 92969ms (Views: 92965.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (3869.8ms)
+Completed 200 OK in 5914ms (Views: 3877.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#update as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:43:46 UTC", "updated_at"=>"2012-06-06 00:43:46 UTC"}, "id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places/980190962
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (1, 9.99, 9.99, '2012-06-06 00:46:51', '2012-06-06 00:46:51')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (2, 9.99, 9.99, '2012-06-06 00:46:51', '2012-06-06 00:46:51')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Fred\'s Place', 'abaljfdlasdfj', 1, '2012-06-06 00:46:51', '2012-06-06 00:46:51', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Somewhere Else', 'sadfsdfdasfdsag', 2, '2012-06-06 00:46:51', '2012-06-06 00:46:51', 298486374)[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#create as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:46:51 UTC", "updated_at"=>"2012-06-06 00:46:51 UTC"}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 00:46:51', 'abaljfdlasdfj', 1, 'Fred\'s Place', '2012-06-06 00:46:51')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/places/980190973
+Completed 302 Found in 18ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `places` WHERE `places`.`id` = 980190962[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places
+Completed 302 Found in 10ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `places` [0m
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  Rendered places/_form.html.erb (18851.4ms)
+Completed 200 OK in 18939ms (Views: 18935.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (1447.2ms)
+Completed 200 OK in 3892ms (Views: 1454.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Completed 200 OK in 14ms (Views: 7.8ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#update as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:46:51 UTC", "updated_at"=>"2012-06-06 00:46:51 UTC"}, "id"=>"980190962"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places/980190962
+Completed 302 Found in 15ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `locations`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (1, 9.99, 9.99, '2012-06-06 00:49:39', '2012-06-06 00:49:39')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `locations` (`id`, `lat`, `long`, `created_at`, `updated_at`) VALUES (2, 9.99, 9.99, '2012-06-06 00:49:39', '2012-06-06 00:49:39')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `places`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Fred\'s Place', 'abaljfdlasdfj', 1, '2012-06-06 00:49:39', '2012-06-06 00:49:39', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `places` (`name`, `external_id`, `location_id`, `created_at`, `updated_at`, `id`) VALUES ('Somewhere Else', 'sadfsdfdasfdsag', 2, '2012-06-06 00:49:39', '2012-06-06 00:49:39', 298486374)[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#create as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:49:39 UTC", "updated_at"=>"2012-06-06 00:49:39 UTC"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 00:49:39', 'abaljfdlasdfj', 1, 'Fred\'s Place', '2012-06-06 00:49:39')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/places/980190974
+Completed 302 Found in 14ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `places` 
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `places` 
+Processing by PlacesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `places` WHERE `places`.`id` = 980190962[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places
+Completed 302 Found in 65ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `places` [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPlace Load (1.2ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+  Rendered places/_form.html.erb (24727.4ms)
+Completed 200 OK in 24817ms (Views: 24813.0ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPlace Load (0.6ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (6937.1ms)
+Completed 200 OK in 14027ms (Views: 6944.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1[0m
+Processing by PlacesController#update as HTML
+  Parameters: {"place"=>{"id"=>"980190962", "name"=>"Fred's Place", "external_id"=>"abaljfdlasdfj", "location_id"=>"1", "created_at"=>"2012-06-06 00:49:39 UTC", "updated_at"=>"2012-06-06 00:49:39 UTC"}, "id"=>"980190962"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/places/980190962
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m

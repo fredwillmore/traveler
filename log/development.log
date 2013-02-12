@@ -1,0 +1,2909 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-02-06 18:10:29 -0800
+Served asset /rails.png - 200 OK (20ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-02-06 18:14:14 -0800
+Served asset /rails.png - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-06 18:14:50 -0800
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-06 18:22:10 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Compiled home.css  (7445ms)  (pid 19486)
+Compiled application.css  (9278ms)  (pid 19486)
+Compiled jquery.js  (2ms)  (pid 19486)
+Compiled jquery_ujs.js  (0ms)  (pid 19486)
+Compiled home.js  (705ms)  (pid 19486)
+Compiled application.js  (1302ms)  (pid 19486)
+Completed 200 OK in 17376ms (Views: 17375.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-06 18:22:30 -0800
+Served asset /home.css - 200 OK (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-06 18:22:30 -0800
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-06 18:22:30 -0800
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-06 18:22:30 -0800
+Served asset /home.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-06 18:22:30 -0800
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-06 18:22:30 -0800
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-06 20:09:16 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Compiled places.css  (2ms)  (pid 19486)
+Compiled scaffolds.css  (22ms)  (pid 19486)
+Compiled application.css  (113ms)  (pid 19486)
+Compiled places.js  (95ms)  (pid 19486)
+Compiled application.js  (112ms)  (pid 19486)
+Completed 200 OK in 634ms (Views: 633.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-06 20:09:17 -0800
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-02-06 20:09:17 -0800
+Served asset /places.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-06 20:09:17 -0800
+Served asset /scaffolds.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-06 20:09:17 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-06 20:09:17 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-06 20:09:17 -0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-02-06 20:09:17 -0800
+Served asset /places.js - 200 OK (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-06 20:09:17 -0800
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-06 20:09:17 -0800
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-12 16:11:14 -0800
+
+Mysql2::Error (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)):
+  mysql2 (0.3.11) lib/mysql2/client.rb:44:in `connect'
+  mysql2 (0.3.11) lib/mysql2/client.rb:44:in `initialize'
+  activerecord (3.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `new'
+  activerecord (3.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `mysql2_connection'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1414357320289915694__call__2168040936348087627__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.5ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-12 16:11:42 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 95ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-12 16:11:43 -0800
+Served asset /application.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-12 16:11:43 -0800
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-02-12 16:11:43 -0800
+Served asset /places.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-12 16:11:43 -0800
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-12 16:11:43 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-12 16:11:43 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-12 16:11:43 -0800
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-02-12 16:11:43 -0800
+Served asset /places.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-12 16:11:43 -0800
+Served asset /application.js - 304 Not Modified (10ms)
+  [1m[36m (113.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (182.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePlaces (20120207023120)
+  [1m[35m (156.3ms)[0m  CREATE TABLE `places` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `external_id` varchar(255), `lat` float, `lng` float, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120207023120')[0m
+  [1m[35m (0.4ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/places.html" for 127.0.0.1 at 2012-02-12 16:26:04 -0800
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.7ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+  Rendered places/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 40ms (Views: 13.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-12 16:26:04 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-12 16:26:04 -0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-12 16:26:04 -0800
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-12 16:26:04 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-12 16:26:04 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-12 16:26:04 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-02-12 16:26:04 -0800
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-02-12 16:26:04 -0800
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-12 16:26:04 -0800
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2012-02-12 16:31:07 -0800
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 1 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-12 16:31:07 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-02-12 16:31:07 -0800
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-12 16:31:07 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-12 16:31:07 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-12 16:31:07 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-12 16:31:07 -0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-12 16:31:07 -0800
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-02-12 16:31:07 -0800
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-12 16:31:07 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1?format=json" for 127.0.0.1 at 2012-02-12 16:31:20 -0800
+Processing by PlacesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/places/1?format=html" for 127.0.0.1 at 2012-02-12 16:31:24 -0800
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 1 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-12 16:31:24 -0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-02-12 16:31:24 -0800
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-02-12 16:31:24 -0800
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-12 16:31:24 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-12 16:31:24 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-12 16:31:24 -0800
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-12 16:31:24 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-12 16:31:24 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-12 16:31:24 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2012-02-19 17:55:33 -0800
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 1 LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-19 17:55:33 -0800
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-02-19 17:55:33 -0800
+Served asset /places.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-19 17:55:33 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-19 17:55:33 -0800
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-19 17:55:33 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-19 17:55:33 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-19 17:55:33 -0800
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-02-19 17:55:33 -0800
+Served asset /places.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-19 17:55:33 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/places/2" for 127.0.0.1 at 2012-02-19 17:56:49 -0800
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 2 LIMIT 1
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=2):
+  app/controllers/places_controller.rb:16:in `show'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-30 22:59:19 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 165ms (Views: 164.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-30 22:59:20 -0500
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-30 22:59:20 -0500
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-04-30 22:59:20 -0500
+Served asset /places.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-30 22:59:20 -0500
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-30 22:59:20 -0500
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-30 22:59:20 -0500
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-04-30 22:59:20 -0500
+Served asset /places.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-30 22:59:20 -0500
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-30 22:59:20 -0500
+Served asset /application.js - 200 OK (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-01 15:53:54 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 49ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-01 15:53:54 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-01 15:53:54 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-05-01 15:53:54 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-01 15:53:54 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-01 15:53:54 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-01 15:53:54 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-01 15:53:54 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-05-01 15:53:54 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-01 15:53:54 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-01 15:55:16 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-01 15:55:16 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-01 15:55:16 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-01 15:55:16 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-05-01 15:55:16 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-01 15:55:16 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-01 15:55:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-01 15:55:16 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-05-01 15:55:16 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-01 15:55:16 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-01 15:55:19 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-01 15:55:19 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-05-01 15:55:19 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-01 15:55:19 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-01 15:55:19 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-01 15:55:19 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-01 15:55:19 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-01 15:55:19 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-05-01 15:55:19 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-01 15:55:20 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-01 15:56:16 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-01 15:56:16 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-01 15:56:16 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-05-01 15:56:16 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-01 15:56:16 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-01 15:56:16 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-01 15:56:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-01 15:56:16 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-05-01 15:56:16 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-01 15:56:16 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-01 15:56:28 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-01 15:56:28 -0500
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-05-01 15:56:28 -0500
+Served asset /places.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-01 15:56:28 -0500
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-01 15:56:28 -0500
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-01 15:56:28 -0500
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-01 15:56:28 -0500
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-01 15:56:28 -0500
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-05-01 15:56:28 -0500
+Served asset /places.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-01 15:56:28 -0500
+Served asset /application.js - 200 OK (4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePlaces (20120207023120)
+Migrating to CreateLocations (20120605190738)
+  [1m[35m (117.5ms)[0m  CREATE TABLE `locations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `lat` decimal, `long` decimal, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120605190738')[0m
+  [1m[35m (0.7ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePlaces (20120207023120)
+Migrating to CreateLocations (20120605190738)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to CreateLocations (20120605190738)
+  [1m[36m (1.2ms)[0m  [1mDROP TABLE `locations`[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120605190738'
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to CreatePlaces (20120207023120)
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE `places`[0m
+  [1m[35m (0.5ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120207023120'
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePlaces (20120207023120)
+  [1m[36m (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePlaces (20120207023120)
+  [1m[35m (55.1ms)[0m  CREATE TABLE `places` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `external_id` varchar(255), `location_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120207023120')[0m
+Migrating to CreateLocations (20120605190738)
+  [1m[35m (227.9ms)[0m  CREATE TABLE `locations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `lat` decimal, `long` decimal, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120605190738')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-05 16:46:20 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (11.6ms)
+Compiled locations.css  (47ms)  (pid 25018)
+Compiled application.css  (77ms)  (pid 25018)
+Compiled locations.js  (185ms)  (pid 25018)
+Compiled application.js  (207ms)  (pid 25018)
+Completed 200 OK in 581ms (Views: 580.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 16:46:22 -0500
+Served asset /home.css - 200 OK (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 16:46:22 -0500
+Served asset /application.css - 200 OK (11ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 16:46:22 -0500
+Served asset /locations.css - 200 OK (4ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 16:46:22 -0500
+Served asset /places.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 16:46:22 -0500
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 16:46:22 -0500
+Served asset /jquery.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 16:46:22 -0500
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 16:46:22 -0500
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 16:46:22 -0500
+Served asset /locations.js - 200 OK (2ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 16:46:22 -0500
+Served asset /places.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 16:46:22 -0500
+Served asset /application.js - 200 OK (29ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2012-06-05 16:46:45 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` [0m
+  Rendered places/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 10.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 16:46:48 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (118.8ms)
+  Rendered places/new.html.erb within layouts/application (156.9ms)
+Completed 500 Internal Server Error in 166ms
+
+ActionView::Template::Error (undefined method `lat' for #<Place:0x007f9022e2af18>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat %><br />
+    24:     <%= f.text_field :lat %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lng %><br />
+  app/views/places/_form.html.erb:24:in `block in _app_views_places__form_html_erb__3563610200646591236_70128513628280'
+  app/views/places/_form.html.erb:1:in `_app_views_places__form_html_erb__3563610200646591236_70128513628280'
+  app/views/places/new.html.erb:3:in `_app_views_places_new_html_erb___417317605629637697_70128514660000'
+  app/controllers/places_controller.rb:29:in `new'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.4ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 17:14:05 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (4.7ms)
+  Rendered places/new.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `lat' for :location:Symbol):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat %><br />
+    24:     <%= f.text_field :location.lat %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lng %><br />
+  app/views/places/_form.html.erb:24:in `block in _app_views_places__form_html_erb__3563610200646591236_70128514326240'
+  app/views/places/_form.html.erb:1:in `_app_views_places__form_html_erb__3563610200646591236_70128514326240'
+  app/views/places/new.html.erb:3:in `_app_views_places_new_html_erb___417317605629637697_70128514660000'
+  app/controllers/places_controller.rb:29:in `new'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.5ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 17:14:29 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (273.3ms)
+  Rendered places/new.html.erb within layouts/application (274.2ms)
+Completed 500 Internal Server Error in 279ms
+
+ActionView::Template::Error (undefined local variable or method `place' for #<#<Class:0x007f90226bb6b0>:0x007f90253c6ce0>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat %><br />
+    24:     <%= f.text_field place.location.lat %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lng %><br />
+  app/views/places/_form.html.erb:24:in `block in _app_views_places__form_html_erb__3563610200646591236_70128523962160'
+  app/views/places/_form.html.erb:1:in `_app_views_places__form_html_erb__3563610200646591236_70128523962160'
+  app/views/places/new.html.erb:3:in `_app_views_places_new_html_erb___417317605629637697_70128514660000'
+  app/controllers/places_controller.rb:29:in `new'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.2ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.8ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 17:16:44 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (156.3ms)
+  Rendered places/new.html.erb within layouts/application (157.2ms)
+Completed 500 Internal Server Error in 159ms
+
+ActionView::Template::Error (undefined method `lat' for nil:NilClass):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat %><br />
+    24:     <%= f.text_field @place.location.lat %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lng %><br />
+  app/views/places/_form.html.erb:24:in `block in _app_views_places__form_html_erb__3563610200646591236_70128526226320'
+  app/views/places/_form.html.erb:1:in `_app_views_places__form_html_erb__3563610200646591236_70128526226320'
+  app/views/places/new.html.erb:3:in `_app_views_places_new_html_erb___417317605629637697_70128514660000'
+  app/controllers/places_controller.rb:29:in `new'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.3ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (38.6ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (46.6ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 17:16:55 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (8.3ms)
+  Rendered places/new.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `lat' for #<Place:0x007f90254c14b0>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat %><br />
+    24:     <%= f.text_field @place.lat %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lng %><br />
+  app/views/places/_form.html.erb:24:in `block in _app_views_places__form_html_erb__3563610200646591236_70128538733840'
+  app/views/places/_form.html.erb:1:in `_app_views_places__form_html_erb__3563610200646591236_70128538733840'
+  app/views/places/new.html.erb:3:in `_app_views_places_new_html_erb___417317605629637697_70128514660000'
+  app/controllers/places_controller.rb:29:in `new'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.9ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.3ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 17:17:01 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (4.2ms)
+  Rendered places/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `locations' for #<Place:0x007f90251a7338>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat %><br />
+    24:     <%= f.text_field @place.locations[0].lat %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lng %><br />
+  app/views/places/_form.html.erb:24:in `block in _app_views_places__form_html_erb__3563610200646591236_70128537198200'
+  app/views/places/_form.html.erb:1:in `_app_views_places__form_html_erb__3563610200646591236_70128537198200'
+  app/views/places/new.html.erb:3:in `_app_views_places_new_html_erb___417317605629637697_70128514660000'
+  app/controllers/places_controller.rb:29:in `new'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 17:17:08 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (4.2ms)
+  Rendered places/new.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `' for #<Place:0x007f9023b25c18>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat %><br />
+    24:     <%= f.text_field @place.location %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lng %><br />
+  app/views/places/_form.html.erb:24:in `block in _app_views_places__form_html_erb__3563610200646591236_70128525389760'
+  app/views/places/_form.html.erb:1:in `_app_views_places__form_html_erb__3563610200646591236_70128525389760'
+  app/views/places/new.html.erb:3:in `_app_views_places_new_html_erb___417317605629637697_70128514660000'
+  app/controllers/places_controller.rb:29:in `new'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.2ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 17:17:24 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (3.8ms)
+  Rendered places/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `' for #<Place:0x007f9022718f40>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat %><br />
+    24:     <%= f.text_field @place.location_id %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lng %><br />
+  app/views/places/_form.html.erb:24:in `block in _app_views_places__form_html_erb__3563610200646591236_70128514613560'
+  app/views/places/_form.html.erb:1:in `_app_views_places__form_html_erb__3563610200646591236_70128514613560'
+  app/views/places/new.html.erb:3:in `_app_views_places_new_html_erb___417317605629637697_70128514660000'
+  app/controllers/places_controller.rb:29:in `new'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.4ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 17:34:06 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (2.7ms)
+  Rendered places/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `' for #<Place:0x007f9023ccba40>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat %><br />
+    24:     <%= f.text_field @place.location_id %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lng %><br />
+  app/views/places/_form.html.erb:24:in `block in _app_views_places__form_html_erb__3563610200646591236_70128514613560'
+  app/views/places/_form.html.erb:1:in `_app_views_places__form_html_erb__3563610200646591236_70128514613560'
+  app/views/places/new.html.erb:3:in `_app_views_places_new_html_erb___417317605629637697_70128514660000'
+  app/controllers/places_controller.rb:29:in `new'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.2ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 19:54:33 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (147.3ms)
+  Rendered places/new.html.erb within layouts/application (203.8ms)
+Completed 200 OK in 453ms (Views: 447.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 19:54:34 -0500
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 19:54:34 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 19:54:34 -0500
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 19:54:34 -0500
+Served asset /home.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 19:54:34 -0500
+Served asset /locations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 19:54:34 -0500
+Served asset /places.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 19:54:34 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 19:54:34 -0500
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 19:54:34 -0500
+Served asset /locations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 19:54:34 -0500
+Served asset /places.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 19:54:34 -0500
+Served asset /application.js - 304 Not Modified (80ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 19:55:06 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (7.3ms)
+  Rendered places/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 19:55:06 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 19:55:06 -0500
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 19:55:06 -0500
+Served asset /locations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 19:55:06 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 19:55:06 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 19:55:06 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 19:55:06 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 19:55:06 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 19:55:06 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 19:55:06 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 19:55:06 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 19:55:25 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (3.5ms)
+  Rendered places/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 19:55:26 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 19:55:26 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 19:55:26 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 19:55:26 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 19:55:26 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 19:55:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 19:55:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 19:55:26 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 19:55:26 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 19:55:26 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 19:55:26 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2012-06-05 20:02:08 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (4.0ms)
+  Rendered places/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:02:08 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:02:08 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:02:08 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:02:08 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:02:08 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:02:08 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:02:08 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:02:08 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:02:08 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:02:08 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:02:08 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2012-06-05 20:05:08 -0500
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Cfu7xqBcmQMe1rfzU8zzF1EWRTyZ7VwFgqv8z1eX8o=", "place"=>{"name"=>"Moogatoosh", "external_id"=>"dkfaldjafsdf", "location_id"=>"12345"}, "commit"=>"Create Place"}
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `places` (`created_at`, `external_id`, `location_id`, `name`, `updated_at`) VALUES ('2012-06-06 01:05:08', 'dkfaldjafsdf', 12345, 'Moogatoosh', '2012-06-06 01:05:08')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/places/1
+Completed 302 Found in 28ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2012-06-05 20:05:08 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 1 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 8.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:08 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:08 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:08 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:08 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:08 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:08 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:08 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:08 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:09 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:09 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:09 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2012-06-05 20:05:17 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT `places`.* FROM `places` WHERE `places`.`id` = 1 LIMIT 1[0m
+  Rendered places/_form.html.erb (3.1ms)
+  Rendered places/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 22ms (Views: 16.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:17 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:17 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:17 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:17 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:17 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:17 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:17 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:17 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:17 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:17 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:17 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/places/1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Cfu7xqBcmQMe1rfzU8zzF1EWRTyZ7VwFgqv8z1eX8o=", "place"=>{"name"=>"Moogatoosh", "external_id"=>"dkfaldjafs98989", "location_id"=>"12345"}, "commit"=>"Update Place", "id"=>"1"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  UPDATE `places` SET `external_id` = 'dkfaldjafs98989', `updated_at` = '2012-06-06 01:05:21' WHERE `places`.`id` = 1
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/places/1
+Completed 302 Found in 15ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (2.9ms)[0m  SELECT `places`.* FROM `places` WHERE `places`.`id` = 1 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Served asset /locations.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:05:21 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-06-05 20:06:04 -0500
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` [0m
+  Rendered locations/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:04 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:04 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:04 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:04 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:04 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:04 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:04 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:04 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:04 -0500
+Served asset /locations.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:04 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:04 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2012-06-05 20:06:09 -0500
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (4.1ms)
+  Rendered locations/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 21ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:09 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:09 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:09 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:09 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:09 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:09 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:09 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:09 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:09 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:09 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:09 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2012-06-05 20:06:20 -0500
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Cfu7xqBcmQMe1rfzU8zzF1EWRTyZ7VwFgqv8z1eX8o=", "location"=>{"lat"=>"33.555", "long"=>"23.98899"}, "commit"=>"Create Location"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `locations` (`created_at`, `lat`, `long`, `updated_at`) VALUES ('2012-06-06 01:06:21', 33, 23, '2012-06-06 01:06:21')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/locations/1
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2012-06-05 20:06:21 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  Rendered locations/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:21 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:21 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:21 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:21 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:21 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:21 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:21 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:21 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:21 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:21 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:21 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-06-05 20:06:26 -0500
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` 
+  Rendered locations/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:26 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:26 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:26 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:26 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:26 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:26 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:26 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:26 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:26 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2012-06-05 20:06:31 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  Rendered locations/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:31 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:31 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:31 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:31 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:31 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:31 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:31 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:31 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:31 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:31 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/1/edit" for 127.0.0.1 at 2012-06-05 20:06:33 -0500
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1
+  Rendered locations/_form.html.erb (3.5ms)
+  Rendered locations/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:33 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:33 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:33 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:33 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:33 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:33 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:33 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:33 -0500
+Served asset /locations.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:33 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:33 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/locations/1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Processing by LocationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Cfu7xqBcmQMe1rfzU8zzF1EWRTyZ7VwFgqv8z1eX8o=", "location"=>{"lat"=>"33.12", "long"=>"23.34"}, "commit"=>"Update Location", "id"=>"1"}
+  [1m[36mLocation Load (0.6ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/locations/1
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1
+  Rendered locations/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:06:42 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to CreateLocations (20120605190738)
+  [1m[36m (1.7ms)[0m  [1mDROP TABLE `locations`[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120605190738'
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePlaces (20120207023120)
+Migrating to CreateLocations (20120605190738)
+  [1m[35m (0.4ms)[0m  CREATE TABLE `locations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `lat` decimal(3,7), `long` decimal(3,7), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+Mysql2::Error: For float(M,D), double(M,D) or decimal(M,D), M must be >= D (column 'lat').: CREATE TABLE `locations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `lat` decimal(3,7), `long` decimal(3,7), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePlaces (20120207023120)
+Migrating to CreateLocations (20120605190738)
+  [1m[35m (52.1ms)[0m  CREATE TABLE `locations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `lat` decimal(10,7), `long` decimal(10,7), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120605190738')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/locations/1/edit" for 127.0.0.1 at 2012-06-05 20:21:47 -0500
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 12ms
+
+ActiveRecord::RecordNotFound (Couldn't find Location with id=1):
+  app/controllers/locations_controller.rb:37:in `edit'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (37.7ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.0ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2012-06-05 20:21:59 -0500
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (140.6ms)
+  Rendered locations/new.html.erb within layouts/application (153.2ms)
+Completed 200 OK in 345ms (Views: 338.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:21:59 -0500
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:21:59 -0500
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:21:59 -0500
+Served asset /locations.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:21:59 -0500
+Served asset /places.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:21:59 -0500
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:21:59 -0500
+Served asset /jquery.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:21:59 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:21:59 -0500
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:21:59 -0500
+Served asset /locations.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:21:59 -0500
+Served asset /places.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:21:59 -0500
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Cfu7xqBcmQMe1rfzU8zzF1EWRTyZ7VwFgqv8z1eX8o=", "location"=>{"lat"=>"181.243143", "long"=>"-123.4567891"}, "commit"=>"Create Location"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `locations` (`created_at`, `lat`, `long`, `updated_at`) VALUES ('2012-06-06 01:22:29', 181.243143, -123.4567891, '2012-06-06 01:22:29')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/locations/1
+Completed 302 Found in 25ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  Rendered locations/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-05 20:22:29 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePlaces (20120207023120)
+Migrating to CreateLocations (20120605190738)
+Migrating to CreateActions (20120606013517)
+  [1m[35m (104.3ms)[0m  CREATE TABLE `actions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `action_type_id` int(11), `reward_id` int(11), `risk_id` int(11), `challenge_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120606013517')[0m
+Migrating to CreateActionTypes (20120606013904)
+  [1m[35m (241.3ms)[0m  CREATE TABLE `action_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120606013904')[0m
+Migrating to CreateChallenges (20120606014018)
+  [1m[35m (120.9ms)[0m  CREATE TABLE `challenges` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `challenge_type_id` int(11), `level` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120606014018')[0m
+Migrating to CreateChallengeTypes (20120606014036)
+  [1m[35m (139.2ms)[0m  CREATE TABLE `challenge_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120606014036')[0m
+Migrating to CreateRewards (20120606014210)
+  [1m[35m (131.6ms)[0m  CREATE TABLE `rewards` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (11.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120606014210')[0m
+Migrating to CreateRewardTypes (20120606014218)
+  [1m[35m (164.6ms)[0m  CREATE TABLE `reward_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120606014218')[0m
+Migrating to CreateItems (20120606014451)
+  [1m[35m (131.1ms)[0m  CREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_type_id` int(11), `value` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120606014451')[0m
+Migrating to CreateItemTypes (20120606014500)
+  [1m[35m (121.3ms)[0m  CREATE TABLE `item_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120606014500')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to CreateItemTypes (20120606014500)
+  [1m[36m (32.9ms)[0m  [1mDROP TABLE `item_types`[0m
+  [1m[35m (11.6ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120606014500'
+Migrating to CreateItems (20120606014451)
+  [1m[36m (1.4ms)[0m  [1mDROP TABLE `items`[0m
+  [1m[35m (1.3ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120606014451'
+Migrating to CreateRewardTypes (20120606014218)
+  [1m[36m (1.2ms)[0m  [1mDROP TABLE `reward_types`[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120606014218'
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePlaces (20120207023120)
+Migrating to CreateLocations (20120605190738)
+Migrating to CreateActions (20120606013517)
+Migrating to CreateActionTypes (20120606013904)
+Migrating to CreateChallenges (20120606014018)
+Migrating to CreateChallengeTypes (20120606014036)
+Migrating to CreateRewards (20120606014210)
+Migrating to CreateRewardTypes (20120606014218)
+  [1m[35m (57.4ms)[0m  CREATE TABLE `reward_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (12.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120606014218')[0m
+Migrating to CreateItems (20120606014451)
+  [1m[35m (221.5ms)[0m  CREATE TABLE `items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_type_id` int(11), `value` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120606014451')[0m
+Migrating to CreateItemTypes (20120606014500)
+  [1m[35m (133.4ms)[0m  CREATE TABLE `item_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120606014500')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-10 18:34:04 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (12.3ms)
+Compiled action_types.css  (88ms)  (pid 74500)
+Compiled actions.css  (1ms)  (pid 74500)
+Compiled challenge_types.css  (1ms)  (pid 74500)
+Compiled challenges.css  (1ms)  (pid 74500)
+Compiled item_types.css  (1ms)  (pid 74500)
+Compiled items.css  (1ms)  (pid 74500)
+Compiled reward_types.css  (1ms)  (pid 74500)
+Compiled rewards.css  (1ms)  (pid 74500)
+Compiled application.css  (390ms)  (pid 74500)
+Compiled action_types.js  (148ms)  (pid 74500)
+Compiled actions.js  (88ms)  (pid 74500)
+Compiled challenge_types.js  (85ms)  (pid 74500)
+Compiled challenges.js  (88ms)  (pid 74500)
+Compiled item_types.js  (89ms)  (pid 74500)
+Compiled items.js  (86ms)  (pid 74500)
+Compiled reward_types.js  (87ms)  (pid 74500)
+Compiled rewards.js  (87ms)  (pid 74500)
+Compiled application.js  (1146ms)  (pid 74500)
+Completed 200 OK in 2573ms (Views: 2572.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /application.css - 200 OK (22ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /actions.css - 200 OK (2ms)
+
+
+Started GET "/assets/challenge_types.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /challenge_types.css - 200 OK (5ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /challenges.css - 200 OK (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /home.css - 200 OK (6ms)
+
+
+Started GET "/assets/action_types.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /action_types.css - 200 OK (2ms)
+
+
+Started GET "/assets/item_types.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /item_types.css - 200 OK (3ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /items.css - 200 OK (3ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /locations.css - 200 OK (12ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /places.css - 200 OK (2ms)
+
+
+Started GET "/assets/reward_types.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /reward_types.css - 200 OK (2ms)
+
+
+Started GET "/assets/rewards.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /rewards.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /jquery_ujs.js - 200 OK (63ms)
+
+
+Started GET "/assets/action_types.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /action_types.js - 200 OK (2ms)
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /actions.js - 200 OK (2ms)
+
+
+Started GET "/assets/challenge_types.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /challenge_types.js - 200 OK (7ms)
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /challenges.js - 200 OK (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /home.js - 200 OK (4ms)
+
+
+Started GET "/assets/item_types.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /item_types.js - 200 OK (2ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /locations.js - 200 OK (2ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /items.js - 200 OK (3ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /places.js - 200 OK (2ms)
+
+
+Started GET "/assets/reward_types.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /reward_types.js - 200 OK (2ms)
+
+
+Started GET "/assets/rewards.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /rewards.js - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-10 18:34:08 +0200
+Served asset /application.js - 200 OK (20ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 56ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/action_types.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /action_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /actions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenge_types.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /challenge_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /challenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/item_types.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /item_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reward_types.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /reward_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rewards.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /rewards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:15 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/action_types.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:16 +0200
+Served asset /action_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:16 +0200
+Served asset /actions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenge_types.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:16 +0200
+Served asset /challenge_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:16 +0200
+Served asset /challenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:16 +0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/item_types.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:16 +0200
+Served asset /item_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:16 +0200
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:16 +0200
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:16 +0200
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reward_types.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:16 +0200
+Served asset /reward_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rewards.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:16 +0200
+Served asset /rewards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:16 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/action_types.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /action_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /actions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/item_types.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /item_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenge_types.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /challenge_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /challenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reward_types.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /reward_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rewards.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /rewards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/action_types.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /action_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenge_types.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /challenge_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /challenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reward_types.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /reward_types.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rewards.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /rewards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/item_types.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /item_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /actions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-10 18:45:52 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-12 06:06:31 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (51.4ms)
+Compiled players.css  (36ms)  (pid 74500)
+Compiled application.css  (100ms)  (pid 74500)
+Compiled players.js  (1750ms)  (pid 74500)
+Compiled application.js  (1820ms)  (pid 74500)
+Completed 200 OK in 5823ms (Views: 5822.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:39 -0500
+Served asset /players.js - 200 OK (3ms)
+
+
+Started GET "/assets/action_types.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:39 -0500
+Served asset /action_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reward_types.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:40 -0500
+Served asset /reward_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenge_types.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:40 -0500
+Served asset /challenge_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:40 -0500
+Served asset /application.css - 304 Not Modified (87ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:40 -0500
+Served asset /actions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/item_types.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:40 -0500
+Served asset /item_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:40 -0500
+Served asset /application.js - 304 Not Modified (99ms)
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /actions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/item_types.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /item_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /players.css - 200 OK (6ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /challenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rewards.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /rewards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/action_types.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /action_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reward_types.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /reward_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenge_types.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /challenge_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /challenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:41 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rewards.js?body=1" for 127.0.0.1 at 2012-09-12 06:06:42 -0500
+Served asset /rewards.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 85ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /players.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/action_types.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /action_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /actions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenge_types.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /challenge_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /challenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/item_types.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /item_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reward_types.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /reward_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rewards.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /rewards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/action_types.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /action_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /actions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /challenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/item_types.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /item_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenge_types.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /challenge_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reward_types.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /reward_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rewards.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /rewards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-16 20:51:58 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /players.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/action_types.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /action_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /actions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenge_types.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /challenge_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /challenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/item_types.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /item_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reward_types.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /reward_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rewards.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /rewards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/js/interface.js" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+
+ActionController::RoutingError (No route matches [GET] "/js/interface.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/js/jquery.form.js" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+
+ActionController::RoutingError (No route matches [GET] "/js/jquery.form.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/action_types.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /action_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/item_types.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /item_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /actions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenge_types.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /challenge_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /challenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reward_types.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /reward_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rewards.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /rewards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:36 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/action_types.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /action_types.css - 200 OK (0ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /actions.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /challenges.css - 200 OK (0ms)
+
+
+Started GET "/assets/challenge_types.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /challenge_types.css - 200 OK (0ms)
+
+
+Started GET "/assets/item_types.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /item_types.css - 200 OK (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /items.css - 200 OK (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /locations.css - 200 OK (0ms)
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /players.css - 200 OK (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /places.css - 200 OK (0ms)
+
+
+Started GET "/assets/reward_types.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /reward_types.css - 200 OK (0ms)
+
+
+Started GET "/assets/rewards.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /rewards.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/action_types.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /action_types.js - 200 OK (0ms)
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /actions.js - 200 OK (0ms)
+
+
+Started GET "/assets/challenge_types.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /challenge_types.js - 200 OK (0ms)
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /challenges.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/item_types.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /item_types.js - 200 OK (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /items.js - 200 OK (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /locations.js - 200 OK (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:43 -0500
+Served asset /places.js - 200 OK (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:44 -0500
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/reward_types.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:44 -0500
+Served asset /reward_types.js - 200 OK (0ms)
+
+
+Started GET "/assets/rewards.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:44 -0500
+Served asset /rewards.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-16 21:05:44 -0500
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/js/interface.js" for 127.0.0.1 at 2012-09-16 21:05:44 -0500
+
+ActionController::RoutingError (No route matches [GET] "/js/interface.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/js/jquery.form.js" for 127.0.0.1 at 2012-09-16 21:05:44 -0500
+
+ActionController::RoutingError (No route matches [GET] "/js/jquery.form.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/fredwillmore/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/fredwillmore/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
