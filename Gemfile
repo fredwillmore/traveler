@@ -5,7 +5,8 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem 'pg', '>= 0.14.1'
+# gem 'mysql2'
 
 
 # Gems used only for assets and not required
@@ -21,6 +22,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
+
+gem 'google_places'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
