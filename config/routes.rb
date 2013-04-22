@@ -1,4 +1,8 @@
 Traveler::Application.routes.draw do
+  resources :place_types
+
+  resources :users
+
   resources :players
 
   resources :item_types
@@ -22,6 +26,13 @@ Traveler::Application.routes.draw do
   resources :places
 
   get "home/index"
+
+  # attempting a custom route:
+  # resources :places do
+  #   collection do
+  #     get 'show'
+  #   end
+  # end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

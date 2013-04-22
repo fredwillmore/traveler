@@ -1,7 +1,7 @@
 class CreatePlayers < ActiveRecord::Migration
   def change
     create_table :players do |t|
-      t.location_id :location
+      t.integer :location_id
       t.integer :level
       t.string :sex
       t.timestamp :dob

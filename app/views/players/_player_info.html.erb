@@ -1,0 +1,159 @@
+<div id="player_info">
+  <div id="player_info_handle" class="handle">
+    <a href="#" id="player_info_display">Player Info</a>
+    <a href="#" id="current_location_display">Current Location</a>
+    <a href="#" id="search_area_display">Search Area</a>
+    <a href="#" id="player_info_close">[ x ]</a>
+  </div>
+
+  <div id="player_info_content">
+<%
+   Player.column_names.each do |attribute|
+%>
+    <div style="padding: 5px;">
+      <b><%= attribute %></b><br />
+      <div id="player_info_<%= attribute %>"></div>
+    </div>
+<%
+  end
+%>
+  </div>
+
+  <div id="current_location_content">
+<%
+  Location.column_names.each do |attribute|
+%>
+    <div style="padding: 5px;">
+      <b><%= attribute %></b><br />
+      <div id="current_location_<%= attribute %>"></div>
+    </div>
+<%
+  end
+%>
+  </div>
+
+  <div id="search_area_content">
+<%
+  place_names = [
+    'accounting',
+    'airport',
+    'amusement_park',
+    'aquarium',
+    'art_gallery',
+    'atm',
+    'bakery',
+    'bank',
+    'bar',
+    'beauty_salon',
+    'bicycle_store',
+    'book_store',
+    'bowling_alley',
+    'bus_station',
+    'cafe',
+    'campground',
+    'car_dealer',
+    'car_rental',
+    'car_repair',
+    'car_wash',
+    'casino',
+    'cemetery',
+    'church',
+    'city_hall',
+    'clothing_store',
+    'convenience_store',
+    'courthouse',
+    'dentist',
+    'department_store',
+    'doctor',
+    'electrician',
+    'electronics_store',
+    'embassy',
+    'establishment',
+    'finance',
+    'fire_station',
+    'florist',
+    'food',
+    'funeral_home',
+    'furniture_store',
+    'gas_station',
+    'general_contractor',
+    'geocode',
+    'grocery_or_supermarket',
+    'gym',
+    'hair_care',
+    'hardware_store',
+    'health',
+    'hindu_temple',
+    'home_goods_store',
+    'hospital',
+    'insurance_agency',
+    'jewelry_store',
+    'laundry',
+    'lawyer',
+    'library',
+    'liquor_store',
+    'local_government_office',
+    'locksmith',
+    'lodging',
+    'meal_delivery',
+    'meal_takeaway',
+    'mosque',
+    'movie_rental',
+    'movie_theater',
+    'moving_company',
+    'museum',
+    'night_club',
+    'painter',
+    'park',
+    'parking',
+    'pet_store',
+    'pharmacy',
+    'physiotherapist',
+    'place_of_worship',
+    'plumber',
+    'police',
+    'post_office',
+    'real_estate_agency',
+    'restaurant',
+    'roofing_contractor',
+    'rv_park',
+    'school',
+    'shoe_store',
+    'shopping_mall',
+    'spa',
+    'stadium',
+    'storage',
+    'store',
+    'subway_station',
+    'synagogue',
+    'taxi_stand',
+    'train_station',
+    'travel_agency',
+    'university',
+    'veterinary_care',
+    'zoo'
+  ];
+  place_names.each do |attribute|
+%>
+    <div style="padding: 5px;">
+      <input type="checkbox" name="placeTypes" id="search_<%= attribute %>" value="<%= attribute %>"><a href="#" id="a_search_<%= attribute %>"><%= attribute %></a>
+    </div>
+<%
+  end
+%>
+    <script>
+<%
+  place_names.each do |attribute|
+%>
+    $('#a_search_<%= attribute %>').click(function() {
+        $('#search_<%= attribute %>').click();
+    });
+    $('#search_<%= attribute %>').click(function() {
+        searchMap();
+    });
+<%
+  end
+%>
+    </script>
+  </div>
+</div>

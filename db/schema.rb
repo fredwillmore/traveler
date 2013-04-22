@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120606014500) do
+ActiveRecord::Schema.define(:version => 20130422144807) do
 
   create_table "action_types", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -53,17 +53,51 @@ ActiveRecord::Schema.define(:version => 20120606014500) do
 
   create_table "locations", :force => true do |t|
     t.decimal  "lat",        :precision => 10, :scale => 7
-    t.decimal  "long",       :precision => 10, :scale => 7
+    t.decimal  "lng",        :precision => 10, :scale => 7
     t.datetime "created_at",                                :null => false
     t.datetime "updated_at",                                :null => false
+  end
+
+  create_table "place_types", :force => true do |t|
+    t.string   "name"
+    t.string   "label"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "place_types_places", :id => false, :force => true do |t|
+    t.integer "place_id"
+    t.integer "place_type_id"
   end
 
   create_table "places", :force => true do |t|
     t.string   "name"
     t.string   "external_id"
+    t.integer  "player_id"
     t.integer  "location_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "players", :force => true do |t|
+    t.integer  "location_id"
+    t.integer  "level"
+    t.string   "sex"
+    t.datetime "dob"
+    t.string   "occupation"
+    t.integer  "energy"
+    t.integer  "food"
+    t.integer  "water"
+    t.integer  "bio"
+    t.integer  "money"
+    t.integer  "confidence"
+    t.integer  "attractiveness"
+    t.integer  "charisma"
+    t.integer  "status"
+    t.integer  "intelligence"
+    t.integer  "luck"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "reward_types", :force => true do |t|
@@ -72,6 +106,13 @@ ActiveRecord::Schema.define(:version => 20120606014500) do
   end
 
   create_table "rewards", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "label"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

@@ -13,7 +13,10 @@ class PlacesController < ApplicationController
   # GET /places/1
   # GET /places/1.json
   def show
-    @place = Place.find(params[:id])
+    @place = Place.find_or_create_by_external_id_and_player_id(params[:external_id], params[:player_id])
+    if !@place
+      @place = new Place;
+    end
 
     respond_to do |format|
       format.html # show.html.erb

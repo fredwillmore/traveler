@@ -1,0 +1,38 @@
+<div id="speech">
+  <div id="speech_handle">
+    <a href="#" id="speech_close">[ x ]</a>
+    Speech Recognizer
+  </div>
+  <div id="speech_content">
+    <div class="slide device-access" id="speech-input">
+      <style>
+          #speech-input-field {
+              width: 400px;
+              height: 50px;
+              padding: 10px 15px;
+              font-size: 155%;
+              border-radius: 10px;
+              border: 1px solid #ccc;
+              outline: 0;
+          }
+      </style>
+      <header><span class="html">HTML</span> <h1>Speech Input</h1></header>
+      <section>
+        <div class="flex hbox boxcenter">
+          <div class="noflex vbox boxcenter" style="height:300px;text-align:center">
+            <div id="challenge">
+            </div>
+            <input id="speech-input-field" type="text" x-webkit-speech />
+            <p style="display:none">Speech input is not enabled in your browser.<br>
+              Try running Google Chrome with the <code>--enable-speech-input</code> flag.</p>
+          </div>
+        </div>
+        <script>
+            if (!('webkitSpeech' in document.createElement('input'))) {
+                document.querySelector('#speech-input p').style.display = 'block';
+            }
+        </script>
+      </section>
+    </div>
+  </div>
+</div>

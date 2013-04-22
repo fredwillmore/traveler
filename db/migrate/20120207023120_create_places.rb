@@ -3,6 +3,7 @@ class CreatePlaces < ActiveRecord::Migration
     create_table :places do |t|
       t.string  :name
       t.string  :external_id
+      t.integer :player_id
       t.integer :location_id
 
       t.timestamps
