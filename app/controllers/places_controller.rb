@@ -17,10 +17,12 @@ class PlacesController < ApplicationController
     if !@place
       @place = new Place;
     end
+    @place.populate_secondary_data
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @place }
+#      format.json { render json: @place }
+      format.json { render :json => @place.to_json(:methods => [:food_cost, :food_value, :drink_cost, :drink_value]) }
     end
   end
 

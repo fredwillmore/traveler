@@ -5,6 +5,7 @@ class CreatePlaces < ActiveRecord::Migration
       t.string  :external_id
       t.integer :player_id
       t.integer :location_id
+      t.float   :rating
 
       t.timestamps
     end

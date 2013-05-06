@@ -1,4 +1,10 @@
 Traveler::Application.routes.draw do
+  resources :quantities
+
+  resources :curriculum_areas
+
+  devise_for :users
+
   resources :place_types
 
   resources :users

@@ -23,6 +23,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
 gem 'google_places'
+gem 'yelp'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -38,6 +39,12 @@ gem 'google_places'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'globalize3'
+
+gem "devise", ">= 2.1.2"
+gem 'devise_invitable', '~> 1.1.0'
+gem "cancan", ">= 1.6.8"
 
 group :development, :test do
   #

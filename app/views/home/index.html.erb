@@ -15,6 +15,7 @@ if(iHaveInternet) {
     var map;
     var placess;
     var distanceMatrix;
+    var directionsService;
     var placeInfo;
     var playerInfo;
     var travelTime;
@@ -111,8 +112,7 @@ if(iHaveInternet) {
             for(var i=0; i<placeInfo.types.length; i++)
             {
                 var type = placeInfo.types[i];
-                switch(type)
-                {
+                switch(type) {
                     // move these magic numbers
                     case 'bar':
                         placeInfo.food += 8;
@@ -126,7 +126,7 @@ if(iHaveInternet) {
                         break;
                 }
             }
-            $("#place_info_handle").html(placeInfo.name);
+            $("#place_info_handle_name").html(placeInfo.name);
             $("#place_info_id").html(placeInfo.id);
             $("#place_info_name").html(placeInfo.name);
             $("#place_info_rating").html(placeInfo.rating);
@@ -138,17 +138,33 @@ if(iHaveInternet) {
         handleDetailResult_complete = true;
     }
 
-    function handleDistanceMatrixResult(result, status)
-    {
-        if (status == google.maps.DistanceMatrixStatus.OK)
-        {
+    function handleDistanceMatrixResult(result, status, travelMode) {
+        if (status == google.maps.DistanceMatrixStatus.OK) {
             travelTime = result.rows[0].elements[0].duration;
-            $("#place_info_travelTimeWalk").html(travelTime.text);
+            $("#place_info_travelTime"+travelMode).html(travelTime.text);
         }
         handleDistancMatrixResult_complete = true;
     }
+    function handleDistanceMatrixWalkingResult(result, status) {
+        handleDistanceMatrixResult(result, status, 'WALKING');
+    }
+    function handleDistanceMatrixBicyclingResult(result, status) {
+        handleDistanceMatrixResult(result, status, 'BICYCLING');
+    }
+    function handleDistanceMatrixDrivingResult(result, status) {
+        handleDistanceMatrixResult(result, status, 'DRIVING');
+    }
+    function handleDirectionsServiceTransitResult(result, status) {
+        handleDistanceMatrixResult(result, status, 'TRANSIT');
+    }
+    function handleDirectionsServiceResult(result, status) {
+        if(result) {
+            alert('hello got yer directions');
+        }
+    }
 
     function showPlaceInfo() {
+        myActivePlaceMarker = this;
         $("#place_info").css('left', mouseX);
         $("#place_info").css('top', mouseY);
         var placeDetailsRequest = {
@@ -168,22 +184,35 @@ if(iHaveInternet) {
             }, //end success: function(result)
         });
 
-        $("#place_info").show();
-        $('#place_info_display').click();
-return; // ?
-
-        myActivePlaceMarker = this; // do we need this global?
         placess.getDetails(placeDetailsRequest, handleDetailResult);
-        ajax()
-
         var distanceMatrixRequest = {
             origins: [myLatLng],
             destinations: [this.position],
             travelMode:google.maps.TravelMode.WALKING
         }
-        distanceMatrix.getDistanceMatrix(distanceMatrixRequest, handleDistanceMatrixResult);
-
-        $("#place_info").show(); // this actually gets shown before it gets populated due to the asynchronous nature of the handlers
+        distanceMatrix.getDistanceMatrix(distanceMatrixRequest, handleDistanceMatrixWalkingResult);
+        var distanceMatrixRequest = {
+            origins: [myLatLng],
+            destinations: [this.position],
+            travelMode:google.maps.TravelMode.BICYCLING
+        }
+        distanceMatrix.getDistanceMatrix(distanceMatrixRequest, handleDistanceMatrixBicyclingResult);
+        var distanceMatrixRequest = {
+            origins: [myLatLng],
+            destinations: [this.position],
+            travelMode:google.maps.TravelMode.DRIVING
+        }
+        distanceMatrix.getDistanceMatrix(distanceMatrixRequest, handleDistanceMatrixDrivingResult);
+// doing transit option in another iteration; current issue is that destination needs to be a text string or latLng but there are a host of other issues as well
+/*
+        var directionsServiceRequest = {
+            origin: [myLatLng],
+            destination: [this.position],
+            travelMode: google.maps.DirectionsTravelMode.TRANSIT
+        }
+        directionsService.route(directionsServiceRequest, handleDirectionsServiceTransitResult);
+*/
+        $("#place_info").show();
     }
 
     function ajaxPlaceHandler(placeInfo) {
@@ -223,9 +252,10 @@ return; // ?
 //               disableDoubleClickZoom: true
         };
         map = new google.maps.Map(document.getElementById('map_canvas'), myMapOptions);
-        google.maps.event.addDomListener(map, 'dragend', searchMap);
+//        google.maps.event.addDomListener(map, 'dragend', searchMap);
         google.maps.event.addDomListener(map, 'resize', searchMap);
         google.maps.event.addDomListener(map, 'zoom_changed', searchMap);
+        google.maps.event.addDomListener(map, 'center_changed', searchMap);
 
         google.maps.event.addDomListener(map, 'click', function(event) {
             mapZoom = map.getZoom();
@@ -234,6 +264,7 @@ return; // ?
 
         placess = new google.maps.places.PlacesService(map);
         distanceMatrix = new google.maps.DistanceMatrixService();
+        directionsService = new google.maps.DirectionsService();
 
         var myMarkerInfo = {
             icon: 'http://lango.dev/lango/images/fw.jpg'
@@ -325,7 +356,9 @@ if(iHaveInternet) {
         {
             $("#speech").hide();
         });
-
+        $('#map_control').click(function() {
+            map.setCenter(myLatLng);
+        });
         $('#speech-input-field').change(function()
         {
             evaluateChallenge(this);
@@ -377,9 +410,18 @@ function ajaxCurrentLocationHandler(locationInfo) {
     {
         if(e.target.id == 'place_info_go_walk')
         {
-            // if
-            // go to the place
+            var directionsServiceRequest = {
+                origin: [myLatLng],
+                destination: [myActivePlaceMarker.position],
+                travelMode: google.maps.DirectionsTravelMode.WALKING
+            }
+            directionsService.route(directionsServiceRequest, handleDirectionsServiceResult);
+
+
+            map.panTo(myActivePlaceMarker.position);
+
             myMarker.setPosition(myActivePlaceMarker.position);
+
             playerInfo.time = parseInt(playerInfo.time) + parseInt(travelTime.value);
             playerInfo.money = parseInt(playerInfo.money) - parseInt(placeInfo.cost);
             playerInfo.food = parseInt(playerInfo.food) + parseInt(placeInfo.food);
@@ -421,6 +463,15 @@ function ajaxCurrentLocationHandler(locationInfo) {
         left:200px;
         top:100px;
         width:500px;
+        background-color:#f0f5FF;
+        border: 1px solid #000;
+        z-index: 50;
+    }
+    #map_control {
+        position: absolute;
+        right:50px;
+        top:50px;
+        width:200px;
         background-color:#f0f5FF;
         border: 1px solid #000;
         z-index: 50;
@@ -468,7 +519,7 @@ function ajaxCurrentLocationHandler(locationInfo) {
 <div id="place_info">
   <div id="place_info_handle" class="handle">
     <a href="#" id="place_info_close">[ x ]</a>
-    Place Info
+    <a href="#" id="place_info_handle_name">Place Info</a>
   </div>
   <div id="place_info_content">
     <table>
@@ -486,28 +537,29 @@ function ajaxCurrentLocationHandler(locationInfo) {
       </tr>
       <tr>
         <td>Travel Time (Walk):</td>
-        <td id="place_info_travelTimeWalk"></td>
+        <td id="place_info_travelTimeWALKING"></td>
       </tr>
       <tr>
         <td>Travel Time (Bike):</td>
-        <td id="place_info_travelTimeBike"></td>
+        <td id="place_info_travelTimeBICYCLING"></td>
       </tr>
       <tr>
         <td>Travel Time (Car):</td>
-        <td id="place_info_travelTimeCar"></td>
+        <td id="place_info_travelTimeDRIVING"></td>
       </tr>
       <tr>
         <td>Travel Time (Bus):</td>
-        <td id="place_info_travelTimeBus"></td>
+        <td id="place_info_travelTimeTRANSIT"></td>
       </tr>
       <tr>
-        <td>Food:</td>
-        <td id="place_info_food"></td>
+        <td>Food Value/Cost:</td>
+        <td><span id="place_info_food_value"></span>/<span id="place_info_food_cost"></span></td>
       </tr>
       <tr>
-        <td>Drink:</td>
-        <td id="place_info_drink"></td>
+        <td>Drink Value/Cost:</td>
+        <td><span id="place_info_drink_value"></span>/<span id="place_info_drink_cost"></span></td>
       </tr>
+<!--
       <tr>
         <td>Entertainment:</td>
         <td id="place_info_entertainment"></td>
@@ -516,15 +568,23 @@ function ajaxCurrentLocationHandler(locationInfo) {
         <td>Cost:</td>
         <td id="place_info_cost"></td>
       </tr>
+-->
       <tr>
         <td></td>
-        <td id=""><input id="place_info_go_foot" type="button" value="walk there"></td>
+        <td id=""><input id="place_info_go_walk" type="button" value="walk there"></td>
       </tr>
+      <!-- allow player to have/rent a car - then add driving option -->
       <tr>
         <td></td>
         <td id=""><input id="place_info_go_taxi" type="button" value="take a taxi there"></td>
       </tr>
     </table>
+  </div>
+</div>
+
+<div id="map_control">
+  <div id="map_control_handle" class="handle">
+    <a href="#" id="map_control_center">Center Map</a>
   </div>
 </div>
 
