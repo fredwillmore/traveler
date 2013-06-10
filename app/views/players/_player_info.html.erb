@@ -34,7 +34,7 @@
 
   <div id="search_area_content">
 <%
-  place_names = [
+  place_type_names = [
     'accounting',
     'airport',
     'amusement_park',
@@ -133,22 +133,23 @@
     'veterinary_care',
     'zoo'
   ];
-  place_names.each do |attribute|
+
+  place_type_names.each do |place_type_name|
 %>
     <div style="padding: 5px;">
-      <input type="checkbox" name="placeTypes" id="search_<%= attribute %>" value="<%= attribute %>"><a href="#" id="a_search_<%= attribute %>"><%= attribute %></a>
+      <input type="checkbox" name="placeTypes" id="search_<%= place_type_name %>" value="<%= place_type_name %>"><a href="#" id="a_search_<%= place_type_name %>"><%= t "place_type_names."+place_type_name %></a>
     </div>
 <%
   end
 %>
     <script>
 <%
-  place_names.each do |attribute|
+  place_type_names.each do |place_type_name|
 %>
-    $('#a_search_<%= attribute %>').click(function() {
-        $('#search_<%= attribute %>').click();
+    $('#a_search_<%= place_type_name %>').click(function() {
+        $('#search_<%= place_type_name %>').click();
     });
-    $('#search_<%= attribute %>').click(function() {
+    $('#search_<%= place_type_name %>').click(function() {
         searchMap();
     });
 <%

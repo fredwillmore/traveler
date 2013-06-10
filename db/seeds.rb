@@ -17,6 +17,18 @@ Users = User.create([{
   email: "fredwillmore@gmail.com"
 }]);
 
+
+Quantity.delete_all
+Quantities = Quantity.create([
+  { id: 1, name:"energy" },
+  { id: 2, name:"food" },
+  { id: 3, name:"water" },
+  { id: 4, name:"hygiene" },
+  { id: 5, name:"money" },
+  { id: 6, name:"confidence" },
+  { id: 7, name:"happiness" }
+]);
+
 Player.delete_all
 Players = Player.create([{
   id: '1',
@@ -32,15 +44,16 @@ Players = Player.create([{
     { player_id: 1, quantity_id: 3, value: 85, max_value: 100 }, #  water
     { player_id: 1, quantity_id: 4, value: 80, max_value: 100 }, #  bio
     { player_id: 1, quantity_id: 5, value: 75, max_value: 100 }, #  money
-    { player_id: 1, quantity_id: 6, value: 70, max_value: 100 } #  confidence
+    { player_id: 1, quantity_id: 6, value: 70, max_value: 100 }, #  confidence
+    { player_id: 1, quantity_id: 7, value: 75, max_value: 100 } #  happiness
   ]),
   attractiveness: '65',
   charisma: '60',
   status: '55',
   intelligence: '50',
   luck: '45',
-  base_locale: 'es', # I'm spanish
-  target_locale: 'en' # trying to learn english
+  base_locale: 'en', # I'm english
+  target_locale: 'es' # trying to learn spanish
 }]);
 
 Location.delete_all
@@ -180,75 +193,29 @@ PlaceTypeDatum.delete_all
 PlaceTypeData = PlaceTypeDatum.create([
 ]);
 
+Challenge.delete_all
 CurriculumArea.delete_all
+language_content = YAML.load_file(Rails.root.join('config/', 'load_content.yml'))
 
-curriculum_area = CurriculumArea.create( { id: 1, title:"Introductory Nouns and Prepositions" } );
-I18n.locale = "es"
-curriculum_area.title = "Sustantivos y preposiciones"
-curriculum_area.save
-I18n.locale = "en"
+locales = language_content.keys - ['en']
+english_content = language_content['en']
 
-curriculum_area = CurriculumArea.create( { id: 2, title:"Verbs: Present Progressive" } );
-I18n.locale = "es"
-curriculum_area.title = "Verbos: el tiempo presente progresivo"
-curriculum_area.save
-I18n.locale = "en"
-
-curriculum_area = CurriculumArea.create( { id: 3, title:"Descriptive Adjectives" } );
-I18n.locale = "es"
-curriculum_area.title = "Adjetivos descriptivos"
-curriculum_area.save
-I18n.locale = "en"
-
-curriculum_area = CurriculumArea.create( { id: 4, title:"Cardinal Numbers and Counting 1-10" } );
-I18n.locale = "es"
-curriculum_area.title = "Los números 1–10"
-curriculum_area.save
-I18n.locale = "en"
-
-curriculum_area = CurriculumArea.create( { id: 5, title:"Singular and Plural: Nouns and Present Indicative Verbs" } );
-I18n.locale = "es"
-curriculum_area.title = "Singular y plural: sustantivos y verbos en el presente progresivo"
-curriculum_area.save
-I18n.locale = "en"
-
-curriculum_area = CurriculumArea.create( { id: 6, title:"Numbers and Clock Time" } );
-I18n.locale = "es"
-curriculum_area.title = "Los números y la hora"
-curriculum_area.save
-I18n.locale = "en"
-
-curriculum_area = CurriculumArea.create( { id: 7, title:"Questions and Answers; Personal Pronouns; Present Indicative of \"To Be\"" } );
-I18n.locale = "es"
-curriculum_area.title = "Preguntas y respuestas; ser y estar"
-curriculum_area.save
-I18n.locale = "en"
-
-curriculum_area = CurriculumArea.create( { id: 8, title:"Food, Eating and Drinking; Direct Objects" } );
-I18n.locale = "es"
-curriculum_area.title = "Comidas, comiendo y bebiendo; complementos directos"
-curriculum_area.save
-I18n.locale = "en"
-
-curriculum_area = CurriculumArea.create( { id: 9, title:"Clothing and Dress; Affirmative and Negative Verb Forms; Direct Objects" } );
-I18n.locale = "es"
-curriculum_area.title = "La ropa, llevar ropa; complementos directos"
-curriculum_area.save
-I18n.locale = "en"
-
-curriculum_area = CurriculumArea.create( { id: 10, title:"Who, What, Where, Which; Interrogative Pronouns and Adjectives" } );
-I18n.locale = "es"
-curriculum_area.title = "Quién, qué, dónde, cuál; palabras interrogativas"
-curriculum_area.save
-I18n.locale = "en"
-
-Quantity.delete_all
-Quantities = Quantity.create([
-  { id: 1, name:"energy" },
-  { id: 2, name:"food" },
-  { id: 3, name:"water" },
-  { id: 4, name:"hygiene" },
-  { id: 5, name:"money" },
-  { id: 6, name:"confidence" },
-  { id: 7, name:"happiness" }
-]);
+english_content.each_with_index {|ca, ca_index|
+  I18n.locale = 'en'
+  curriculum_area = CurriculumArea.create( { title: ca['curriculum_area'] } );
+  level = english_content[ca_index]['level']
+  locales.each { |locale|
+    I18n.locale = locale
+    curriculum_area.title = language_content[locale][ca_index]['curriculum_area']
+    curriculum_area.save
+  }
+  english_content[ca_index]['challenges'].each_with_index {|ch, ch_index|
+    I18n.locale = 'en'
+    challenge = Challenge.create({ challenge_text: ch, curriculum_area_id: curriculum_area.id, level: level})
+    locales.each { |locale|
+      I18n.locale = locale
+      challenge.challenge_text = language_content[locale][ca_index]['challenges'][ch_index]
+      challenge.save
+    }
+  }
+}

@@ -17,9 +17,7 @@ if(iHaveInternet) {
     var distanceMatrix;
     var directionsService;
     var placeInfo;
-    var playerInfo;
     var travelTime;
-    var myLatLng;
     var mouseX;
     var mouseY;
     var myMarker;
@@ -29,6 +27,10 @@ if(iHaveInternet) {
     var handleDetailResult_complete = false; // these are used to track the status of the api callback handlers
     var handleDistancMatrixResult_complete = false; // these are used to track the status of the api callback handlers
     var targetText = ''; // for evaluating challenge
+    var travelTimes = new Object;
+    // initialize travel times
+    travelTimes['WALKING'] = travelTimes['BICYCLING'] = travelTimes['DRIVING'] = travelTimes['TRANSIT'] = 0;
+
 
     function searchMap(){
         var liveMarker;
@@ -46,7 +48,7 @@ if(iHaveInternet) {
             }
             var myPlaceSearchOptions = {
                 location: map.getCenter(),
-//                location: myLatLng,
+//                location: $.myLatLng,
                 bounds: map.getBounds(),
                 types: placeTypes,
                 radius: 500
@@ -141,6 +143,7 @@ if(iHaveInternet) {
     function handleDistanceMatrixResult(result, status, travelMode) {
         if (status == google.maps.DistanceMatrixStatus.OK) {
             travelTime = result.rows[0].elements[0].duration;
+            travelTimes[travelMode] = travelTime.value;
             $("#place_info_travelTime"+travelMode).html(travelTime.text);
         }
         handleDistancMatrixResult_complete = true;
@@ -176,7 +179,7 @@ if(iHaveInternet) {
             type: "GET",
             data: {
                 external_id: this.placeReference,
-                player_id: 1 // eventually in session or something
+                player_id: <%= @player.id %>
             },
             dataType: 'json',
             success: function(data){
@@ -185,20 +188,24 @@ if(iHaveInternet) {
         });
 
         placess.getDetails(placeDetailsRequest, handleDetailResult);
+
+        // initialize travel times
+        travelTimes['WALKING'] = travelTimes['BICYCLING'] = travelTimes['DRIVING'] = travelTimes['TRANSIT'] = 0;
+
         var distanceMatrixRequest = {
-            origins: [myLatLng],
+            origins: [$.myLatLng],
             destinations: [this.position],
             travelMode:google.maps.TravelMode.WALKING
         }
         distanceMatrix.getDistanceMatrix(distanceMatrixRequest, handleDistanceMatrixWalkingResult);
         var distanceMatrixRequest = {
-            origins: [myLatLng],
+            origins: [$.myLatLng],
             destinations: [this.position],
             travelMode:google.maps.TravelMode.BICYCLING
         }
         distanceMatrix.getDistanceMatrix(distanceMatrixRequest, handleDistanceMatrixBicyclingResult);
         var distanceMatrixRequest = {
-            origins: [myLatLng],
+            origins: [$.myLatLng],
             destinations: [this.position],
             travelMode:google.maps.TravelMode.DRIVING
         }
@@ -206,7 +213,7 @@ if(iHaveInternet) {
 // doing transit option in another iteration; current issue is that destination needs to be a text string or latLng but there are a host of other issues as well
 /*
         var directionsServiceRequest = {
-            origin: [myLatLng],
+            origin: [$.myLatLng],
             destination: [this.position],
             travelMode: google.maps.DirectionsTravelMode.TRANSIT
         }
@@ -242,11 +249,20 @@ if(iHaveInternet) {
 }
     // NOW FOR JQUERY STUFF
     $(document).ready(function(){
-        myLatLng = new google.maps.LatLng(<%= @player_location.lat %>, <%= @player_location.lng %>);
+        $.playerInfo = new Object();
+
+<%
+    @player.attributes.each { |key, value|
+%>
+        $.playerInfo['<%= key %>'] = '<%= value %>';
+<%
+    }
+%>
+        $.myLatLng = new google.maps.LatLng(<%= @player_location.lat %>, <%= @player_location.lng %>);
 
         var myMapOptions = {
             zoom: 17,
-            center: myLatLng,
+            center: $.myLatLng,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             disableDefaultUI: true,
 //               disableDoubleClickZoom: true
@@ -269,7 +285,7 @@ if(iHaveInternet) {
         var myMarkerInfo = {
             icon: 'http://lango.dev/lango/images/fw.jpg'
         }
-        myMarker = addMarker(myLatLng, myMarkerInfo);
+        myMarker = addMarker($.myLatLng, myMarkerInfo);
         google.maps.event.addDomListener(myMarker, 'click', showPlayerInfo);
 
         $(document).keyup(function(e) {
@@ -284,14 +300,12 @@ if(iHaveInternet) {
             mouseY = e.pageY;
         });
         //jQuery events go here
-        $('#player_info').draggable(
-                {
-                    zIndex:    20,
-                    ghosting:false,
-                    opacity: 0.7,
-                    handle:    '#player_info_handle'
-                }
-        );
+        $('#player_info').draggable( {
+            zIndex:    20,
+            ghosting:false,
+            opacity: 0.7,
+            handle:    '#player_info_handle'
+        } );
 if(iHaveInternet) {
         $("#player_info").hide();
 } else {
@@ -318,132 +332,196 @@ if(iHaveInternet) {
         });
 
         $('#place_info').draggable(
-                {
-                    zIndex:    20,
-                    ghosting:false,
-                    opacity: 0.7,
-                    handle:    '#place_info_handle'
-                }
+            {
+                zIndex:    20,
+                ghosting:false,
+                opacity: 0.7,
+                handle:    '#place_info_handle'
+            }
         );
         $("#place_info_go_walk").click(doAction);
         $("#place_info_go_taxi").click(doAction);
         $("#place_info").hide();
 
-        $('#place_info_close').click(function()
-        {
+        $('#place_info_close').click(function() {
             $("#place_info").hide();
         });
-        $('#place_info_handle').click(function()
-        {
+        $('#place_info_handle').click(function() {
             $("#place_info").hide();
         });
 
         $('#speech').draggable(
-                {
-                    zIndex:    20,
-                    ghosting:false,
-                    opacity: 0.7,
-                    handle:    '#speech_handle'
-                }
+            {
+                zIndex:    20,
+                ghosting:false,
+                opacity: 0.7,
+                handle:    '#speech_handle'
+            }
         );
         $("#speech").hide();
 
-        $('#speech_close').click(function()
-        {
+        $('#speech_close').click(function() {
             $("#speech").hide();
         });
-        $('#speech_handle').click(function()
-        {
+        $('#speech_handle').click(function() {
             $("#speech").hide();
         });
         $('#map_control').click(function() {
-            map.setCenter(myLatLng);
+            map.setCenter($.myLatLng);
         });
-        $('#speech-input-field').change(function()
-        {
+        $('#speech-input-field').change(function() {
             evaluateChallenge(this);
         });
-    });
 
+        $("#travel_mode").hide();
 
-    function showPlayerInfo(e)
-    {
-        $("#player_info").css('left', mouseX);
-        $("#player_info").css('top', mouseY);
-        $.ajax({
-            type: 'GET',
-            url: '/players/1',
-            dataType: 'json',
-            success: function(data){
-                ajaxPlayerHandler(data);
-            }, //end success: function(result)
+<%
+   for counter in 1..@player.level
+%>
+        $("#get_challenge_<%= counter %>").click( function() {
+            getChallenge(<%= counter %>);
         });
-        $("#player_info").show();
-        $('#player_info_display').click();
-    }
+<%
+   end
+%>
+        function getChallenge(level) {
+            $.ajax({
+                type: 'GET',
+                url: '/challenges/' + level + '/get_by_level',
+                dataType: 'json',
+                data: { 'locale' : '<%=@player.target_locale%>' },
+                success: function(data){
+                    ajaxChallengeHandler(data);
+                },
+            });
+        }
 
-function ajaxPlayerHandler(playerInfo) {
-//        var date = new Date(playerInfo.time*1000);
-//        var hours = date.getHours();
-//        var minutes = date.getMinutes();
-//        $("#player_info_time").html(hours + ':' + minutes);
-    $.ajax({
-        type: 'GET',
-        url: '/locations/' + playerInfo.location_id,
-        dataType: 'json',
-        success: function(data){
-            ajaxCurrentLocationHandler(data);
-        }, //end success: function(result)
-    });
-    for(var attribute in playerInfo) {
-        $("#player_info_"+attribute).html(playerInfo[attribute]);
-    }
-}
-function ajaxCurrentLocationHandler(locationInfo) {
-    for(var attribute in locationInfo) {
-        $("#current_location_"+attribute).html(locationInfo[attribute]);
-    }
-}
+        function ajaxChallengeHandler(challengeData) {
+            targetText = challengeData['challenge_text'];
+            var challengeText = "Say the following:\n\"" + targetText + "\"";
+            $("#speech").show();
+            $("#challenge").html(challengeText);
+            $("#challenge").show;
+        }
 
-    // this is the one that does it
-    function doAction(e)
-    {
-        if(e.target.id == 'place_info_go_walk')
-        {
-            var directionsServiceRequest = {
-                origin: [myLatLng],
-                destination: [myActivePlaceMarker.position],
-                travelMode: google.maps.DirectionsTravelMode.WALKING
+        function showPlayerInfo() {
+            $("#player_info").css('left', mouseX);
+            $("#player_info").css('top', mouseY);
+            $.ajax({
+                type: 'GET',
+                url: '/players/1',
+                dataType: 'json',
+                success: function(data){
+                    ajaxPlayerHandler(data);
+                }, //end success: function(result)
+            });
+            $("#player_info").show();
+            $('#player_info_display').click();
+        }
+
+        function ajaxPlayerHandler(playerData) {
+        //        var date = new Date(playerData.time*1000);
+        //        var hours = date.getHours();
+        //        var minutes = date.getMinutes();
+        //        $("#player_info_time").html(hours + ':' + minutes);
+            $.ajax({
+                type: 'GET',
+                url: '/locations/' + playerData.location_id,
+                dataType: 'json',
+                success: function(data){
+                    ajaxCurrentLocationHandler(data);
+                }, //end success: function(result)
+            });
+            for(var attribute in playerData) {
+                $.playerInfo[attribute] = playerData[attribute];
+                $("#player_info_"+attribute).html(playerData[attribute]);
             }
-            directionsService.route(directionsServiceRequest, handleDirectionsServiceResult);
+        }
 
+        function ajaxCurrentLocationHandler(locationInfo) {
+            for(var attribute in locationInfo) {
+                $("#current_location_"+attribute).html(locationInfo[attribute]);
+            }
+        }
 
+        // this is the one that does it
+        function doAction(e) {
+            if(e.target.id == 'place_info_go_walk') {
+                var travelTime=travelTimes['WALKING'];
+        /*
+        this stuff could be used for making an interesting animation of moving in real time
+            but for now I'm just going to enter travel mode and call it good
+                    var directionsServiceRequest = {
+                        origin: [$.myLatLng],
+                        destination: [myActivePlaceMarker.position],
+                        travelMode: google.maps.DirectionsTravelMode.WALKING
+                    }
+                    directionsService.route(directionsServiceRequest, handleDirectionsServiceResult);
+        */
+            }
+            if(e.target.id == 'place_info_go_taxi') {
+                var travelTime=travelTimes['DRIVING'];
+                $("#place_info").hide();
+                targetText = "Driver please take me to " + placeInfo.name;
+                var challengeText = "Say the following:\n\"" + targetText + "\"";
+                $("#challenge").html(challengeText);
+                $("#speech").show();
+                // var placeInfo = getPlaceInfo(myActivePlaceMarker.position);
+                thinger = placeInfo;
+            }
+
+            var travel_timer = $.timer(function() {
+                this.stop();
+                $('#travel_mode_close').show();
+                $('#travel_mode_handle').click(function() {
+                    finishTravel();
+                    $("#travel_mode").hide();
+                });
+            });
+
+            travelTime = 10; // for temp
+            travel_timer.set({ time : 1000*travelTime, autostart : true });
+            $("#place_info").hide();
+            $('#travel_mode_close').hide();
+            $("#travel_mode").show();
+            $.ajax({
+                url: '/players/<%= @player.id %>/start_travel',
+                type: "GET",
+                dataType: 'json',
+                success: function(data){
+                    handleStartTravel(data);
+                }
+            });
+        }
+
+        function finishTravel() {
+            myMarker.setPosition(myActivePlaceMarker.position);
             map.panTo(myActivePlaceMarker.position);
 
-            myMarker.setPosition(myActivePlaceMarker.position);
-
-            playerInfo.time = parseInt(playerInfo.time) + parseInt(travelTime.value);
-            playerInfo.money = parseInt(playerInfo.money) - parseInt(placeInfo.cost);
-            playerInfo.food = parseInt(playerInfo.food) + parseInt(placeInfo.food);
-            playerInfo.drink = parseInt(playerInfo.drink) + parseInt(placeInfo.drink);
-            playerInfo.happiness = parseInt(playerInfo.happiness) + parseInt(placeInfo.entertainment);
-            $("#player_info_time").html(playerInfo.time);
-            $("#player_info_money").html(playerInfo.money);
-
-
-            $("#place_info").hide();
+//               $.playerInfo.time = parseInt($.playerInfo.time) + parseInt(travelTime.value);
+            $.playerInfo.money = parseInt($.playerInfo.money) - parseInt(placeInfo.cost);
+            $.playerInfo.food = parseInt($.playerInfo.food) + parseInt(placeInfo.food);
+            $.playerInfo.drink = parseInt($.playerInfo.drink) + parseInt(placeInfo.drink);
+            $.playerInfo.happiness = parseInt($.playerInfo.happiness) + parseInt(placeInfo.entertainment);
+//               $("#player_info_time").html($.playerInfo.time);
+            $("#player_info_money").html($.playerInfo.money);
+            $.ajax({
+                url: '/players/<%= @player.id %>/finish_travel',
+                type: "GET",
+                dataType: 'json',
+                success: function(data){
+                    handleFinishTravel(data);
+                }
+            });
         }
-        if(e.target.id == 'place_info_go_taxi')
-        {
-            $("#place_info").hide();
-            targetText = "Driver please take me to " + placeInfo.name;
-            var challengeText = "Say the following:\n\"" + targetText + "\"";
-            $("#challenge").html(challengeText);
-            $("#speech").show();
-            // var placeInfo = getPlaceInfo(myActivePlaceMarker.position);
-            thinger = placeInfo;
+
+        function handleStartTravel(data){
+            var noop = data;
         }
-    }
+        function handleFinishTravel(data){
+            var noop = data;
+        }
+    });
 
 </script>
 <style type="text/css">
@@ -452,13 +530,11 @@ function ajaxCurrentLocationHandler(locationInfo) {
         padding: 0;
         height: 100%;
     }
-    body
-    {
+    body {
         font-family:Verdana, Arial, Helvetica, sans-serif;
         font-size:11px
     }
-    #player_info, #place_info, #speech
-    {
+    #player_info, #place_info, #speech, #travel_mode {
         position: absolute;
         left:200px;
         top:100px;
@@ -476,6 +552,15 @@ function ajaxCurrentLocationHandler(locationInfo) {
         border: 1px solid #000;
         z-index: 50;
     }
+    #speech-input-field {
+        width: 400px;
+        height: 50px;
+        padding: 10px 15px;
+        font-size: 155%;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        outline: 0;
+    }
     .handle {
         background-color:#5588bb;
         padding:2px;
@@ -488,17 +573,14 @@ function ajaxCurrentLocationHandler(locationInfo) {
         padding-left:5px;
         padding-right:5px;
     }
-    #player_info_content, #place_info_content, #speech_content
-    {
+    #player_info_content, #place_info_content, #speech_content, #travel_mode_content {
         padding:5px;
     }
-    #player_info_close, #place_info_close, #speech_close
-    {
+    #player_info_close, #place_info_close, #speech_close, #travel_mode_close {
         float:right;
         text-decoration:none;
     }
-    h1, h2
-    {
+    h1, h2 {
         font-size:20px;
     }
 </style>
@@ -524,39 +606,39 @@ function ajaxCurrentLocationHandler(locationInfo) {
   <div id="place_info_content">
     <table>
       <tr>
-        <td>ID:</td>
+        <td><%= t "place_info.id" %>:</td>
         <td id="place_info_id"></td>
       </tr>
       <tr>
-        <td>Name:</td>
+        <td><%= t "place_info.name" %>:</td>
         <td id="place_info_name"></td>
       </tr>
       <tr>
-        <td>Rating:</td>
+        <td><%= t "place_info.rating" %>:</td>
         <td id="place_info_rating"></td>
       </tr>
       <tr>
-        <td>Travel Time (Walk):</td>
+        <td><%= t "place_info.travelTimeWALKING" %>:</td>
         <td id="place_info_travelTimeWALKING"></td>
       </tr>
       <tr>
-        <td>Travel Time (Bike):</td>
+        <td><%= t "place_info.travelTimeBICYCLING" %>:</td>
         <td id="place_info_travelTimeBICYCLING"></td>
       </tr>
       <tr>
-        <td>Travel Time (Car):</td>
+        <td><%= t "place_info.travelTimeDRIVING" %>:</td>
         <td id="place_info_travelTimeDRIVING"></td>
       </tr>
       <tr>
-        <td>Travel Time (Bus):</td>
+        <td><%= t "place_info.travelTimeTRANSIT" %>:</td>
         <td id="place_info_travelTimeTRANSIT"></td>
       </tr>
       <tr>
-        <td>Food Value/Cost:</td>
+        <td><%= t "place_info.food_value" %>/<%= t "place_info.food_cost" %>:</td>
         <td><span id="place_info_food_value"></span>/<span id="place_info_food_cost"></span></td>
       </tr>
       <tr>
-        <td>Drink Value/Cost:</td>
+        <td><%= t "place_info.drink_value" %>/<%= t "place_info.drink_cost" %>:</td>
         <td><span id="place_info_drink_value"></span>/<span id="place_info_drink_cost"></span></td>
       </tr>
 <!--
@@ -571,12 +653,12 @@ function ajaxCurrentLocationHandler(locationInfo) {
 -->
       <tr>
         <td></td>
-        <td id=""><input id="place_info_go_walk" type="button" value="walk there"></td>
+        <td id=""><input id="place_info_go_walk" type="button" value="<%= t "place_info.go_walk" %>"></td>
       </tr>
       <!-- allow player to have/rent a car - then add driving option -->
       <tr>
         <td></td>
-        <td id=""><input id="place_info_go_taxi" type="button" value="take a taxi there"></td>
+        <td id=""><input id="place_info_go_taxi" type="button" value="<%= t "place_info.go_taxi" %>"></td>
       </tr>
     </table>
   </div>
@@ -584,7 +666,28 @@ function ajaxCurrentLocationHandler(locationInfo) {
 
 <div id="map_control">
   <div id="map_control_handle" class="handle">
-    <a href="#" id="map_control_center">Center Map</a>
+    <a href="#" id="map_control_center"><%= t "map_control_center" %></a>
+  </div>
+</div>
+
+<div id="travel_mode">
+  <div id="travel_mode_handle" class="handle">
+    <a href="#" id="travel_mode_close">[ x ]</a>
+    <a href="#" id="travel_mode_handle_name"><%= t "travel_mode" %></a>
+  </div>
+  <div id="travel_mode_content">
+    Now we're in travel mode. Let's do some challenges to pass the time:
+    <div id="challengeXXX">
+    </div>
+    <div id="challenge_list">
+<%
+   for counter in 1..@player.level
+%>
+      <div><a href="#" id="get_challenge_<%= counter %>">level <%= counter %></a></div>
+<%
+   end
+%>
+    </div>
   </div>
 </div>
 

@@ -27,6 +27,17 @@ ActiveRecord::Schema.define(:version => 20130505133548) do
     t.datetime "updated_at",     :null => false
   end
 
+  create_table "challenge_translations", :force => true do |t|
+    t.integer  "challenge_id"
+    t.string   "locale"
+    t.text     "challenge_text"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "challenge_translations", ["challenge_id"], :name => "index_challenge_translations_on_challenge_id"
+  add_index "challenge_translations", ["locale"], :name => "index_challenge_translations_on_locale"
+
   create_table "challenge_types", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -34,9 +45,11 @@ ActiveRecord::Schema.define(:version => 20130505133548) do
 
   create_table "challenges", :force => true do |t|
     t.integer  "challenge_type_id"
+    t.integer  "curriculum_area_id"
     t.integer  "level"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.text     "challenge_text"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
   create_table "curriculum_area_translations", :force => true do |t|
@@ -125,6 +138,7 @@ ActiveRecord::Schema.define(:version => 20130505133548) do
 
   create_table "players", :force => true do |t|
     t.integer  "user_id"
+    t.string   "state"
     t.integer  "location_id"
     t.integer  "level"
     t.string   "sex"

@@ -1,4 +1,6 @@
 class PlayersController < ApplicationController
+
+  respond_to :html, :xml, :json
   # GET /players
   # GET /players.json
   def index
@@ -80,4 +82,17 @@ class PlayersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def start_travel
+    @player = Player.find(params[:id])
+    @player.start_travel
+    respond_with @player
+  end
+
+  def finish_travel
+    @player = Player.find(params[:id])
+    @player.finish_travel
+    respond_with @player
+  end
+
 end

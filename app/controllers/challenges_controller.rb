@@ -1,4 +1,6 @@
 class ChallengesController < ApplicationController
+
+  respond_to :html, :xml, :json
   # GET /challenges
   # GET /challenges.json
   def index
@@ -79,5 +81,12 @@ class ChallengesController < ApplicationController
       format.html { redirect_to challenges_url }
       format.json { head :no_content }
     end
+  end
+
+  def get_by_level
+    I18n.locale = params[:locale]
+    challenges = Challenge.find_all_by_level(params[:id])
+    @challenge = challenges[rand(challenges.count - 1)]
+    respond_with @challenge
   end
 end

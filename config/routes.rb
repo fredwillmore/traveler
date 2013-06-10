@@ -9,7 +9,12 @@ Traveler::Application.routes.draw do
 
   resources :users
 
-  resources :players
+  resources :players do
+    member do
+      get 'start_travel'
+      get 'finish_travel'
+    end
+  end
 
   resources :item_types
 
@@ -22,6 +27,11 @@ Traveler::Application.routes.draw do
   resources :challenge_types
 
   resources :challenges
+  resources :challenges do
+    member do
+      get 'get_by_level'
+    end
+  end
 
   resources :action_types
 
