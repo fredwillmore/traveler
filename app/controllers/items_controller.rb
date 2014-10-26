@@ -5,7 +5,7 @@ class ItemsController < ApplicationController
     @items = Item.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.json { render json: @items }
     end
   end
@@ -16,7 +16,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # show.html.haml
       format.json { render json: @item }
     end
   end

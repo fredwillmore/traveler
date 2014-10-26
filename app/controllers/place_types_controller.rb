@@ -5,7 +5,7 @@ class PlaceTypesController < ApplicationController
     @place_types = PlaceType.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.json { render json: @place_types }
     end
   end
@@ -16,7 +16,7 @@ class PlaceTypesController < ApplicationController
     @place_type = PlaceType.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # show.html.haml
       format.json { render json: @place_type }
     end
   end

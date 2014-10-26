@@ -5,7 +5,7 @@ class PlacesController < ApplicationController
     @places = Place.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.json { render json: @places }
     end
   end
@@ -20,7 +20,7 @@ class PlacesController < ApplicationController
     @place.populate_secondary_data
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # show.html.haml
 #      format.json { render json: @place }
       format.json { render :json => @place.to_json(:methods => [:food_cost, :food_value, :drink_cost, :drink_value]) }
     end

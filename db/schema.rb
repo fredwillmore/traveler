@@ -18,15 +18,6 @@ ActiveRecord::Schema.define(:version => 20130505133548) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "actions", :force => true do |t|
-    t.integer  "action_type_id"
-    t.integer  "reward_id"
-    t.integer  "risk_id"
-    t.integer  "challenge_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
   create_table "challenge_translations", :force => true do |t|
     t.integer  "challenge_id"
     t.string   "locale"
@@ -151,6 +142,7 @@ ActiveRecord::Schema.define(:version => 20130505133548) do
     t.integer  "luck"
     t.string   "base_locale"
     t.string   "target_locale"
+    t.string   "target_dialect"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
@@ -168,6 +160,15 @@ ActiveRecord::Schema.define(:version => 20130505133548) do
   create_table "rewards", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "user_actions", :force => true do |t|
+    t.integer  "action_type_id"
+    t.integer  "reward_id"
+    t.integer  "risk_id"
+    t.integer  "challenge_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "users", :force => true do |t|

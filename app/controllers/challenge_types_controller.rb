@@ -5,7 +5,7 @@ class ChallengeTypesController < ApplicationController
     @challenge_types = ChallengeType.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.json { render json: @challenge_types }
     end
   end
@@ -16,7 +16,7 @@ class ChallengeTypesController < ApplicationController
     @challenge_type = ChallengeType.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # show.html.haml
       format.json { render json: @challenge_type }
     end
   end

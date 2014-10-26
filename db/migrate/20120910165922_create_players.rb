@@ -22,6 +22,7 @@ class CreatePlayers < ActiveRecord::Migration
 
       t.string :base_locale
       t.string :target_locale
+      t.string :target_dialect
 
       t.timestamps
     end

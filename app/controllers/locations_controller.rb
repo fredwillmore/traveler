@@ -5,7 +5,7 @@ class LocationsController < ApplicationController
     @locations = Location.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.json { render json: @locations }
     end
   end
@@ -16,7 +16,7 @@ class LocationsController < ApplicationController
     @location = Location.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # show.html.haml
       format.json { render json: @location }
     end
   end

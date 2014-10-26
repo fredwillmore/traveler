@@ -5,7 +5,7 @@ class ActionTypesController < ApplicationController
     @action_types = ActionType.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.json { render json: @action_types }
     end
   end
@@ -16,7 +16,7 @@ class ActionTypesController < ApplicationController
     @action_type = ActionType.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # show.html.haml
       format.json { render json: @action_type }
     end
   end

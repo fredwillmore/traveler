@@ -5,7 +5,7 @@ class CurriculumAreasController < ApplicationController
     @curriculum_areas = CurriculumArea.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.json { render json: @curriculum_areas }
     end
   end
@@ -16,7 +16,7 @@ class CurriculumAreasController < ApplicationController
     @curriculum_area = CurriculumArea.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # show.html.haml
       format.json { render json: @curriculum_area }
     end
   end

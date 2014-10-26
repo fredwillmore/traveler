@@ -4,9 +4,9 @@
 one:
 #  id: 1
   lat: 9.99
-  long: 9.99
+  lng: 9.99
 
 two:
 #  id: 2
   lat: -9.99
-  long: 9.99
+  lng: 9.99

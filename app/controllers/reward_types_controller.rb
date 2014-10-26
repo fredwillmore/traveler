@@ -5,7 +5,7 @@ class RewardTypesController < ApplicationController
     @reward_types = RewardType.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.json { render json: @reward_types }
     end
   end
@@ -16,7 +16,7 @@ class RewardTypesController < ApplicationController
     @reward_type = RewardType.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # show.html.haml
       format.json { render json: @reward_type }
     end
   end

@@ -7,7 +7,7 @@ class ChallengesController < ApplicationController
     @challenges = Challenge.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.json { render json: @challenges }
     end
   end
@@ -18,7 +18,7 @@ class ChallengesController < ApplicationController
     @challenge = Challenge.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # show.html.haml
       format.json { render json: @challenge }
     end
   end
@@ -84,9 +84,12 @@ class ChallengesController < ApplicationController
   end
 
   def get_by_level
-    I18n.locale = params[:locale]
+    temp = I18n.locale
+    I18n.locale = params[:base_locale]
     challenges = Challenge.find_all_by_level(params[:id])
     @challenge = challenges[rand(challenges.count - 1)]
+    I18n.locale = params[:target_locale]
+    challenge_id =
     respond_with @challenge
   end
 end

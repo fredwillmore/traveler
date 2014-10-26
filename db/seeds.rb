@@ -53,7 +53,8 @@ Players = Player.create([{
   intelligence: '50',
   luck: '45',
   base_locale: 'en', # I'm english
-  target_locale: 'es' # trying to learn spanish
+  target_locale: 'es', # trying to learn spanish
+  target_dialect: 'ES'
 }]);
 
 Location.delete_all

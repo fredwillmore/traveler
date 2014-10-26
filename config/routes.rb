@@ -1,4 +1,8 @@
 Traveler::Application.routes.draw do
+  namespace :admin do
+    root to: "dashboard#index"
+  end
+
   resources :quantities
 
   resources :curriculum_areas
@@ -35,7 +39,7 @@ Traveler::Application.routes.draw do
 
   resources :action_types
 
-  resources :actions
+  resources :user_actions
 
   resources :locations
 
@@ -61,7 +65,7 @@ Traveler::Application.routes.draw do
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
+  # Sample resource route (maps HTTP verbs to controller user_actions automatically):
   #   resources :products
 
   # Sample resource route with options:
@@ -104,6 +108,6 @@ Traveler::Application.routes.draw do
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
-  # Note: This route will make all actions in every controller accessible via GET requests.
+  # Note: This route will make all user_actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end

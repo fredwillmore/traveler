@@ -23,7 +23,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
 gem 'google_places'
-gem 'yelp'
+# gem 'yelp'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -48,7 +48,8 @@ gem "cancan", ">= 1.6.8"
 
 gem 'state_machine'
 
-# gem 'sidekiq'
+gem 'sidekiq'
+gem 'haml'
 
 group :development, :test do
   #
@@ -58,7 +59,7 @@ group :development, :test do
   #
   # perf testing
   #
-  gem 'ruby-prof', :git => 'git://github.com/wycats/ruby-prof.git'
+  gem 'ruby-prof'
   #
   # test coverage
   #

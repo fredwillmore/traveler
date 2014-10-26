@@ -5,7 +5,7 @@ class QuantitiesController < ApplicationController
     @quantities = Quantity.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.json { render json: @quantities }
     end
   end
@@ -16,7 +16,7 @@ class QuantitiesController < ApplicationController
     @quantity = Quantity.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # show.html.haml
       format.json { render json: @quantity }
     end
   end
