@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lat:</b>
+  <%= @location.lat %>
+</p>
+
+<p>
+  <b>Long:</b>
+  <%= @location.lng %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_location_path(@location) %> |
+<%= link_to 'Back', admin_locations_path %>

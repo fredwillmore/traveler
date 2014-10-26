@@ -1,0 +1,48 @@
+%h1 Listing players
+
+%table
+  %tr
+    %th Location
+    %th Level
+    %th Sex
+    %th Dob
+    %th Occupation
+    -#%th Energy
+    -#%th Food
+    -#%th Water
+    -#%th Bio
+    -#%th Money
+    -#%th Confidence
+    %th Attractiveness
+    %th Charisma
+    %th Status
+    %th Intelligence
+    %th Luck
+    %th 
+    %th 
+    %th 
+
+  - @players.each do |player|
+    %tr
+      %td= player.location
+      %td= player.level
+      %td= player.sex
+      %td= player.dob
+      %td= player.occupation
+      -#%td= player.energy
+      -#%td= player.food
+      -#%td= player.water
+      -#%td= player.bio
+      -#%td= player.money
+      -#%td= player.confidence
+      %td= player.attractiveness
+      %td= player.charisma
+      %td= player.status
+      %td= player.intelligence
+      %td= player.luck
+      %td= link_to 'Show', [:admin, player]
+      %td= link_to 'Edit', edit_admin_player_path(player)
+      %td= link_to 'Destroy', [:admin, player], confirm: 'Are you sure?', method: :delete
+%br
+
+= link_to 'New Player', new_admin_player_path

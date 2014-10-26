@@ -1,18 +1,24 @@
 Traveler::Application.routes.draw do
   namespace :admin do
     root to: "dashboard#index"
+    resources :action_types
+    resources :curriculum_areas
+    resources :place_types
+    resources :quantities
+    resources :users
+    resources :players
+    resources :item_types
+    resources :items
+    resources :reward_types
+    resources :rewards
+    resources :challenge_types
+    resources :challenges
+    resources :user_actions
+    resources :locations
+    resources :places
   end
 
-  resources :quantities
-
-  resources :curriculum_areas
-
   devise_for :users
-
-  resources :place_types
-
-  resources :users
-
   resources :players do
     member do
       get 'start_travel'
@@ -20,30 +26,11 @@ Traveler::Application.routes.draw do
     end
   end
 
-  resources :item_types
-
-  resources :items
-
-  resources :reward_types
-
-  resources :rewards
-
-  resources :challenge_types
-
-  resources :challenges
   resources :challenges do
     member do
       get 'get_by_level'
     end
   end
-
-  resources :action_types
-
-  resources :user_actions
-
-  resources :locations
-
-  resources :places
 
   get "home/index"
 

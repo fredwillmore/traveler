@@ -1,0 +1,53 @@
+%p#notice= notice
+
+%p
+  %b Location ID:
+  = @player.location_id
+%p
+  %b Level:
+  = @player.level
+%p
+  %b Sex:
+  = @player.sex
+%p
+  %b Dob:
+  = @player.dob
+%p
+  %b Occupation:
+  = @player.occupation
+-#%p
+-#  %b Energy:
+-#  = @player.energy
+-#%p
+-#  %b Food:
+-#  = @player.food
+-#%p
+-#  %b Water:
+-#  = @player.water
+-#%p
+-#  %b Bio:
+-#  = @player.bio
+-#%p
+-#  %b Money:
+-#  = @player.money
+-#%p
+-#  %b Confidence:
+-#  = @player.confidence
+%p
+  %b Attractiveness:
+  = @player.attractiveness
+%p
+  %b Charisma:
+  = @player.charisma
+%p
+  %b Status:
+  = @player.status
+%p
+  %b Intelligence:
+  = @player.intelligence
+%p
+  %b Luck:
+  = @player.luck
+
+= link_to 'Edit', edit_admin_player_path(@player) |
+= link_to 'Back', admin_players_path
