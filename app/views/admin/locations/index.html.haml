@@ -1,25 +1,21 @@
-<h1>Listing locations</h1>
+%h1 Listing locations
 
-<table>
-  <tr>
-    <th>Lat</th>
-    <th>Long</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+%table
+  %tr
+    %th Lat
+    %th Long
+    %th
+    %th
+    %th
 
-<% @locations.each do |location| %>
-  <tr>
-    <td><%= location.lat %></td>
-    <td><%= location.lng %></td>
-    <td><%= link_to 'Show', [:admin, location] %></td>
-    <td><%= link_to 'Edit', edit_admin_location_path(location) %></td>
-    <td><%= link_to 'Destroy', [:admin, location], confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+  - @locations.each do |location|
+    %tr
+      %td= location.lat
+      %td= location.lng
+      %td= link_to 'Show', [:admin, location]
+      %td= link_to 'Edit', edit_admin_location_path(location)
+      %td= link_to 'Destroy', [:admin, location], confirm: 'Are you sure?', method: :delete
 
-<br />
+%br
 
-<%= link_to 'New Location', new_admin_location_path %>
+= link_to 'New Location', new_admin_location_path

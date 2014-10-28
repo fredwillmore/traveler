@@ -1,6 +1,7 @@
-[:admin, <h]1>Editing reward</h1>
+%h1 Editing reward
 
-<%= render 'form' %>
+= render 'form'
 
-<%= link_to 'Show', [:admin, @reward] %> |
-<%= link_to 'Back', admin_rewards_path %>
+= link_to 'Show', [:admin, @reward]
+|
+= link_to 'Back', admin_rewards_path

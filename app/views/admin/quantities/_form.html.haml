@@ -1,17 +1,12 @@
-<%= form_for [:admin, @quantity] do |f| %>
-  <% if @quantity.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@quantity.errors.count, "error") %> prohibited this quantity from being saved:</h2>
+= form_for [:admin, @quantity] do |f|
+  - if @quantity.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@quantity.errors.count, "error")
+        prohibited this quantity from being saved:
 
-      <ul>
-      <% @quantity.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+      %ul
+        - @quantity.errors.full_messages.each do |msg|
+          %li= msg
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+  .actions= f.submit

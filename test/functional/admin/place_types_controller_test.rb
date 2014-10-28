@@ -20,7 +20,6 @@ class Admin::PlaceTypesControllerTest < ActionController::TestCase
     assert_difference('PlaceType.count') do
       post :create, place_type: @place_type.attributes
     end
-
     assert_redirected_to admin_place_type_path(assigns(:place_type))
   end
 

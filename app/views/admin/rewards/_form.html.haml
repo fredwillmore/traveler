@@ -1,17 +1,13 @@
-<%= form_for [:admin, @reward] do |f| %>
-  <% if @reward.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@reward.errors.count, "error") %> prohibited this reward from being saved:</h2>
+= form_for [:admin, @reward] do |f|
+  - if @reward.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@reward.errors.count, "error")
+        prohibited this reward from being saved:
 
-      <ul>
-      <% @reward.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+      %ul
+        - @reward.errors.full_messages.each do |msg|
+          %li= msg
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+  .actions
+    = f.submit

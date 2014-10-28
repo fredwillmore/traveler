@@ -1,21 +1,17 @@
-<h1>Listing rewards</h1>
+%h1 Listing rewards
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+%table
+  %tr
+    %th
+    %th
+    %th
 
-<% @rewards.each do |reward| %>
-  <tr>
-    <td><%= link_to 'Show', [:admin, reward] %></td>
-    <td><%= link_to 'Edit', edit_admin_reward_path(reward) %></td>
-    <td><%= link_to 'Destroy', [:admin, reward], confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+  - @rewards.each do |reward|
+    %tr
+      %td= link_to 'Show', [:admin, reward]
+      %td= link_to 'Edit', edit_admin_reward_path(reward)
+      %td= link_to 'Destroy', [:admin, reward], confirm: 'Are you sure?', method: :delete
 
-<br />
+%br
 
-<%= link_to 'New Reward', new_admin_reward_path %>
+= link_to 'New Reward', new_admin_reward_path

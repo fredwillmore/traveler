@@ -40,7 +40,7 @@ class Admin::RewardsController < ApplicationController
   # POST /rewards
   # POST /rewards.json
   def create
-    @reward = Reward.new(params[:reward])
+    @reward = Reward.new(reward_params)
 
     respond_to do |format|
       if @reward.save
@@ -59,7 +59,7 @@ class Admin::RewardsController < ApplicationController
     @reward = Reward.find(params[:id])
 
     respond_to do |format|
-      if @reward.update_attributes(params[:reward])
+      if @reward.update_attributes(reward_params)
         format.html { redirect_to [:admin, @reward], notice: 'Reward was successfully updated.' }
         format.json { head :no_content }
       else
@@ -79,5 +79,12 @@ class Admin::RewardsController < ApplicationController
       format.html { redirect_to admin_rewards_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+
+  def reward_params
+    params.require(:reward).permit(
+    )
   end
 end

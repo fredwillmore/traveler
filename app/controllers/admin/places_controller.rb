@@ -13,7 +13,7 @@ class Admin::PlacesController < ApplicationController
   # GET /places/1
   # GET /places/1.json
   def show
-    @place = Place.find_or_create_by_external_id_and_player_id(params[:external_id], params[:player_id])
+    @place = Place.find_or_create_by(external_id: params[:external_id], player_id: params[:player_id])
     if !@place
       @place = new Place;
     end
@@ -45,7 +45,7 @@ class Admin::PlacesController < ApplicationController
   # POST /places
   # POST /places.json
   def create
-    @place = Place.new(params[:place])
+    @place = Place.new(place_params)
 
     respond_to do |format|
       if @place.save
@@ -64,7 +64,7 @@ class Admin::PlacesController < ApplicationController
     @place = Place.find(params[:id])
 
     respond_to do |format|
-      if @place.update_attributes(params[:place])
+      if @place.update_attributes(place_params)
         format.html { redirect_to [:admin, @place], notice: 'Place was successfully updated.' }
         format.json { head :no_content }
       else
@@ -84,5 +84,16 @@ class Admin::PlacesController < ApplicationController
       format.html { redirect_to admin_places_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+  def place_params
+    params.require(:place).permit(
+      :name,
+      :external_id,
+      :player_id,
+      :location_id,
+      :rating
+    )
   end
 end

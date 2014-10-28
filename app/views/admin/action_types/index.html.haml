@@ -1,21 +1,17 @@
-<h1>Listing action_types</h1>
+%h1 Listing action_types
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+%table
+  %tr
+    %th
+    %th
+    %th
 
-<% @action_types.each do |action_type| %>
-  <tr>
-    <td><%= link_to 'Show', [:admin, action_type] %></td>
-    <td><%= link_to 'Edit', edit_admin_action_type_path(action_type) %></td>
-    <td><%= link_to 'Destroy', [:admin, action_type], confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+- @action_types.each do |action_type|
+  %tr
+    %td= link_to 'Show', [:admin, action_type]
+    %td= link_to 'Edit', edit_admin_action_type_path(action_type)
+    %td= link_to 'Destroy', [:admin, action_type], confirm: 'Are you sure?', method: :delete
 
-<br />
+%br
 
-<%= link_to 'New Action type', new_admin_action_type_path %>
+= link_to 'New Action type', new_admin_action_type_path

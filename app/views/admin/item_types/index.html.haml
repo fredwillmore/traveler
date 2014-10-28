@@ -1,21 +1,17 @@
-<h1>Listing item_types</h1>
+%h1 Listing item_types
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+%table
+  %tr
+    %th
+    %th
+    %th
 
-<% @item_types.each do |item_type| %>
-  <tr>
-    <td><%= link_to 'Show', [:admin, item_type] %></td>
-    <td><%= link_to 'Edit', edit_admin_item_type_path(item_type) %></td>
-    <td><%= link_to 'Destroy', [:admin, item_type], confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+  - @item_types.each do |item_type|
+    %tr
+      %td= link_to 'Show', [:admin, item_type]
+      %td= link_to 'Edit', edit_admin_item_type_path(item_type)
+      %td= link_to 'Destroy', [:admin, item_type], confirm: 'Are you sure?', method: :delete
 
-<br />
+%br
 
-<%= link_to 'New Item type', new_admin_item_type_path %>
+= link_to 'New Item type', new_admin_item_type_path

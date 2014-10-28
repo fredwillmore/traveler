@@ -40,7 +40,7 @@ class Admin::ActionTypesController < ApplicationController
   # POST /action_types
   # POST /action_types.json
   def create
-    @action_type = ActionType.new(params[:action_type])
+    @action_type = ActionType.new(action_type_params)
 
     respond_to do |format|
       if @action_type.save
@@ -60,7 +60,7 @@ class Admin::ActionTypesController < ApplicationController
     @action_type = ActionType.find(params[:id])
 
     respond_to do |format|
-      if @action_type.update_attributes(params[:action_type])
+      if @action_type.update_attributes(action_type_params)
         format.html { redirect_to admin_action_type_path(@action_type), notice: 'Action type was successfully updated.' }
         format.json { head :no_content }
       else
@@ -80,5 +80,12 @@ class Admin::ActionTypesController < ApplicationController
       format.html { redirect_to admin_action_types_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+
+  def action_type_params
+    params.require(:action_type).permit(
+    )
   end
 end

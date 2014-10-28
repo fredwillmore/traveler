@@ -40,7 +40,7 @@ class Admin::QuantitiesController < ApplicationController
   # POST /quantities
   # POST /quantities.json
   def create
-    @quantity = Quantity.new(params[:quantity])
+    @quantity = Quantity.new(quantity_params)
 
     respond_to do |format|
       if @quantity.save
@@ -59,7 +59,7 @@ class Admin::QuantitiesController < ApplicationController
     @quantity = Quantity.find(params[:id])
 
     respond_to do |format|
-      if @quantity.update_attributes(params[:quantity])
+      if @quantity.update_attributes(quantity_params)
         format.html { redirect_to [:admin, @quantity], notice: 'Quantity was successfully updated.' }
         format.json { head :no_content }
       else
@@ -79,5 +79,13 @@ class Admin::QuantitiesController < ApplicationController
       format.html { redirect_to admin_quantities_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+  def quantity_params
+    params.require(:quantity).permit(
+      :name,
+      :value
+    )
   end
 end

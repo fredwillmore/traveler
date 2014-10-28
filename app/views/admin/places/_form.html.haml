@@ -1,29 +1,24 @@
-<%= form_for [:admin, @place] do |f| %>
-  <% if @place.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@place.errors.count, "error") %> prohibited this place from being saved:</h2>
+= form_for [:admin, @place] do |f|
+  - if @place.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@place.errors.count, "error")
+        prohibited this place from being saved:
 
-      <ul>
-      <% @place.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+      %ul
+        - @place.errors.full_messages.each do |msg|
+          %li= msg
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :external_id %><br />
-    <%= f.text_field :external_id %>
-  </div>
-  <div class="field">
-    <%= f.label :location_id %><br />
-    <%= f.text_field :location_id %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+  .field
+    = f.label :name
+    %br
+    = f.text_field :name
+  .field
+    = f.label :external_id
+    %br
+    = f.text_field :external_id
+  .field
+    = f.label :location_id
+    %br
+    = f.text_field :location_id
+  .actions= f.submit

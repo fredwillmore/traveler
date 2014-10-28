@@ -1,15 +1,13 @@
-<p id="notice"><%= notice %></p>
+%p#notice= notice
 
-<p>
-  <b>Item type:</b>
-  <%= @item.item_type_id %>
-</p>
-
-<p>
-  <b>Value:</b>
-  <%= @item.value %>
-</p>
+%p
+  %b Item type:
+  = @item.item_type_id
+%p
+  %b Value:
+  = @item.value
 
 
-<%= link_to 'Edit', edit_admin_item_path(@item) %> |
-<%= link_to 'Back', admin_items_path %>
+= link_to 'Edit', edit_admin_item_path(@item)
+|
+= link_to 'Back', admin_items_path

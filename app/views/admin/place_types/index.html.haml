@@ -1,21 +1,17 @@
-<h1>Listing place_types</h1>
+%h1 Listing place_types
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+%table
+  %tr
+    %th
+    %th
+    %th
 
-<% @place_types.each do |place_type| %>
-  <tr>
-    <td><%= link_to 'Show', [:admin, place_type] %></td>
-    <td><%= link_to 'Edit', edit_admin_place_type_path(place_type) %></td>
-    <td><%= link_to 'Destroy', [:admin, place_type], confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+  - @place_types.each do |place_type|
+    %tr
+      %td= link_to 'Show', [:admin, place_type]
+      %td= link_to 'Edit', edit_admin_place_type_path(place_type)
+      %td= link_to 'Destroy', [:admin, place_type], confirm: 'Are you sure?', method: :delete
 
-<br />
+%br
 
-<%= link_to 'New Place type', new_admin_place_type_path %>
+= link_to 'New Place type', new_admin_place_type_path

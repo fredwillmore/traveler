@@ -40,7 +40,7 @@ class Admin::PlaceTypesController < ApplicationController
   # POST /place_types
   # POST /place_types.json
   def create
-    @place_type = PlaceType.new(params[:place_type])
+    @place_type = PlaceType.new(place_type_params)
 
     respond_to do |format|
       if @place_type.save
@@ -59,7 +59,7 @@ class Admin::PlaceTypesController < ApplicationController
     @place_type = PlaceType.find(params[:id])
 
     respond_to do |format|
-      if @place_type.update_attributes(params[:place_type])
+      if @place_type.update_attributes(place_type_params)
         format.html { redirect_to [:admin, @place_type], notice: 'Place type was successfully updated.' }
         format.json { head :no_content }
       else
@@ -79,5 +79,13 @@ class Admin::PlaceTypesController < ApplicationController
       format.html { redirect_to admin_place_types_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+  def place_type_params
+    params.require(:place_type).permit(
+      :name,
+      :label
+    )
   end
 end

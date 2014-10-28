@@ -1,5 +1,6 @@
-<p id="notice"><%= notice %></p>
+%p#notice= notice
 
 
-<%= link_to 'Edit', edit_admin_item_type_path(@item_type) %> |
-<%= link_to 'Back', admin_item_types_path %>
+= link_to 'Edit', edit_admin_item_type_path(@item_type)
+|
+= link_to 'Back', admin_item_types_path

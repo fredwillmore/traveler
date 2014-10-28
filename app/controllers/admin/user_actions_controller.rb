@@ -40,7 +40,7 @@ class Admin::UserActionsController < ApplicationController
   # POST /user_actions
   # POST /user_actions.json
   def create
-    @user_action = UserAction.new(params[:user_action])
+    @user_action = UserAction.new(user_action_params)
 
     respond_to do |format|
       if @user_action.save
@@ -59,7 +59,7 @@ class Admin::UserActionsController < ApplicationController
     @user_action = UserAction.find(params[:id])
 
     respond_to do |format|
-      if @user_action.update_attributes(params[:user_action])
+      if @user_action.update_attributes(user_action_params)
         format.html { redirect_to [:admin, @user_action], notice: 'Action was successfully updated.' }
         format.json { head :no_content }
       else
@@ -79,5 +79,16 @@ class Admin::UserActionsController < ApplicationController
       format.html { redirect_to admin_user_actions_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+
+  def user_action_params
+    params.require(:user_action).permit(
+      :action_type_id,
+      :reward_id,
+      :risk_id,
+      :challenge_id
+    )
   end
 end

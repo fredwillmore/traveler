@@ -1,17 +1,11 @@
-<%= form_for [:admin, @reward_type] do |f| %>
-  <% if @reward_type.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@reward_type.errors.count, "error") %> prohibited this reward_type from being saved:</h2>
+= form_for [:admin, @reward_type] do |f|
+  - if @reward_type.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@reward_type.errors.count, "error")
+        prohibited this reward_type from being saved:
+      %ul
+        - @reward_type.errors.full_messages.each do |msg|
+          %li= msg
 
-      <ul>
-      <% @reward_type.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+  .actions= f.submit

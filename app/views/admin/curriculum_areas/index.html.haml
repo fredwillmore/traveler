@@ -1,21 +1,17 @@
-<h1>Listing curriculum_areas</h1>
+%h1 Listing curriculum_areas
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+%table
+  %tr
+    %th
+    %th
+    %th
 
-<% @curriculum_areas.each do |curriculum_area| %>
-  <tr>
-    <td><%= link_to 'Show', [:admin, curriculum_area] %></td>
-    <td><%= link_to 'Edit', edit_admin_curriculum_area_path(curriculum_area) %></td>
-    <td><%= link_to 'Destroy', [:admin, curriculum_area], confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+  - @curriculum_areas.each do |curriculum_area|
+    %tr
+      %td= link_to 'Show', [:admin, curriculum_area]
+      %td= link_to 'Edit', edit_admin_curriculum_area_path(curriculum_area)
+      %td= link_to 'Destroy', [:admin, curriculum_area], confirm: 'Are you sure?', method: :delete
 
-<br />
+%br
 
-<%= link_to 'New Curriculum area', new_admin_curriculum_area_path %>
+= link_to 'New Curriculum area', new_admin_curriculum_area_path

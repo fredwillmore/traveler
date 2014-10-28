@@ -1,21 +1,17 @@
-<h1>Listing challenge_types</h1>
+%h1 Listing challenge_types
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+%table
+  %tr
+    %th
+    %th
+    %th
 
-<% @challenge_types.each do |challenge_type| %>
-  <tr>
-    <td><%= link_to 'Show', [:admin, challenge_type] %></td>
-    <td><%= link_to 'Edit', edit_admin_challenge_type_path(challenge_type) %></td>
-    <td><%= link_to 'Destroy', [:admin, challenge_type], confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+  - @challenge_types.each do |challenge_type|
+    %tr
+      %td= link_to 'Show', [:admin, challenge_type]
+      %td= link_to 'Edit', edit_admin_challenge_type_path(challenge_type)
+      %td= link_to 'Destroy', [:admin, challenge_type], confirm: 'Are you sure?', method: :delete
 
-<br />
+%br
 
-<%= link_to 'New Challenge type', new_admin_challenge_type_path %>
+= link_to 'New Challenge type', new_admin_challenge_type_path

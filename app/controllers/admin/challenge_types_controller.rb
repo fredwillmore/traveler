@@ -40,7 +40,7 @@ class Admin::ChallengeTypesController < ApplicationController
   # POST /challenge_types
   # POST /challenge_types.json
   def create
-    @challenge_type = ChallengeType.new(params[:challenge_type])
+    @challenge_type = ChallengeType.new(challenge_type_params)
 
     respond_to do |format|
       if @challenge_type.save
@@ -59,7 +59,7 @@ class Admin::ChallengeTypesController < ApplicationController
     @challenge_type = ChallengeType.find(params[:id])
 
     respond_to do |format|
-      if @challenge_type.update_attributes(params[:challenge_type])
+      if @challenge_type.update_attributes(challenge_type_params)
         format.html { redirect_to [:admin, @challenge_type], notice: 'Challenge type was successfully updated.' }
         format.json { head :no_content }
       else
@@ -80,4 +80,12 @@ class Admin::ChallengeTypesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+  def challenge_type_params
+    params.require(:challenge_type).permit(
+    )
+  end
+
 end

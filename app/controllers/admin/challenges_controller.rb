@@ -92,4 +92,15 @@ class Admin::ChallengesController < ApplicationController
     challenge_id =
     respond_with @challenge
   end
+
+  private
+  def challenge_params
+    params.require(:challenge).permit(
+      :target_text,
+      :challenge_text,
+      :curriculum_area_id,
+      :level,
+      :challenge_type_id
+    )
+  end
 end

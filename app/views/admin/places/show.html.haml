@@ -1,19 +1,17 @@
-<p id="notice"><%= notice %></p>
+%p#notice= notice
 
-<p>
-  <b>Name:</b>
-  <%= @place.name %>
-</p>
+%p
+  %b Name:
+  = @place.name
 
-<p>
-  <b>External:</b>
-  <%= @place.external_id %>
-</p>
+%p
+  %b External:
+  = @place.external_id
 
-<p>
-  <b>Location:</b>
-  <%= @place.location_id %>
-</p>
+%p
+  %b Location:
+  = @place.location_id
 
-<%= link_to 'Edit', edit_admin_place_path(@place) %> |
-<%= link_to 'Back', admin_places_path %>
+= link_to 'Edit', edit_admin_place_path(@place)
+|
+= link_to 'Back', admin_places_path
