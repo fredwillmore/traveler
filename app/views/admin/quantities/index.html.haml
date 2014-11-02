@@ -5,9 +5,11 @@
     %th
     %th
     %th
+    %th
 
   - @quantities.each do |quantity|
     %tr
+      %td= quantity[:name]
       %td= link_to 'Show', [:admin, quantity]
       %td= link_to 'Edit', edit_admin_quantity_path(quantity)
       %td= link_to 'Destroy', [:admin, quantity], confirm: 'Are you sure?', method: :delete

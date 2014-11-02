@@ -9,4 +9,8 @@
         - @quantity.errors.full_messages.each do |msg|
           %li= msg
 
+  = f.label :name
+  %br
+  = f.number_field :name
+
   .actions= f.submit

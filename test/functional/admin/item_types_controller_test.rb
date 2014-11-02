@@ -1,8 +1,11 @@
 require 'test_helper'
 
 class Admin::ItemTypesControllerTest < ActionController::TestCase
+
   setup do
-    @item_type = item_types(:one)
+    @user = FactoryGirl.create :user
+    @item_type = FactoryGirl.create :item_type
+    sign_in User.first
   end
 
   test "should get index" do

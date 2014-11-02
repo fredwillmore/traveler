@@ -40,7 +40,7 @@ class Admin::ItemTypesController < ApplicationController
   # POST /item_types
   # POST /item_types.json
   def create
-    @item_type = ItemType.new(params[:item_type])
+    @item_type = ItemType.new(item_type_params)
 
     respond_to do |format|
       if @item_type.save
@@ -59,7 +59,7 @@ class Admin::ItemTypesController < ApplicationController
     @item_type = ItemType.find(params[:id])
 
     respond_to do |format|
-      if @item_type.update_attributes(params[:item_type])
+      if @item_type.update_attributes(item_type_params)
         format.html { redirect_to [:admin, @item_type], notice: 'Item type was successfully updated.' }
         format.json { head :no_content }
       else
@@ -80,4 +80,13 @@ class Admin::ItemTypesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+  def item_type_params
+    params.require(:item_type).permit(
+      :name
+    )
+  end
+
 end

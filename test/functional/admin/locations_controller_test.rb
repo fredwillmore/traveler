@@ -1,8 +1,10 @@
 require 'test_helper'
 
 class Admin::LocationsControllerTest < ActionController::TestCase
-  setup do
-    @location = locations(:one)
+  def setup
+    @user = FactoryGirl.create :user
+    @location = FactoryGirl.create :location
+    sign_in User.first
   end
 
   test "should get index" do

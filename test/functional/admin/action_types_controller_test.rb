@@ -2,7 +2,9 @@ require 'test_helper'
 
 class Admin::ActionTypesControllerTest < ActionController::TestCase
   setup do
-    @action_type = action_types(:one)
+    @user = FactoryGirl.create :user
+    @action_type = FactoryGirl.create :action_type
+    sign_in User.first
   end
 
   test "should get index" do

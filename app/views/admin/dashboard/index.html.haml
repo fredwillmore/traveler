@@ -1,1 +1,37 @@
-hello you are in admin area
+%h1 Admin Area
+
+%table
+  %tr
+    %th
+  %tr
+    %td= link_to 'Action Types', admin_action_types_path
+  %tr
+    %td= link_to 'Challenge Types', admin_challenge_types_path
+  %tr
+    %td= link_to 'Challenges', admin_challenges_path
+  %tr
+    %td= link_to 'Curriculum Areas', admin_curriculum_areas_path
+  %tr
+    %td= link_to 'Item Types', admin_item_types_path
+  %tr
+    %td= link_to 'Items', admin_items_path
+  %tr
+    %td= link_to 'Locations', admin_locations_path
+  %tr
+    %td= link_to 'Place Types', admin_place_types_path
+  %tr
+    %td= link_to 'Places', admin_places_path
+  %tr
+    %td= link_to 'Players', admin_players_path
+  %tr
+    %td= link_to 'Quantities', admin_quantities_path
+  %tr
+    %td= link_to 'Reward Types', admin_reward_types_path
+  %tr
+    %td= link_to 'Rewards', admin_rewards_path
+  %tr
+    %td= link_to 'User Actions', admin_user_actions_path
+  %tr
+    %td= link_to 'Users', admin_users_path
+
+= link_to 'New Action type', new_admin_action_type_path

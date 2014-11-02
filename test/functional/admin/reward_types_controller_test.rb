@@ -2,7 +2,9 @@ require 'test_helper'
 
 class Admin::RewardTypesControllerTest < ActionController::TestCase
   setup do
-    @reward_type = reward_types(:one)
+    @user = FactoryGirl.create :user
+    @reward_type = FactoryGirl.create :reward_type
+    sign_in User.first
   end
 
   test "should get index" do

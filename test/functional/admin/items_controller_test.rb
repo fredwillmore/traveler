@@ -2,7 +2,9 @@ require 'test_helper'
 
 class Admin::ItemsControllerTest < ActionController::TestCase
   setup do
-    @item = items(:one)
+    @user = FactoryGirl.create :user
+    @item = FactoryGirl.create :item
+    sign_in User.first
   end
 
   test "should get index" do

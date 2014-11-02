@@ -40,7 +40,7 @@ class Admin::CurriculumAreasController < ApplicationController
   # POST /curriculum_areas
   # POST /curriculum_areas.json
   def create
-    @curriculum_area = CurriculumArea.new(params[:curriculum_area])
+    @curriculum_area = CurriculumArea.new(curriculum_area_params)
 
     respond_to do |format|
       if @curriculum_area.save
@@ -59,7 +59,7 @@ class Admin::CurriculumAreasController < ApplicationController
     @curriculum_area = CurriculumArea.find(params[:id])
 
     respond_to do |format|
-      if @curriculum_area.update_attributes(params[:curriculum_area])
+      if @curriculum_area.update_attributes(curriculum_area_params)
         format.html { redirect_to [:admin, @curriculum_area], notice: 'Curriculum area was successfully updated.' }
         format.json { head :no_content }
       else
@@ -80,4 +80,13 @@ class Admin::CurriculumAreasController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+  def curriculum_area_params
+    params.require(:curriculum_area).permit(
+      :title
+    )
+  end
+
 end

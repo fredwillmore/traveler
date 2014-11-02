@@ -2,7 +2,9 @@ require 'test_helper'
 
 class Admin::PlayersControllerTest < ActionController::TestCase
   setup do
-    @player = players(:one)
+    @user = FactoryGirl.create :user
+    @player = FactoryGirl.create :player
+    sign_in User.first
   end
 
   test "should get index" do

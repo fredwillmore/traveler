@@ -2,7 +2,9 @@ require 'test_helper'
 
 class Admin::CurriculumAreasControllerTest < ActionController::TestCase
   setup do
-    @curriculum_area = curriculum_areas(:one)
+    @user = FactoryGirl.create :user
+    @curriculum_area = FactoryGirl.create :curriculum_area
+    sign_in User.first
   end
 
   test "should get index" do

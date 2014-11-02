@@ -2,7 +2,9 @@ require 'test_helper'
 
 class Admin::PlacesControllerTest < ActionController::TestCase
   setup do
-    @place = places(:one)
+    @user = FactoryGirl.create :user
+    @place = FactoryGirl.create :place
+    sign_in User.first
   end
 
   test "should get index" do

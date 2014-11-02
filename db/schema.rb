@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20130505133548) do
   enable_extension "plpgsql"
 
   create_table "action_types", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -33,6 +34,7 @@ ActiveRecord::Schema.define(version: 20130505133548) do
   add_index "challenge_translations", ["locale"], name: "index_challenge_translations_on_locale", using: :btree
 
   create_table "challenge_types", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -64,6 +66,7 @@ ActiveRecord::Schema.define(version: 20130505133548) do
   end
 
   create_table "item_types", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -156,6 +159,7 @@ ActiveRecord::Schema.define(version: 20130505133548) do
   end
 
   create_table "reward_types", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

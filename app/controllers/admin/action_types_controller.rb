@@ -86,6 +86,7 @@ class Admin::ActionTypesController < ApplicationController
 
   def action_type_params
     params.require(:action_type).permit(
+      :name
     )
   end
 end

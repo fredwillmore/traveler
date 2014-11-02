@@ -85,6 +85,7 @@ class Admin::RewardTypesController < ApplicationController
 
   def reward_type_params
     params.require(:reward_type).permit(
+      :name
     )
   end
 end

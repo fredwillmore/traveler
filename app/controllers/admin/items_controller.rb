@@ -34,13 +34,13 @@ class Admin::ItemsController < ApplicationController
 
   # GET /items/1/edit
   def edit
-    @item = Item.find(params[:id])
+    @item = Item.find params[:id]
   end
 
   # POST /items
   # POST /items.json
   def create
-    @item = Item.new(params[:item])
+    @item = Item.new item_params
 
     respond_to do |format|
       if @item.save
@@ -56,10 +56,10 @@ class Admin::ItemsController < ApplicationController
   # PUT /items/1
   # PUT /items/1.json
   def update
-    @item = Item.find(params[:id])
+    @item = Item.find params[:id]
 
     respond_to do |format|
-      if @item.update_attributes(params[:item])
+      if @item.update_attributes(item_params)
         format.html { redirect_to [:admin, @item], notice: 'Item was successfully updated.' }
         format.json { head :no_content }
       else
@@ -80,4 +80,15 @@ class Admin::ItemsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+  def item_params
+    params.require(:item).permit(
+      # :name,
+      :item_type_id,
+      :value
+    )
+  end
+
 end

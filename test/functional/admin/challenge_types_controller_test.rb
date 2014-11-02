@@ -2,7 +2,9 @@ require 'test_helper'
 
 class Admin::ChallengeTypesControllerTest < ActionController::TestCase
   setup do
-    @challenge_type = challenge_types(:one)
+    @user = FactoryGirl.create :user
+    @challenge_type = FactoryGirl.create :challenge_type
+    sign_in User.first
   end
 
   test "should get index" do

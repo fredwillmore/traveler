@@ -2,7 +2,9 @@ require 'test_helper'
 
 class Admin::UserActionsControllerTest < ActionController::TestCase
   setup do
-    @user_action = user_actions(:one)
+    @user = FactoryGirl.create :user
+    @user_action = FactoryGirl.create :user_action
+    sign_in User.first
   end
 
   test "should get index" do
@@ -35,7 +37,7 @@ class Admin::UserActionsControllerTest < ActionController::TestCase
   end
 
   test "should update action" do
-    post(:update, {id: @user_action}, {user_action: @user_action.attributes})
+    post(:update, id: @user_action, user_action: @user_action.attributes)
     assert_redirected_to admin_user_action_path(assigns(:user_action))
   end
 
