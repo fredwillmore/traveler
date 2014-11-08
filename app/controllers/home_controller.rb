@@ -1,11 +1,11 @@
 class HomeController < ApplicationController
+  before_filter :authenticate_user!
   def index
-    # eventually we'll do some sort of user authentication but for now just stick the id in there
-    #  @user = User.find 1 # don't know why user isnt sticking in seed
-    # @player = Player.find 1
-    @player = Player.new level: 1
-    @player_location = @player.location
-#    I18n.locale = @player.base_locale
-    noop =0;
+    if current_user
+      @player = Player.new level: 1
+      @player_location = @player.location
+    else
+      redirect_to login
+    end
   end
 end

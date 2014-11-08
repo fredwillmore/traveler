@@ -19,6 +19,10 @@ Traveler::Application.routes.draw do
   end
 
   devise_for :users
+  devise_scope :user do
+    get '/sign-in' => "devise/sessions#new", :as => :login
+  end
+
   resources :players do
     member do
       get 'start_travel'
