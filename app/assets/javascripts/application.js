@@ -15,3 +15,9 @@
 //= require jquery_ujs
 //= require_tree .
 //= require jquery.timer
+
+$(function() {
+//    initializePlayer
+//    $.initialize();
+    $.initialize()
+});

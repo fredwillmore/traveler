@@ -37,6 +37,7 @@ Traveler::Application.routes.draw do
   end
 
   get "home/index"
+  get "home/select_player/:player_id", to: 'home#select_player'
 
   # attempting a custom route:
   # resources :places do

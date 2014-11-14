@@ -28,8 +28,8 @@ gem 'google_places'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
+gem 'jbuilder' # used for serialization of models into JSON
+gem 'kaminari' # adds pagination to ActiveModels
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -72,7 +72,7 @@ group :development, :test do
   # To use debugger
   #gem 'linecache19', '0.5.13', :path => "~/.rvm/gems/ruby-1.9.3-p125/gems/linecache19-0.5.13/"
   #gem 'ruby-debug-base19', '0.11.26', :path => "~/.rvm/gems/ruby-1.9.3-p125/gems/ruby-debug-base19-0.11.26/"
-  #gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'debugger'
 
   gem 'factory_girl_rails', :require => false
 end

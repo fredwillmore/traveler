@@ -14,7 +14,8 @@ Users = User.create([{
   id: '1',
   first_name: "Freddy",
   last_name: "McReddy",
-  email: "fredwillmore@gmail.com"
+  email: "fredwillmore@gmail.com",
+  password: "!welcome"
 }]);
 
 

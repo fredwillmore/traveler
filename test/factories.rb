@@ -52,7 +52,6 @@ FactoryGirl.define do
   end
 
   factory :player do |f|
-    f.user_id         1
     f.state           "normal"
     f.location_id     1
     f.level           2

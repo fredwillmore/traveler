@@ -149,6 +149,7 @@ ActiveRecord::Schema.define(version: 20141103043013) do
     t.string   "base_locale"
     t.string   "target_locale"
     t.string   "target_dialect"
+    t.boolean  "is_current_player"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
