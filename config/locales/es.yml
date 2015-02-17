@@ -2,7 +2,11 @@
 
 es:
   hello: "hola mundo"
+
   map_control_center: "Centrar el mapa"
+  search_map: "Buscar mapa"
+  current_player: "Jugador Activo"
+  get_players_index: "Lista de Jugadores"
 
   place_info:
     id: "ID"

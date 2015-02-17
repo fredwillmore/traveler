@@ -5,6 +5,7 @@ class CreatePlayers < ActiveRecord::Migration
       t.string :state
       t.integer :location_id
       t.integer :level
+      t.string :name
       t.string :sex
       t.timestamp :dob
       t.string :occupation

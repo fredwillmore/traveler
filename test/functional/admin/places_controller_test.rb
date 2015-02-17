@@ -27,6 +27,7 @@ class Admin::PlacesControllerTest < ActionController::TestCase
   end
 
   test "should show place" do
+    debugger
     get :show, id: @place
     assert_response :success
   end

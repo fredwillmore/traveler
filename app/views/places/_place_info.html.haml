@@ -1,0 +1,59 @@
+#place_info
+  #place_info_handle.handle
+    %a#place_info_close{href: "#"}
+      [ x ]
+    %a#place_info_handle_name{href: "#"}
+      Place Info
+  #place_info_content
+    %table
+      %tr
+        %td
+          #{t "place_info.id"}:
+        %td#place_info_id
+      %tr
+        %td
+          #{t "place_info.name"}:
+        %td#place_info_name
+      %tr
+        %td
+          #{t "place_info.rating"}:
+        %td#place_info_rating
+      %tr
+        %td
+          #{t "place_info.travelTimeWALKING"}:
+        %td#place_info_travelTimeWALKING
+      %tr
+        %td
+          #{t "place_info.travelTimeBICYCLING"}:
+        %td#place_info_travelTimeBICYCLING
+      %tr
+        %td
+          #{t "place_info.travelTimeDRIVING"}:
+        %td#place_info_travelTimeDRIVING
+      %tr
+        %td
+          #{t "place_info.travelTimeTRANSIT"}:
+        %td#place_info_travelTimeTRANSIT
+      %tr
+        %td
+          #{t "place_info.food_value"}/#{t "place_info.food_cost"}:
+        %td
+          %span#place_info_food_value
+          /
+          %span#place_info_food_cost
+      %tr
+        %td
+          #{t "place_info.drink_value"}/#{t "place_info.drink_cost"}:
+        %td
+          %span#place_info_drink_value
+          /
+          %span#place_info_drink_cost
+      %tr
+        %td
+        %td
+          %input#place_info_go_walk{type: "button", value: t("place_info.go_walk")}
+      -#allow player to have/rent a car - then add driving option
+      %tr
+        %td
+        %td
+          %input#place_info_go_taxi{type: "button", value: t("place_info.go_taxi")}

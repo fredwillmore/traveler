@@ -51,6 +51,8 @@ gem 'state_machine'
 gem 'sidekiq'
 gem 'haml'
 
+gem 'bootstrap-sass'
+
 group :development, :test do
   #
   # unit testing
@@ -72,7 +74,13 @@ group :development, :test do
   # To use debugger
   #gem 'linecache19', '0.5.13', :path => "~/.rvm/gems/ruby-1.9.3-p125/gems/linecache19-0.5.13/"
   #gem 'ruby-debug-base19', '0.11.26', :path => "~/.rvm/gems/ruby-1.9.3-p125/gems/ruby-debug-base19-0.11.26/"
-  gem 'debugger'
+  unless ENV['RM_INFO']
+    # gem 'pry-full'
+    gem 'debugger'
+  end
 
   gem 'factory_girl_rails', :require => false
+  gem 'better_errors'
+  gem 'paperclip'
+  gem 'fancybox2-rails'
 end

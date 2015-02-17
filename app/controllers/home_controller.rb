@@ -9,18 +9,4 @@ class HomeController < ApplicationController
     end
   end
 
-  def select_player
-    Player.find(current_user.current_player.id).update_attribute :is_current_player, FALSE
-    Player.find(params[:player_id]).update_attribute :is_current_player, TRUE
-    respond_to do |format|
-      format.html
-      format.js
-    end
-    # current_user.players.find(params[:player_id]).update_attribute :is_current_player, TRUE
-  end
-
-  def get_place
-
-  end
-
 end

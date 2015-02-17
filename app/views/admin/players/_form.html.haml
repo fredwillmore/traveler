@@ -17,7 +17,11 @@
     %br
     = f.number_field :level
   .field
-    = f.label :sex     
+    = f.label :name
+    %br
+    = f.text_field :name
+  .field
+    = f.label :sex
     %br
     = f.text_field :sex
   .field
@@ -28,30 +32,6 @@
     = f.label :occupation     
     %br
     = f.text_field :occupation
-  -#.field
-  -#  = f.label :energy
-  -#  %br
-  -#  = f.number_field :energy
-  -#.field
-  -#  = f.label :food
-  -#  %br
-  -#  = f.number_field :food
-  -#.field
-  -#  = f.label :water
-  -#  %br
-  -#  = f.number_field :water
-  -#.field
-  -#  = f.label :bio
-  -#  %br
-  -#  = f.number_field :bio
-  -#.field
-  -#  = f.label :money
-  -#  %br
-  -#  = f.number_field :money
-  -#.field
-  -#  = f.label :confidence
-  -#  %br
-  -#  = f.number_field :confidence
   .field
     = f.label :attractiveness     
     %br

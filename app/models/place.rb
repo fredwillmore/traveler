@@ -1,19 +1,19 @@
 class Place < ActiveRecord::Base
-  has_one :location
+  belongs_to :location
   has_and_belongs_to_many :place_types
 
   API_KEY = 'AIzaSyBd2SvRNu_Lf48wvjh7MQZsNisYfi6ae_s'
   YWSID = 'eVO1YSwv3rgJVEfoap8TDQ'
 
-  COST_GRADE_1 = 2;
-  VALUE_GRADE_1 = 2;
-  COST_GRADE_2 = 4;
-  VALUE_GRADE_2 = 4;
-  COST_GRADE_3 = 6;
-  VALUE_GRADE_3 = 6;
+  COST_GRADE_1 = 2
+  VALUE_GRADE_1 = 2
+  COST_GRADE_2 = 4
+  VALUE_GRADE_2 = 4
+  COST_GRADE_3 = 6
+  VALUE_GRADE_3 = 6
 
-  FOOD_VALUE_MAX = 20;
-  DRINK_VALUE_MAX = 10;
+  FOOD_VALUE_MAX = 20
+  DRINK_VALUE_MAX = 10
 
   attr_accessor :food_cost
   attr_accessor :food_value
@@ -30,42 +30,21 @@ class Place < ActiveRecord::Base
     end
   end
 
-  def self.find_or_create_by_external_id (external_id)
-    my_place = Place.find_by_external_id external_id
-    if !my_place
-
-      google_places_client = GooglePlaces::Client.new(API_KEY)
-      my_spot = google_places_client.spot(external_id)
-
-      # get additional info from Yelp, if available and appropriate
-      # actually, it looks like the thing I really want, price range, is not given by Yelp API
-      # so I'm putting this on the shelf for now.
-      # There is still good stuff in here so maybe I'll come back to it
-      # if my_spot.types & ['bar', 'restaurant', 'club', 'cafe'] # to be continued
-      #   yelp_client = Yelp::Client.new
-      #   yelp_request = Yelp::Review::Request::GeoPoint.new(
-      #       :latitude => my_spot.lat,
-      #       :longitude => my_spot.lng,
-      #       :radius => '.001',
-      #       :yws_id => YWSID)
-      #   yelp_response = yelp_client.search(yelp_request)
-      # end
-
-      my_location = Location.find_or_create_by_lat_and_lng( my_spot.lat, my_spot.lng )
-
-      my_place = Place.new
-      my_place.external_id = external_id
-      my_place.name = my_spot.name
-      my_place.rating = my_spot.rating
-      my_place.location_id = my_location.id
-      my_spot.types.each do |place_type|
-#        my_place_type = PlaceType::find_by_name place_type
-        my_place.place_types << PlaceType::find_by_name(place_type)
+  def self.find_or_create_by_external_id(external_id)
+    unless place = Place.find_by_external_id(external_id)
+      spot = GooglePlaces::Client.new(API_KEY).spot(external_id)
+      place = Place.new({
+        external_id: external_id,
+        name: spot.name,
+        rating: spot.rating,
+        location: Location.find_or_create_by(lat: spot.lat, lng: spot.lng)
+      })
+      spot.types.each do |t|
+        place.place_types << PlaceType::find_by(name: t)
       end
-
-      my_place.save
+      place.save!
     end
-    return my_place;
+    place;
   end
 
   def populate_secondary_data

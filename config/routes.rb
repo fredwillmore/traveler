@@ -1,4 +1,6 @@
 Traveler::Application.routes.draw do
+  resources :search_suggestions
+
   namespace :admin do
     root to: "dashboard#index"
     resources :action_types
@@ -16,6 +18,24 @@ Traveler::Application.routes.draw do
     resources :user_actions
     resources :locations
     resources :places
+  end
+
+  scope :api do
+    get "api/select_player/:player_id", to: 'home#select_player'
+    get "api/create_player"
+    get "api/check_player_name"
+    get "api/delete_player"
+    get "api/select_player"
+    get "api/get_player"
+    get "api/update_player_destination"
+    get "api/get_player_location"
+  end
+
+  resources :players do
+    get "select_player/:player_id", to: 'home#select_player'
+    get "check_player_name"
+    get "select_player"
+    get "get_player_location"
   end
 
   devise_for :users
@@ -37,7 +57,8 @@ Traveler::Application.routes.draw do
   end
 
   get "home/index"
-  get "home/select_player/:player_id", to: 'home#select_player'
+
+  get "places/:external_id", to: "places#show"
 
   # attempting a custom route:
   # resources :places do

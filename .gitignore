@@ -25,4 +25,5 @@ public/assets/source_maps/
 .idea/
 tmp
 
-
+# don't share secrets
+/config/secrets.yml

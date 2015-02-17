@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141103043013) do
+ActiveRecord::Schema.define(version: 20141206193100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -138,6 +138,7 @@ ActiveRecord::Schema.define(version: 20141103043013) do
     t.string   "state"
     t.integer  "location_id"
     t.integer  "level"
+    t.string   "name"
     t.string   "sex"
     t.datetime "dob"
     t.string   "occupation"
@@ -152,6 +153,10 @@ ActiveRecord::Schema.define(version: 20141103043013) do
     t.boolean  "is_current_player"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   create_table "quantities", force: true do |t|
@@ -166,6 +171,13 @@ ActiveRecord::Schema.define(version: 20141103043013) do
   end
 
   create_table "rewards", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "search_suggestions", force: true do |t|
+    t.string   "term"
+    t.integer  "popularity"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

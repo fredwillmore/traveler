@@ -22,4 +22,8 @@ class User < ActiveRecord::Base
     players.find_by is_current_player: true
   end
 
+  def current_player= player
+    players.find(player).update_attribute :is_current_player, true
+  end
+
 end

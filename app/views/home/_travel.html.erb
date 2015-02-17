@@ -1,0 +1,20 @@
+<div id="travel_mode">
+  <div id="travel_mode_handle" class="handle">
+    <a href="#" id="travel_mode_close">[ x ]</a>
+    <a href="#" id="travel_mode_handle_name"><%= t "travel_mode" %></a>
+  </div>
+  <div id="travel_mode_content">
+    Now we're in travel mode. Let's do some challenges to pass the time:
+    <div id="challengeXXX">
+    </div>
+    <div id="challenge_list">
+      <%
+         for counter in 1..@player.level
+      %>
+          <div><a href="#" id="get_challenge_<%= counter %>">level <%= counter %></a></div>
+      <%
+         end
+      %>
+    </div>
+  </div>
+</div>

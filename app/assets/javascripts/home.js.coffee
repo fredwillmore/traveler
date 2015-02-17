@@ -32,34 +32,117 @@ $ ->
 #  travelTimes = new Object
 #  # initialize travel times
 #  travelTimes['WALKING'] = travelTimes['BICYCLING'] = travelTimes['DRIVING'] = travelTimes['TRANSIT'] = 0
+  google.maps.event.addDomListener(window, 'load', $.initialize);
+
+#   might as well make players_index clickable to trigger the loading of player data
+  $("#players_index").click ->
+    $.initialize()
+
+#  $("#show_search").click ->
+#    return false
+#    $("#player_info").show
+
+#    $.searchMap()
 
   $.initialize = ->
-
-
-  $.initializeMap = (latitude, longitude)->
-    mapOptions = {
-      center: new google.maps.LatLng(latitude, longitude)
-      zoom: 5
+    $.gMap = new google.maps.Map document.getElementById("map_canvas"), {
+      center: new google.maps.LatLng(44, -144)
+      zoom: 10
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
-    $.map = new google.maps.Map document.getElementById("map_canvas"), mapOptions
+    $.placesService = new google.maps.places.PlacesService $.gMap
+    $.liveMarkers = []
+    $().mousemove (e) ->
+      $.mouseX = e.pageX
+      $.mouseY = e.pageY
+    $("#place_info").hide()
+
+    $.ajax
+      url: $("#players_index").data('ajaxPath'),
+      data: {}
+      dataType: 'json'
+      success: (data) ->
+        $.ajaxPlayerIndexHandler data
+
+  $.ajaxPlayerIndexHandler = (data)->
+    current = $.grep( data, (item) ->
+      return item.is_current_player == true
+    )[0]
+    $.updateBoardForPlayer current
+
+  $.updateBoardForPlayer = (player)->
+    $("#current_player").html player.name
+    location = new google.maps.LatLng(player.location.lat, player.location.lng)
+    $.gMap.setCenter location
+    $.addMarker location, icon: player.avatar_urls.small
+
+  $.clearSearchMarkers = ->
+    $.each $.liveMarkers, (i)->
+      $.liveMarkers[i].setMap null
+
+  $.searchMap = ->
+    $.clearSearchMarkers()
+    $.placesService.textSearch({
+        query: $("#prefix").val()
+        bounds: $.gMap.getBounds()
+      }, (results, status) ->
+        if status == google.maps.places.PlacesServiceStatus.OK
+          for i in [0..(results.length-1)]
+            $.addPlaceMarker results[i])
+
+  $("#prefix").autocomplete
+    source: "/search_suggestions" # TODO: fetch this path in the view, store in html5 data element
+    select: ->
+      $.fancybox.close()
+      $.searchMap()
+
+  $.addPlaceMarker = (place) ->
+    marker = $.addMarker place.geometry.location
+    marker.set 'placeReference', place.reference
+    $.liveMarkers.push marker
+    google.maps.event.addListener marker, 'click', $.showPlaceInfo
+#    google.maps.event.addListener marker, 'mouseout', $.hidePlaceInfo()
+    marker
+
+  $.addMarker = (location, markerInfo={}) ->
+    new google.maps.Marker {
+      map: $.gMap
+      position: location
+      icon: markerInfo.icon
+    }
+
+  $.showPlaceInfo = ->
+    $("#place_info").css 'left', $.mouseX
+    $("#place_info").css 'top', $.mouseY
+
+    $.ajax
+      url: '/places/'+this.placeReference
+      type: "GET"
+      data:
+        external_id: this.placeReference
+      dataType: 'json'
+      success: (data) ->
+        for attribute in data
+          $("#place_info_"+attribute).html placeInfo[attribute]
+        $("#place_info").show()
+
+
 
   searchMap = ->
-    liveMarker
     while liveMarker = liveMarkers.pop
       liveMarker.setMap null
-      placeTypeChecked = $('input:checkbox[name=placeTypes]:checked')
-      if placeTypeChecked.length > 0
-        placeTypes = new Array
-        for i in [0..i<placeTypeChecked.length]
-          placeTypes[i] = placeTypeChecked[i].value
-        myPlaceSearchOptions =
-          location: map.getCenter
-  #        location: $.myLatLng
-          bounds: map.getBounds
-          types: placeTypes
-          radius: 500
-        placess.search myPlaceSearchOptions, handleSearchResults
+    placeTypeChecked = $('input:checkbox[name=placeTypes]:checked')
+    if placeTypeChecked.length > 0
+      placeTypes = new Array
+      for i in [0..i<placeTypeChecked.length]
+        placeTypes[i] = placeTypeChecked[i].value
+      myPlaceSearchOptions =
+        location: map.getCenter
+#        location: $.myLatLng
+        bounds: map.getBounds
+        types: placeTypes
+        radius: 500
+      placess.search myPlaceSearchOptions, handleSearchResults
 
 
   handleSearchResults = (results, status) ->

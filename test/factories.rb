@@ -44,8 +44,7 @@ FactoryGirl.define do
   end
 
   factory :place do |f|
-    f.name "House of Wings"
-    f.external_id "1234567890"
+    f.external_id "ChIJD9ZJunsKlVQRM22Z262SgSk"
     f.player_id 1
     f.location_id 2
     f.rating 2.5
@@ -55,6 +54,7 @@ FactoryGirl.define do
     f.state           "normal"
     f.location_id     1
     f.level           2
+    f.name            "Lahr"
     f.sex             "m"
     f.dob             Date.parse("1979-06-26")
     f.occupation      "screen printer"

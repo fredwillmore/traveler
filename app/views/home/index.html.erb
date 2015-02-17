@@ -1,71 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 <div id="map_canvas"></div>
-<div id="place_info">
-  <div id="place_info_handle" class="handle">
-    <a href="#" id="place_info_close">[ x ]</a>
-    <a href="#" id="place_info_handle_name">Place Info</a>
-  </div>
-  <div id="place_info_content">
-    <table>
-      <tr>
-        <td><%= t "place_info.id" %>:</td>
-        <td id="place_info_id"></td>
-      </tr>
-      <tr>
-        <td><%= t "place_info.name" %>:</td>
-        <td id="place_info_name"></td>
-      </tr>
-      <tr>
-        <td><%= t "place_info.rating" %>:</td>
-        <td id="place_info_rating"></td>
-      </tr>
-      <tr>
-        <td><%= t "place_info.travelTimeWALKING" %>:</td>
-        <td id="place_info_travelTimeWALKING"></td>
-      </tr>
-      <tr>
-        <td><%= t "place_info.travelTimeBICYCLING" %>:</td>
-        <td id="place_info_travelTimeBICYCLING"></td>
-      </tr>
-      <tr>
-        <td><%= t "place_info.travelTimeDRIVING" %>:</td>
-        <td id="place_info_travelTimeDRIVING"></td>
-      </tr>
-      <tr>
-        <td><%= t "place_info.travelTimeTRANSIT" %>:</td>
-        <td id="place_info_travelTimeTRANSIT"></td>
-      </tr>
-      <tr>
-        <td><%= t "place_info.food_value" %>/<%= t "place_info.food_cost" %>:</td>
-        <td><span id="place_info_food_value"></span>/<span id="place_info_food_cost"></span></td>
-      </tr>
-      <tr>
-        <td><%= t "place_info.drink_value" %>/<%= t "place_info.drink_cost" %>:</td>
-        <td><span id="place_info_drink_value"></span>/<span id="place_info_drink_cost"></span></td>
-      </tr>
-<!--
-      <tr>
-        <td>Entertainment:</td>
-        <td id="place_info_entertainment"></td>
-      </tr>
-      <tr>
-        <td>Cost:</td>
-        <td id="place_info_cost"></td>
-      </tr>
--->
-      <tr>
-        <td></td>
-        <td id=""><input id="place_info_go_walk" type="button" value="<%= t "place_info.go_walk" %>"></td>
-      </tr>
-      <!-- allow player to have/rent a car - then add driving option -->
-      <tr>
-        <td></td>
-        <td id=""><input id="place_info_go_taxi" type="button" value="<%= t "place_info.go_taxi" %>"></td>
-      </tr>
-    </table>
-  </div>
-</div>
 
 <div id="map_control">
   <div id="map_control_handle" class="handle">
@@ -73,29 +8,16 @@
   </div>
 </div>
 
-<div id="travel_mode">
-  <div id="travel_mode_handle" class="handle">
-    <a href="#" id="travel_mode_close">[ x ]</a>
-    <a href="#" id="travel_mode_handle_name"><%= t "travel_mode" %></a>
-  </div>
-  <div id="travel_mode_content">
-    Now we're in travel mode. Let's do some challenges to pass the time:
-    <div id="challengeXXX">
-    </div>
-    <div id="challenge_list">
-<%
-   for counter in 1..@player.level
-%>
-      <div><a href="#" id="get_challenge_<%= counter %>">level <%= counter %></a></div>
-<%
-   end
-%>
-    </div>
-  </div>
-</div>
 
-<%= render "players/player_info" %>
-<%= render "speech" %>
+<%=
+    render "search"
+%>
+<%=
+    render "places/place_info"
+%>
+<%=
+    # render "speech"
+%>
 
 
 </body>

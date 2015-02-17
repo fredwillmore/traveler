@@ -5,6 +5,9 @@ en:
   hello: "Hello world"
 
   map_control_center: "Center Map"
+  search_map: "Search Map"
+  current_player: "Active Player"
+  get_players_index: "Player List"
 
   place_info:
     id: "ID"

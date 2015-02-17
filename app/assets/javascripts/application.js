@@ -11,13 +11,19 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require fancybox
 //= require jquery-ui
 //= require jquery_ujs
-//= require_tree .
 //= require jquery.timer
+//= require bootstrap-sprockets
+//= require_tree .
 
 $(function() {
 //    initializePlayer
 //    $.initialize();
     $.initialize()
+});
+
+$(document).ready(function() {
+    $("a.fancybox").fancybox();
 });

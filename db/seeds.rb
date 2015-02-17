@@ -31,11 +31,12 @@ Quantities = Quantity.create([
 ]);
 
 Player.delete_all
-Players = Player.create([{
+p1 = Player.create({
   id: '1',
   user_id: '1',
   location_id: '1',
   level: '1',
+  name: 'Fizznuckle',
   sex: 'M',
   dob: '1967-06-26',
   occupation: 'software guy',
@@ -55,8 +56,44 @@ Players = Player.create([{
   luck: '45',
   base_locale: 'en', # I'm english
   target_locale: 'es', # trying to learn spanish
-  target_dialect: 'ES'
-}]);
+  target_dialect: 'ES',
+  is_current_player: TRUE
+})
+p1.avatar = File.open("#{Rails.application.secrets.photo_directory}/IMG_2753.jpg")
+p1.save
+
+p2 = Player.create({
+  id: '2',
+  user_id: '1',
+  location_id: '1',
+  level: '1',
+  name: 'Fizznucklois',
+  sex: 'M',
+  dob: '1967-06-26',
+  occupation: 'software guy',
+  player_quantities: PlayerQuantity.create([
+    { player_id: 1, quantity_id: 1, value: 95, max_value: 100 }, # energy
+    { player_id: 1, quantity_id: 2, value: 90, max_value: 100 }, #  food
+    { player_id: 1, quantity_id: 3, value: 85, max_value: 100 }, #  water
+    { player_id: 1, quantity_id: 4, value: 80, max_value: 100 }, #  bio
+    { player_id: 1, quantity_id: 5, value: 75, max_value: 100 }, #  money
+    { player_id: 1, quantity_id: 6, value: 70, max_value: 100 }, #  confidence
+    { player_id: 1, quantity_id: 7, value: 75, max_value: 100 } #  happiness
+  ]),
+  attractiveness: '65',
+  charisma: '60',
+  status: '55',
+  intelligence: '50',
+  luck: '45',
+  base_locale: 'en', # I'm english
+  target_locale: 'fr', # trying to learn french
+  target_dialect: 'FR',
+  is_current_player: FALSE
+})
+
+p2.avatar = File.open("#{Rails.application.secrets.photo_directory}/IMG_2775.jpg")
+p2.save
+
 
 Location.delete_all
 Locations = Location.create([{
@@ -190,6 +227,11 @@ PlaceTypes = PlaceType.create([
   { id: 96, name:  'veterinary_care', label: 'Veterinary Care' },
   { id: 97, name:  'zoo', label: 'Zoo' }
 ]);
+
+SearchSuggestion.delete_all
+PlaceType.all.map(&:label).each do |t|
+  SearchSuggestion.create term: t.downcase, popularity: rand(1..100)
+end
 
 PlaceTypeDatum.delete_all
 PlaceTypeData = PlaceTypeDatum.create([
