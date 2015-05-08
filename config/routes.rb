@@ -1,4 +1,6 @@
 Traveler::Application.routes.draw do
+  resources :players
+
   resources :search_suggestions
 
   namespace :admin do

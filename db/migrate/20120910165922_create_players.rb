@@ -4,6 +4,7 @@ class CreatePlayers < ActiveRecord::Migration
       t.integer :user_id
       t.string :state
       t.integer :location_id
+      t.integer :destination_id
       t.integer :level
       t.string :name
       t.string :sex

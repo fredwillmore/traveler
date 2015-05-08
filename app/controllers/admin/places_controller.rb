@@ -13,6 +13,7 @@ class Admin::PlacesController < ApplicationController
   # GET /places/1
   # GET /places/1.json
   def show
+    @place = Place.find params[:id]
     respond_to do |format|
       format.html # show.html.haml
       format.json { render :json => @place.to_json(:methods => [:food_cost, :food_value, :drink_cost, :drink_value]) }
@@ -32,7 +33,7 @@ class Admin::PlacesController < ApplicationController
 
   # GET /places/1/edit
   def edit
-    @place = Place.find(params[:id])
+    @place = Place.find params[:id]
   end
 
   # POST /places

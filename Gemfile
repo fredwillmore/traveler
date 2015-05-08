@@ -6,6 +6,12 @@ gem 'rails', '4.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg', '>= 0.14.1'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'paperclip'
+gem 'fancybox2-rails'
+gem 'jbuilder' # used for serialization of models into JSON
+gem 'kaminari' # adds pagination to ActiveModels
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,8 +25,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
 
 gem 'google_places'
 # gem 'yelp'
@@ -28,8 +32,6 @@ gem 'google_places'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
-gem 'jbuilder' # used for serialization of models into JSON
-gem 'kaminari' # adds pagination to ActiveModels
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -76,11 +78,12 @@ group :development, :test do
   #gem 'ruby-debug-base19', '0.11.26', :path => "~/.rvm/gems/ruby-1.9.3-p125/gems/ruby-debug-base19-0.11.26/"
   unless ENV['RM_INFO']
     # gem 'pry-full'
-    gem 'debugger'
+    gem 'byebug'
   end
 
   gem 'factory_girl_rails', :require => false
   gem 'better_errors'
-  gem 'paperclip'
-  gem 'fancybox2-rails'
+  gem 'rspec-rails'
+  gem 'shoulda'
+  gem 'shoulda-matchers'
 end

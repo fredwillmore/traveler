@@ -112,6 +112,7 @@ Places = Place.create([{
 
 PlaceType.delete_all
 PlaceTypes = PlaceType.create([
+
   { id: 1, name:  'accounting', label: 'Accounting' },
   { id: 2, name:  'airport', label: 'Airport' },
   { id: 3, name:  'amusement_park', label: 'Amusement Park' },
