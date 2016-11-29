@@ -4,6 +4,7 @@
 #     f.email Faker::Internet.email
 #   end
 # end
+
 FactoryGirl.define do
   factory :action_type do |f|
     f.name "Physical"

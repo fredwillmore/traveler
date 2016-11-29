@@ -26,6 +26,7 @@ Traveler::Application.routes.draw do
     get "api/select_player/:player_id", to: 'home#select_player'
     get "api/create_player"
     get "api/check_player_name"
+    get "api/move_player"
     get "api/delete_player"
     get "api/select_player"
     get "api/get_player"

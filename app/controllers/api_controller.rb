@@ -1,8 +1,13 @@
 class ApiController < ApplicationController
-  before_filter :authenticate_user!
+  before_action :authenticate_user!
 
   def check_player_name
   end
+
+  def move_player
+
+  end
+
 
   def select_player
     if current_user.players.map(&:id).include? params[:player_id].to_i

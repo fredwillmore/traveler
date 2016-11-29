@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1'
+gem 'rails', '>= 5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -42,7 +42,7 @@ gem 'google_places'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem 'globalize'
+gem 'globalize', github: 'globalize/globalize'
 
 gem "devise"
 gem 'devise_invitable'
