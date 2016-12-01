@@ -54,6 +54,7 @@ gem 'sidekiq'
 gem 'haml'
 
 gem 'bootstrap-sass'
+gem 'grape'
 
 group :development, :test do
   #
@@ -81,9 +82,9 @@ group :development, :test do
     gem 'byebug'
   end
 
-  gem 'factory_girl_rails', :require => false
+  gem 'factory_girl_rails'
   gem 'better_errors'
   gem 'rspec-rails'
-  gem 'shoulda'
-  gem 'shoulda-matchers'
+  # gem 'shoulda'
+  # gem 'shoulda-matchers'
 end

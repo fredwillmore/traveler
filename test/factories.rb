@@ -87,10 +87,10 @@ FactoryGirl.define do
     f.challenge_id   4
   end
 
-  factory :user do |f|
-    f.first_name "Felix"
-    f.last_name "Feelgood"
-    f.email "xoxo@example.com"
-    f.password "hello1234"
+  factory :user do
+    first_name "Felix"
+    last_name "Feelgood"
+    sequence(:email) { |n| "test#{n}@example.com" }
+    password "hello1234"
   end
 end
