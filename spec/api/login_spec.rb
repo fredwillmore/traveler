@@ -7,8 +7,8 @@ describe '/api/login' do
   let(:original_params) { { email: email, password: password } }
   let(:params) { original_params }
 
-  def api_call *params
-    post "/api/login", *params
+  def api_call params
+    post "/api/login", params: params
   end
 
   context 'negative tests' do
@@ -39,6 +39,13 @@ describe '/api/login' do
   end
   context 'positive tests' do
     context 'valid params' do
+      it_behaves_like '201' 
+      it_behaves_like 'json result'
+
+      specify 'returns the token as part of the response' do
+        api_call params
+        expect(AuthenticationToken.new JSON.parse(response.body)['token']).to be_a AuthenticationToken
+      end
     end
   end
 end
