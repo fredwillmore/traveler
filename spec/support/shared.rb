@@ -5,6 +5,20 @@ RSpec.shared_examples 'json result' do
   end
 end
 
+RSpec.shared_examples '200' do
+  specify 'returns 200' do
+    api_call params
+    expect(response.status).to eq(200)
+  end
+end
+
+RSpec.shared_examples '201' do
+  specify 'returns 201' do
+    api_call params
+    expect(response.status).to eq(201)
+  end
+end
+
 RSpec.shared_examples '400' do
   specify 'returns 400' do
     api_call params
