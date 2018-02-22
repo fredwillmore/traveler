@@ -55,6 +55,7 @@ gem 'haml'
 
 gem 'bootstrap-sass'
 gem 'grape'
+# gem 'squeel'
 
 group :development, :test do
   #
