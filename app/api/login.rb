@@ -10,6 +10,7 @@ class Login < Grape::API
     post do
       user = User.find_by_email params[:email]
       if user.present? && user.valid_password?(params[:password])
+        { token: user.authentication_tokens.new }
       else
         error_msg = 'Bad Authentication Parameters'
         error!({ error_msg: error_msg }, 401)
