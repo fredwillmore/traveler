@@ -15,6 +15,7 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   has_many :players
+  has_many :authentication_tokens
 
   devise :invitable, :database_authenticatable, :timeoutable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable

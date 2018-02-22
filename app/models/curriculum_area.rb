@@ -1,4 +1,5 @@
+
 class CurriculumArea < ActiveRecord::Base
   has_many :challenges
-  translates :title
+  # translates :title
 end
