@@ -8,7 +8,7 @@ gem 'rails', '>= 5'
 gem 'pg', '>= 0.14.1'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'paperclip'
+gem 'paperclip', '~> 5.2.0'
 gem 'fancybox2-rails'
 gem 'jbuilder' # used for serialization of models into JSON
 gem 'kaminari' # adds pagination to ActiveModels
@@ -86,6 +86,6 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'better_errors'
   gem 'rspec-rails'
-  # gem 'shoulda'
+  gem 'shoulda'
   # gem 'shoulda-matchers'
 end
