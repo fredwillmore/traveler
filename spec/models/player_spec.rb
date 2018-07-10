@@ -5,5 +5,5 @@ describe Player do
   it { should have_many(:quantities).through :player_quantities }
   it { should belong_to :location }
   it { should belong_to(:destination).class_name Location }
-  it { is_expected_to delegate(:current_user) }
+  it { should delegate_method(:current_user).to :user }
 end
