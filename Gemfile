@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.6.3'
 gem 'rails', '>= 5'
 
 # Bundle edge Rails instead:
@@ -86,6 +87,6 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'better_errors'
   gem 'rspec-rails'
-  gem 'shoulda'
-  # gem 'shoulda-matchers'
+  # gem 'shoulda'
+  gem 'shoulda-matchers'
 end

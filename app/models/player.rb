@@ -4,7 +4,7 @@ class Player < ActiveRecord::Base
   has_many :player_quantities
   has_many :quantities, :through => :player_quantities
   belongs_to :location
-  belongs_to :destination, class_name: Location
+  belongs_to :destination, class_name: 'Location'
   delegate :current_user, to: :user
 
   has_attached_file :avatar, styles: { xsmall: "20", small: "50", medium: "150", large: "400", xlarge: "500", xxlarge: "600" }, default_url: "/images/:style/missing.png"
