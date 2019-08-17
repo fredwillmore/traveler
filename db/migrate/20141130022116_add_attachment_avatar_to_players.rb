@@ -1,4 +1,4 @@
-class AddAttachmentAvatarToPlayers < ActiveRecord::Migration
+class AddAttachmentAvatarToPlayers < ActiveRecord::Migration[4.2]
   def self.up
     change_table :players do |t|
       t.attachment :avatar

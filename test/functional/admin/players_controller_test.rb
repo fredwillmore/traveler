@@ -2,8 +2,8 @@ require 'test_helper'
 
 class Admin::PlayersControllerTest < ActionController::TestCase
   setup do
-    @user = FactoryGirl.create :user
-    @player = FactoryGirl.create :player
+    @user = FactoryBot.create :user
+    @player = FactoryBot.create :player
     sign_in User.first
   end
 

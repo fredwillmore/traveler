@@ -3,9 +3,9 @@ require 'test_helper'
 class HomeControllerTest < ActionController::TestCase
 
   setup do
-    @user = FactoryGirl.create :user
-    @player = FactoryGirl.create :player
-    @location = FactoryGirl.create :location
+    @user = FactoryBot.create :user
+    @player = FactoryBot.create :player
+    @location = FactoryBot.create :location
   end
 
   test "should get index" do

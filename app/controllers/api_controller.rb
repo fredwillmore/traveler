@@ -1,6 +1,11 @@
 class ApiController < ApplicationController
   before_action :authenticate_user!
 
+  def login
+    puts 'we are here'
+    debugger
+  end
+
   def check_player_name
   end
 

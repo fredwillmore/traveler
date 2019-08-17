@@ -8,6 +8,7 @@ describe '/api/login' do
   let(:params) { original_params }
 
   def api_call params
+# debugger
     post "/api/login", params: params
   end
 

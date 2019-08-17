@@ -1,4 +1,4 @@
-class CreateChallenges < ActiveRecord::Migration
+class CreateChallenges < ActiveRecord::Migration[4.2]
   def self.up
     create_table :challenges do |t|
       t.integer :challenge_type_id

@@ -3,11 +3,11 @@ require 'test_helper'
 class PlayersControllerTest < ActionController::TestCase
 
   setup do
-    @user = FactoryGirl.create :user
-    @player = FactoryGirl.create :player
+    @user = FactoryBot.create :user
+    @player = FactoryBot.create :player
     # not sure how to test this just now
     # @player.stubs :avatar_file_name, with: "hello"
-    @location = FactoryGirl.create :location
+    @location = FactoryBot.create :location
 
     @player.location = @location
     @user.players << @player

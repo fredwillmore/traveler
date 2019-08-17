@@ -2,8 +2,8 @@ require 'test_helper'
 
 class Admin::PlaceTypesControllerTest < ActionController::TestCase
   setup do
-    @user = FactoryGirl.create :user
-    @place_type = FactoryGirl.create :place_type
+    @user = FactoryBot.create :user
+    @place_type = FactoryBot.create :place_type
     sign_in User.first
   end
 

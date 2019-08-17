@@ -3,13 +3,13 @@ require 'test_helper'
 class ApiControllerTest < ActionController::TestCase
 
   setup do
-    @user = FactoryGirl.create :user
-    @player = FactoryGirl.create :player
+    @user = FactoryBot.create :user
+    @player = FactoryBot.create :player
     @player.update_attributes(user_id: @user.id, is_current_player: TRUE)
-    @player2 = FactoryGirl.create(:player)
+    @player2 = FactoryBot.create(:player)
     @player2.update_attributes(user_id: @user.id, is_current_player: FALSE)
-    @location = FactoryGirl.create :location
-    @location2 = FactoryGirl.create :location, lat: 101, lng: 88
+    @location = FactoryBot.create :location
+    @location2 = FactoryBot.create :location, lat: 101, lng: 88
     sign_in @user
   end
 

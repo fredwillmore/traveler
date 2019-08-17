@@ -4,8 +4,8 @@ class ApiControllerTest < ActionController::TestCase
 
   setup do
     @api = GameManager.new
-    user = FactoryGirl.create :user
-    player = FactoryGirl.create :player
+    user = FactoryBot.create :user
+    player = FactoryBot.create :player
     user.current_player = player
     User.current_user = user
     user
@@ -18,7 +18,7 @@ class ApiControllerTest < ActionController::TestCase
   end
 
   test "should move player" do
-    new_location = FactoryGirl.create :location
+    new_location = FactoryBot.create :location
     get :move_player, location: new_location
     assert_response :success
     assert @player.location == new_location

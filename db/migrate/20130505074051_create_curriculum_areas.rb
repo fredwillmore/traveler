@@ -1,4 +1,4 @@
-class CreateCurriculumAreas < ActiveRecord::Migration
+class CreateCurriculumAreas < ActiveRecord::Migration[4.2]
   def self.up
     create_table :curriculum_areas do |t|
       t.string :title

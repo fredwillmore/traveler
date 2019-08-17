@@ -3,8 +3,8 @@ require 'test_helper'
 class Admin::ItemTypesControllerTest < ActionController::TestCase
 
   setup do
-    @user = FactoryGirl.create :user
-    @item_type = FactoryGirl.create :item_type
+    @user = FactoryBot.create :user
+    @item_type = FactoryBot.create :item_type
     sign_in User.first
   end
 

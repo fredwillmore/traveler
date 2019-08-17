@@ -1,4 +1,4 @@
-class CreatePlayerQuantities < ActiveRecord::Migration
+class CreatePlayerQuantities < ActiveRecord::Migration[4.2]
   def change
     create_table :player_quantities do |t|
       t.integer :player_id

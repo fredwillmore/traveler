@@ -2,8 +2,8 @@ require 'test_helper'
 
 class Admin::ActionTypesControllerTest < ActionController::TestCase
   setup do
-    @user = FactoryGirl.create :user
-    @action_type = FactoryGirl.create :action_type
+    @user = FactoryBot.create :user
+    @action_type = FactoryBot.create :action_type
     sign_in User.first
   end
 

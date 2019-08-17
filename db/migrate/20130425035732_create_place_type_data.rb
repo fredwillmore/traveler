@@ -1,4 +1,4 @@
-class CreatePlaceTypeData < ActiveRecord::Migration
+class CreatePlaceTypeData < ActiveRecord::Migration[4.2]
   def change
     create_table :place_type_data do |t|
       t.integer :place_type_id

@@ -2,8 +2,8 @@ require 'test_helper'
 
 class Admin::QuantitiesControllerTest < ActionController::TestCase
   setup do
-    @user = FactoryGirl.create :user
-    @quantity = FactoryGirl.create :quantity
+    @user = FactoryBot.create :user
+    @quantity = FactoryBot.create :quantity
     sign_in User.first
   end
 
