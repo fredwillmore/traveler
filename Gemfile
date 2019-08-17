@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.6.3'
 gem 'rails', '>= 5'
 
 # Bundle edge Rails instead:
@@ -42,7 +43,7 @@ gem 'google_places'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem 'globalize', github: 'globalize/globalize'
+gem 'globalize'
 
 gem "devise"
 gem 'devise_invitable'
@@ -83,9 +84,9 @@ group :development, :test do
     gem 'byebug'
   end
 
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'better_errors'
   gem 'rspec-rails'
   gem 'shoulda'
-  # gem 'shoulda-matchers'
+  gem 'shoulda-matchers'
 end
