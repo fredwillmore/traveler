@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/globalize/globalize.git
-  revision: 8f1e84942a1bbe4e77ae2ce87450c43eb447bbaa
+  remote: git://github.com/globalize/globalize.git
+  revision: 6207a3b49d9705120ceed460af0d0af78c8bfaf3
   specs:
     globalize (5.3.0)
       activemodel (>= 4.2, < 6.1)
@@ -184,7 +184,7 @@ GEM
     pg (1.1.4)
     populator (1.0.0)
     power_assert (1.1.4)
-    rack (2.0.7)
+    rack (2.0.8)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-protection (2.0.5)
