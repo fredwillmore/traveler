@@ -4,6 +4,7 @@ class Admin::PlayersController < ApplicationController
   # GET /players
   # GET /players.json
   def index
+    debugger
     @players = Player.all
 
     respond_to do |format|

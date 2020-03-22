@@ -24,17 +24,22 @@ Traveler::Application.routes.draw do
     resources :places
   end
 
-  # scope :api do
-  #   get "api/select_player/:player_id", to: 'home#select_player'
-  #   get "api/create_player"
-  #   get "api/check_player_name"
-  #   get "api/move_player"
-  #   get "api/delete_player"
-  #   get "api/select_player"
-  #   get "api/get_player"
-  #   get "api/update_player_destination"
-  #   get "api/get_player_location"
-  # end
+  # get "login"
+  # post "login", to: 'api#login'
+  
+  namespace :api do
+  #   get "login"
+  #   post "login"
+  # #   get "api/select_player/:player_id", to: 'home#select_player'
+  # #   get "api/create_player"
+  # #   get "api/check_player_name"
+    get "move_player"
+  # #   get "api/delete_player"
+  # #   get "api/select_player"
+  # #   get "api/get_player"
+  # #   get "api/update_player_destination"
+  # #   get "api/get_player_location"
+  end
 
   resources :players do
     get "select_player/:player_id", to: 'home#select_player'
@@ -45,7 +50,8 @@ Traveler::Application.routes.draw do
 
   devise_for :users
   devise_scope :user do
-    get '/sign-in' => "devise/sessions#new", :as => :login
+    get '/login' => "devise/sessions#new"
+    post '/login' => "devise/sessions#create"
   end
 
   resources :players do

@@ -1,5 +1,5 @@
 class ApiController < ApplicationController
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
 
   def login
     puts 'we are here'
@@ -10,9 +10,24 @@ class ApiController < ApplicationController
   end
 
   def move_player
-
+    current_player.update!(
+      location: Location.find(params[:location])
+    )
+    
+    head "200"
+    # respond_to do |format|
+      # format.html do
+      #   current_player.location = params[:destination]
+      # end
+      # format.json do
+      #   current_player.location = params[:destination]
+      # end
+    # end
   end
 
+  def current_player
+    current_user.current_player
+  end
 
   def select_player
     if current_user.players.map(&:id).include? params[:player_id].to_i
