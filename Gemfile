@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.6.3'
+ruby '2.7.3'
 gem 'rails', '>= 5'
 
 # Bundle edge Rails instead:
@@ -9,7 +9,7 @@ gem 'rails', '>= 5'
 gem 'pg', '>= 0.14.1'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'paperclip', '~> 5.2.0'
+# gem 'paperclip', '~> 5.2.0'
 gem 'fancybox2-rails'
 gem 'jbuilder' # used for serialization of models into JSON
 gem 'kaminari' # adds pagination to ActiveModels
