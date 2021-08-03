@@ -2,7 +2,7 @@ class CreatePlayers < ActiveRecord::Migration[4.2]
   def change
     create_table :players do |t|
       t.integer :user_id
-      t.string :state
+      t.string :state, default: 'normal'
       t.integer :location_id
       t.integer :destination_id
       t.integer :level
