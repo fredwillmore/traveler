@@ -27,3 +27,5 @@ tmp
 
 # don't share secrets
 /config/secrets.yml
+
+.byebug_history
