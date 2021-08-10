@@ -35,37 +35,67 @@ module Admin
     describe 'POST create' do
       let(:params) { { player: { user_id: user.id } } }
 
-      it "should create player" do
-        expect { post :create,  params: params }.to change(Player, :count)
+      it "creates a player" do
+        expect { post :create, params: params }.to change(Player, :count)
+      end
 
-        # assert_redirected_to player_path(assigns(:player))
+      it "issues a redirect" do
+        post :create, params: params
+        expect(response).to redirect_to(admin_player_path(controller.instance_variable_get(:@player)))
       end
     end
 
-    # test "should show player" do
-    #   get :show, id: @player
-    #   assert_response :success
-    # end
+    describe 'GET show' do
+      let(:params) { { id: player.id } }
 
-    # test "should get edit" do
-    #   get :edit, id: @player
-    #   assert_response :success
-    # end
+      it "responds with success" do
+        get :show, params: params
+        expect(response).to have_http_status(:success)
+      end
+    end
 
-    # test "should update player" do
-    #   patch :update, id: @player, player: {  }
-    #   assert_redirected_to player_path(assigns(:player))
-    # end
+    describe 'GET edit' do
+      let(:params) { { id: player.id } }
 
-    # test "should destroy player" do
-    #   assert_difference('Player.count', -1) do
-    #     delete :destroy, id: @player
-    #   end
+      it "responds with success" do
+        get :edit, params: params
+        expect(response).to have_http_status(:success)
+      end
+    end
 
-    #   assert_redirected_to players_path
-    # end
+    describe 'PATCH update' do
+      let(:params) { { id: player.id, player: { name: 'Test Name' } } }
 
+      it "responds with redirect" do
+        patch :update, params: params
+        expect(response).to have_http_status(:redirect)
+      end
 
+      it "updates the player name" do
+        expect do
+          patch :update, params: params
+          player.reload
+        end.to change(player, :name).to 'Test Name'
+      end
+    end
 
+    describe 'DELETE destroy' do
+      let(:params) { { id: player.id } }
+
+      before do
+        player
+      end
+
+      it "responds with redirect" do
+        delete :destroy, params: params
+        expect(response).to have_http_status(:redirect)
+      end
+
+      it "deletes a player record" do
+        expect do
+          delete :destroy, params: params
+        end.to change(Player, :count).by -1
+      end
+    end
   end
 end

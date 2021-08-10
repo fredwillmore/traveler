@@ -105,6 +105,7 @@ module Admin
           :state,
           :location_id,
           :level,
+          :name,
           :sex,
           :dob,
           :occupation,
