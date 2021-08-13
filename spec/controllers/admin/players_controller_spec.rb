@@ -15,7 +15,7 @@ module Admin
     describe "GET index" do
       it "responds with success" do
         get :index, format: :json
-        expect(response.success?).to be true
+        expect(response).to have_http_status(:success)
       end
 
       it "fetches the players" do
@@ -28,7 +28,7 @@ module Admin
     describe "GET new" do
       it "responds with success" do
         get :new
-        expect(response.success?).to be true
+        expect(response).to have_http_status(:success)
       end
     end
 

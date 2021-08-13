@@ -18,7 +18,7 @@ module Admin
       context "with format=html" do
         it "responds with success" do
           get :index, format: :html
-          expect(response.success?).to be true
+          expect(response).to have_http_status(:success)
         end
       end
 
@@ -26,7 +26,7 @@ module Admin
         # GET /action_types.json
         it "responds with success" do
           get :index, format: :json
-          expect(response.success?).to be true
+          expect(response).to have_http_status(:success)
         end
       end
     end
@@ -40,7 +40,7 @@ module Admin
         # GET /action_types/1
         it "responds with success" do
           get :show, params: { id: 1, format: :html }
-          expect(response.success?).to be true
+          expect(response).to have_http_status(:success)
         end
       end
 
@@ -48,7 +48,7 @@ module Admin
         # GET /action_types/1.json
         it "responds with success" do
           get :show, params: { id: 1, format: :json }
-          expect(response.success?).to be true
+          expect(response).to have_http_status(:success)
         end
       end
     end
@@ -62,7 +62,7 @@ module Admin
         # GET /action_types/new
         it "responds with success" do
           get :new, params: { id: 1, format: :html }
-          expect(response.success?).to be true
+          expect(response).to have_http_status(:success)
         end
       end
 
@@ -70,7 +70,7 @@ module Admin
         # GET /action_types/new.json
         it "responds with success" do
           get :new, params: { id: 1, format: :json }
-          expect(response.success?).to be true
+          expect(response).to have_http_status(:success)
         end
       end
     end
@@ -84,7 +84,7 @@ module Admin
         # GET /action_types/1/edit
         it "responds with success" do
           get :edit, params: { id: 1, format: :html }
-          expect(response.success?).to be true
+          expect(response).to have_http_status(:success)
         end
       end
     end
@@ -96,9 +96,9 @@ module Admin
 
       context "with format=html" do
         # POST /action_types
-        it "responds with success" do
+        it "responds with redirect" do
           post :create, params: { action_type: { name: 'Thing' }, format: :html }
-          expect(response.redirect?).to be true
+          expect(response).to have_http_status(:redirect)
         end
       end
       
@@ -106,7 +106,7 @@ module Admin
         # POST /action_types.json
         it "responds with success" do
           post :create, params: { action_type: { name: 'Thing' }, format: :json }
-          expect(response.success?).to be true
+          expect(response).to have_http_status(:success)
         end
       end
     end
@@ -118,9 +118,9 @@ module Admin
 
       context "with format=html" do
         # PUT /action_types/1
-        it "responds with success" do
+        it "responds with redirect" do
           put :update, params: { id: 1, action_type: { name: 'Thing' }, format: :html }
-          expect(response.redirect?).to be true
+          expect(response).to have_http_status(:redirect)
         end
       end
       
@@ -128,7 +128,7 @@ module Admin
         # PUT /action_types/1.json
         it "responds with success" do
           put :update, params: { id: 1, action_type: { name: 'Thing' }, format: :json }
-          expect(response.success?).to be true
+          expect(response).to have_http_status(:success)
         end
       end
     end
@@ -140,9 +140,9 @@ module Admin
 
       context "with format=html" do
         # DELETE /action_types/1
-        it "responds with success" do
+        it "responds with redirect" do
           delete :destroy, params: { id: 1, format: :html }
-          expect(response.redirect?).to be true
+          expect(response).to have_http_status(:redirect)
         end
       end
       
@@ -150,7 +150,7 @@ module Admin
         # DELETE /action_types/1.json
         it "responds with success" do
           delete :destroy, params: { id: 1, format: :json }
-          expect(response.success?).to be true
+          expect(response).to have_http_status(:success)
         end
       end
     end

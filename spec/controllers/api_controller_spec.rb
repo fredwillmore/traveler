@@ -21,7 +21,7 @@ describe ApiController do
   it "should move player" do
     get :move_player, params: { location: new_location }
     player.reload
-    expect(response.success?).to be true
+    expect(response).to have_http_status(:success)
     expect(player.location).to eq new_location
   end
 

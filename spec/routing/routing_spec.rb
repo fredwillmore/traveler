@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-describe "routing" do
+xdescribe "routing" do
   it "routes get: /login to devise/sessions#new" do
     expect(true).to be true
   end
