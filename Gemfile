@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
 ruby '2.7.3'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '6.1.7'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg', '>= 0.14.1'
+gem 'pg', '1.4.5'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
