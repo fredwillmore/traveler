@@ -59,7 +59,7 @@ class Admin::QuantitiesController < ApplicationController
     @quantity = Quantity.find(params[:id])
 
     respond_to do |format|
-      if @quantity.update_attributes(quantity_params)
+      if @quantity.update(quantity_params)
         format.html { redirect_to [:admin, @quantity], notice: 'Quantity was successfully updated.' }
         format.json { head :no_content }
       else

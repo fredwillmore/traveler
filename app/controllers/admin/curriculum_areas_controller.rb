@@ -59,7 +59,7 @@ class Admin::CurriculumAreasController < ApplicationController
     @curriculum_area = CurriculumArea.find(params[:id])
 
     respond_to do |format|
-      if @curriculum_area.update_attributes(curriculum_area_params)
+      if @curriculum_area.update(curriculum_area_params)
         format.html { redirect_to [:admin, @curriculum_area], notice: 'Curriculum area was successfully updated.' }
         format.json { head :no_content }
       else

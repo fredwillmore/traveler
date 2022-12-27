@@ -59,7 +59,7 @@ class Admin::ChallengeTypesController < ApplicationController
     @challenge_type = ChallengeType.find(params[:id])
 
     respond_to do |format|
-      if @challenge_type.update_attributes(challenge_type_params)
+      if @challenge_type.update(challenge_type_params)
         format.html { redirect_to [:admin, @challenge_type], notice: 'Challenge type was successfully updated.' }
         format.json { head :no_content }
       else

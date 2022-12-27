@@ -59,7 +59,7 @@ class Admin::UserActionsController < ApplicationController
     @user_action = UserAction.find(params[:id])
 
     respond_to do |format|
-      if @user_action.update_attributes(user_action_params)
+      if @user_action.update(user_action_params)
         format.html { redirect_to [:admin, @user_action], notice: 'Action was successfully updated.' }
         format.json { head :no_content }
       else

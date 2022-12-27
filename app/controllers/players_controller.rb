@@ -63,7 +63,7 @@ class PlayersController < ApplicationController
     @player = Player.find(params[:id])
 
     respond_to do |format|
-      if @player.update_attributes(player_params)
+      if @player.update(player_params)
         format.html { redirect_to [:admin, @player], notice: 'Player was successfully updated.' }
         format.json { head :no_content }
       else

@@ -65,7 +65,7 @@ module Admin
       @action_type = ActionType.find(params[:id])
 
       respond_to do |format|
-        if @action_type.update_attributes(action_type_params)
+        if @action_type.update(action_type_params)
           format.html { redirect_to admin_action_type_path(@action_type), notice: 'Action type was successfully updated.' }
           format.json { head :no_content }
         else

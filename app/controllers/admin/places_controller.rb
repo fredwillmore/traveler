@@ -58,7 +58,7 @@ class Admin::PlacesController < ApplicationController
     @place = Place.find(params[:id])
 
     respond_to do |format|
-      if @place.update_attributes(place_params)
+      if @place.update(place_params)
         format.html { redirect_to [:admin, @place], notice: 'Place was successfully updated.' }
         format.json { head :no_content }
       else

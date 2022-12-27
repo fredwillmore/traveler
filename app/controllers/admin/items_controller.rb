@@ -59,7 +59,7 @@ class Admin::ItemsController < ApplicationController
     @item = Item.find params[:id]
 
     respond_to do |format|
-      if @item.update_attributes(item_params)
+      if @item.update(item_params)
         format.html { redirect_to [:admin, @item], notice: 'Item was successfully updated.' }
         format.json { head :no_content }
       else

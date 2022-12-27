@@ -59,7 +59,7 @@ class Admin::RewardTypesController < ApplicationController
     @reward_type = RewardType.find(params[:id])
 
     respond_to do |format|
-      if @reward_type.update_attributes(reward_type_params)
+      if @reward_type.update(reward_type_params)
         format.html { redirect_to [:admin, @reward_type], notice: 'Reward type was successfully updated.' }
         format.json { head :no_content }
       else
