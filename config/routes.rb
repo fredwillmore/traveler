@@ -1,6 +1,5 @@
 Traveler::Application.routes.draw do
-  mount API => '/'
-
+  
   resources :players
 
   resources :search_suggestions
