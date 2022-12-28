@@ -6,7 +6,7 @@ gem 'rails', '6.1.7'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg', '1.4.5'
+gem 'pg', '>= 1.4.5'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
@@ -16,12 +16,6 @@ gem 'kaminari' # adds pagination to ActiveModels
 # in production environments by default.
 group :assets do
   gem 'sass-rails'
-  gem 'coffee-rails'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer'
-
-  gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'google_places'
@@ -30,7 +24,7 @@ gem 'globalize'
 
 gem "devise"
 gem 'devise_invitable'
-gem "cancan", ">= 1.6.8"
+gem "cancan", "~> 1.6.10"
 
 gem 'state_machine'
 
