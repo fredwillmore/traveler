@@ -48,3 +48,5 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
 end
+
+gem "importmap-rails", "~> 1.1"
