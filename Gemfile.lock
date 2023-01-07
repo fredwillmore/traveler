@@ -304,7 +304,7 @@ DEPENDENCIES
   pg (>= 1.4.5)
   pry
   pry-byebug
-  rails (~> 7.0.0)
+  rails (= 7.0.4)
   rspec-rails
   sass-rails
   shoulda-matchers
