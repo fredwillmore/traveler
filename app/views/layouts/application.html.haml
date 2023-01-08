@@ -5,8 +5,8 @@
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
-    = javascript_include_tag "http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true&key=AIzaSyBd2SvRNu_Lf48wvjh7MQZsNisYfi6ae_s"
-    = javascript_include_tag "speech"
+    = javascript_include_tag "http://maps.googleapis.com/maps/api/js?libraries=places&key=#{Rails.application.credentials.google_maps_api_key}"
+    -# = javascript_include_tag "speech"
     = javascript_importmap_tags
   %body
     .container{width: "20%"}
