@@ -48,3 +48,6 @@ group :development, :test do
 end
 
 gem "importmap-rails", "~> 1.1"
+
+# Reduces boot times through caching; required in config/boot.rb
+gem "bootsnap", require: false
