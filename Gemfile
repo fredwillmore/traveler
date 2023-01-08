@@ -7,8 +7,8 @@ gem 'rails', '7.0.4'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg', '>= 1.4.5'
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
+# gem 'jquery-rails'
+# gem 'jquery-ui-rails'
 gem 'fancybox2-rails'
 gem 'coffee-rails'
 
