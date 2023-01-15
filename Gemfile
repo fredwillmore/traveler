@@ -9,6 +9,8 @@ gem 'rails', '~> 7.0.0'
 gem 'pg', '>= 1.4.5'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+gem 'fancybox2-rails'
+gem 'coffee-rails'
 
 gem 'kaminari' # adds pagination to ActiveModels
 
