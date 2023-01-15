@@ -30,6 +30,7 @@ tmp
 
 .byebug_history
 
+/public/assets
 /public/packs
 /public/packs-test
 /node_modules
