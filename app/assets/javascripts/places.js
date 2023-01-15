@@ -1,5 +1,9 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+// Place all the behaviors and hooks related to the matching controller here.
+// All this logic will automatically be available in application.js.
 
-$("#place_info_close").click -> $("#place_info").hide()
+(function() {
+  $("#place_info_close").click(function() {
+    return $("#place_info").hide();
+  });
+
+}).call(this);
