@@ -30,7 +30,6 @@ gem "devise"
 gem 'devise_invitable'
 gem "cancan", "~> 1.6.10"
 
-gem 'state_machine'
 
 gem 'sidekiq'
 gem 'haml'
@@ -50,3 +49,7 @@ group :development, :test do
 end
 
 gem "importmap-rails", "~> 1.1"
+
+# gem "bootsnap", "~> 1.15"
+
+gem "state_machines", "~> 0.5.0"

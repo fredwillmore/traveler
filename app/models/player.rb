@@ -21,16 +21,16 @@ class Player < ActiveRecord::Base
     }
   end
 
-  state_machine :state, :initial => :normal do
-    state :normal
-    state :travel
+  # state_machine :state, :initial => :normal do
+  #   state :normal
+  #   state :travel
 
-    event :start_travel do
-      transition :normal => :travel
-    end
+  #   event :start_travel do
+  #     transition :normal => :travel
+  #   end
 
-    event :finish_travel do
-      transition :travel => :normal
-    end
-  end
+  #   event :finish_travel do
+  #     transition :travel => :normal
+  #   end
+  # end
 end
