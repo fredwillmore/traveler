@@ -3,11 +3,14 @@
   %head
     %title Traveler
     = stylesheet_link_tag    "application", :media => "all"
-    = javascript_include_tag "application"
     = csrf_meta_tags
-    = javascript_include_tag "http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true&key=AIzaSyBd2SvRNu_Lf48wvjh7MQZsNisYfi6ae_s"
-    = javascript_include_tag "speech"
     = javascript_importmap_tags
+
+    :javascript
+      function initialize() {
+        console.log("hello I am initializing")
+      }
+    = javascript_include_tag "http://maps.googleapis.com/maps/api/js?libraries=places&key=#{Rails.application.credentials[:googlemaps_api_key]}&callback=initialize"
   %body
     .container{width: "20%"}
       - if notice
@@ -17,7 +20,7 @@
       #top_nav.row
         #left.col-xs-4
           -# this is a link with a html5 data attribute for javascripts to have access to the controller paths without hard-coding them
-          =link_to t("get_players_index"), '#', id: "players_index", data: {ajax_path: players_url}
+          =link_to t("get_players_index"), '#', id: "players_index", data: {ajax_path: players_url(format: :json)}
           #{t "current_player"}:
           %span#current_player
         .center.col-xs-4
