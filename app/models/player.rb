@@ -7,7 +7,7 @@ class Player < ActiveRecord::Base
   belongs_to :destination, class_name: 'Location'
   delegate :current_user, to: :user
 
-  # has_attached_file :avatar, styles: { xsmall: "20", small: "50", medium: "150", large: "400", xlarge: "500", xxlarge: "600" }, default_url: "/images/:style/missing.png"
+  has_one_attached :avatar # , styles: { xsmall: "20", small: "50", medium: "150", large: "400", xlarge: "500", xxlarge: "600" }, default_url: "/images/:style/missing.png"
   # validates_with AttachmentContentTypeValidator, attributes: :avatar, content_type: ['image/jpeg', 'image/jpg', 'image/png']
   
   def avatar_urls
