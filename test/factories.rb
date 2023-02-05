@@ -52,6 +52,8 @@ FactoryBot.define do
   end
 
   factory :player do
+    user
+
     state           { "normal" }
     location_id     { 1 }
     level           { 2 }
