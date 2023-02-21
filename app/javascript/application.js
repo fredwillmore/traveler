@@ -7,5 +7,4 @@
 // import "things/home"
 // import "things/main"
 
-console.log('hello')
 import "controllers/component_controller"
