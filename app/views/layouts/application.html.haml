@@ -8,6 +8,8 @@
 
     :javascript
       function initialize() {
+        // import "controllers/component_controller";
+
         console.log("hello I am initializing")
       }
     = javascript_include_tag "http://maps.googleapis.com/maps/api/js?libraries=places&key=#{Rails.application.credentials[:googlemaps_api_key]}&callback=initialize"
@@ -17,14 +19,4 @@
         %p.notice= notice
       - if alert
         %p.alert= alert
-      #top_nav.row
-        #left.col-xs-4
-          -# this is a link with a html5 data attribute for javascripts to have access to the controller paths without hard-coding them
-          =link_to t("get_players_index"), '#', id: "players_index", data: {ajax_path: players_url(format: :json)}
-          #{t "current_player"}:
-          %span#current_player
-        .center.col-xs-4
-          =link_to t("search_map"), '#search', id: "show_search", class: "fancybox", onclick: "return false;"
-        .right.col-xs-4
-          =t "map_control_center"
     = yield
