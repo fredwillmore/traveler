@@ -1,24 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<div id="map_canvas" data-lat="45.516858" data-lng="-122.628558" data-zoom="10"></div>
+<div id="app_canvas" data-lat="0" data-lng="0" data-zoom="10" data-players-url="<%= players_url(format: :json) %>"></div>
 
-<div id="map_control">
-  <div id="map_control_handle" class="handle">
-    <a href="#" id="map_control_center"><%= t "map_control_center" %></a>
-  </div>
-</div>
-
-
-<%=
-    render "search"
-%>
-<%=
-    # render "places/place_info"
-%>
 <%=
     # render "speech"
 %>
-
-
-</body>
-</html>
