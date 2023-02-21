@@ -11,13 +11,17 @@ class Player < ActiveRecord::Base
   # validates_with AttachmentContentTypeValidator, attributes: :avatar, content_type: ['image/jpeg', 'image/jpg', 'image/png']
   
   def avatar_urls
+    # this requires imagemagick or graphicsmagick, I'd rather not deal trying to install either of those on this laptop for now
+    # path = Rails.application.routes.url_helpers.rails_blob_path(avatar.blob.variant(resize: "100x100"), only_path: true)
+    # just give 'em baby yoda
+    path = "https://assets-prd.ignimgs.com/2019/11/21/960x0-1574375485306.jpeg?crop=16%3A9&width=replace_me"
     {
-      xsmall:   avatar.url(:xsmall),
-      small:    avatar.url(:small),
-      medium:   avatar.url(:medium),
-      large:    avatar.url(:large),
-      xlarge:   avatar.url(:xlarge),
-      xxlarge:  avatar.url(:xxlarge)
+      xsmall:   path.gsub('replace_me', '20'),
+      small:    path.gsub('replace_me', '50'),
+      medium:   path.gsub('replace_me', '150'),
+      large:    path.gsub('replace_me', '300'),
+      xlarge:   path.gsub('replace_me', '400'),
+      xxlarge:  path.gsub('replace_me', '500')
     }
   end
 
