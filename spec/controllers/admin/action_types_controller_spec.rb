@@ -3,11 +3,10 @@ require 'rails_helper'
 module Admin
   describe ActionTypesController do
     let(:admin) { create(:user) }
-    let(:action_type) { create(:action_type, id: 1) }
+    let!(:action_type) { create(:action_type, id: 1) }
 
     before do
       sign_in(admin)
-      action_type
     end
 
     describe "GET /admin/action_types" do
@@ -23,7 +22,6 @@ module Admin
       end
 
       context "with format=json" do
-        # GET /action_types.json
         it "responds with success" do
           get :index, format: :json
           expect(response).to have_http_status(:success)

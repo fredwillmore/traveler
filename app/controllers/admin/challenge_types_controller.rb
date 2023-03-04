@@ -41,11 +41,11 @@ class Admin::ChallengeTypesController < ApplicationController
   # POST /challenge_types.json
   def create
     @challenge_type = ChallengeType.new(challenge_type_params)
-
+    
     respond_to do |format|
       if @challenge_type.save
         format.html { redirect_to [:admin, @challenge_type], notice: 'Challenge type was successfully created.' }
-        format.json { render json: @challenge_type, status: :created, location: @challenge_type }
+        format.json { render json: @challenge_type, status: :created }
       else
         format.html { render action: "new" }
         format.json { render json: @challenge_type.errors, status: :unprocessable_entity }
