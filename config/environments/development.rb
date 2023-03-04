@@ -1,4 +1,10 @@
 require "active_support/core_ext/integer/time"
+<<<<<<< HEAD
+=======
+
+Rails.application.configure do
+  # Settings specified here will take precedence over those in config/application.rb
+>>>>>>> 2f03e3f45710ea452254dfbf9c64b9d0e405bb6e
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
@@ -23,12 +29,30 @@ Rails.application.configure do
     config.action_controller.perform_caching = true
     config.action_controller.enable_fragment_cache_logging = true
 
-    config.cache_store = :memory_store
+  # Do not eager load code on boot.
+  config.eager_load = false
+
+  # Show full error reports.
+  config.consider_all_requests_local = true
+
+  # Enable server timing
+  config.server_timing = true
+
+  # Enable/disable caching. By default caching is disabled.
+  # Run rails dev:cache to toggle caching.
+  if Rails.root.join("tmp/caching-dev.txt").exist?
+    config.action_controller.perform_caching = true
+    config.action_controller.enable_fragment_cache_logging = true
     config.public_file_server.headers = {
       "Cache-Control" => "public, max-age=#{2.days.to_i}"
     }
   else
-    config.action_controller.perform_caching = false
+    config.action_controller.perform_caching = false  
+    config.cache_store = :null_store
+  end
+
+  # Store uploaded files on the local file system (see config/storage.yml for options).
+  config.active_storage.service = :local
 
     config.cache_store = :null_store
   end
@@ -53,18 +77,17 @@ Rails.application.configure do
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
 
+  # Do not compress assets
+  config.assets.compress = false
+
   # Highlight code that triggered database queries in logs.
   config.active_record.verbose_query_logs = true
+  
+  # Expands the lines which load the assets
+  config.assets.debug = true
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
-
-  # Raises error for missing translations.
-  # config.i18n.raise_on_missing_translations = true
-
-  # Annotate rendered view with file names.
-  # config.action_view.annotate_rendered_view_with_filenames = true
-
-  # Uncomment if you wish to allow Action Cable access from any origin.
-  # config.action_cable.disable_request_forgery_protection = true
+  
+  config.eager_load = false
 end

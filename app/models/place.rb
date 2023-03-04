@@ -2,8 +2,7 @@ class Place < ActiveRecord::Base
   belongs_to :location
   has_and_belongs_to_many :place_types
 
-  API_KEY = 'AIzaSyBd2SvRNu_Lf48wvjh7MQZsNisYfi6ae_s'
-  YWSID = 'eVO1YSwv3rgJVEfoap8TDQ'
+  API_KEY = Rails.application.credentials[:googlemaps_api_key]
 
   COST_GRADE_1 = 2
   VALUE_GRADE_1 = 2
@@ -40,7 +39,7 @@ class Place < ActiveRecord::Base
         location: Location.find_or_create_by(lat: spot.lat, lng: spot.lng)
       })
       spot.types.each do |t|
-        place.place_types << PlaceType::find_by(name: t)
+        place.place_types << PlaceType.find_or_create_by(name: t)
       end
       place.save!
     end

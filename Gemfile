@@ -1,14 +1,16 @@
 source 'https://rubygems.org'
 
-ruby '2.7.3'
+ruby '2.7.6'
 gem 'rails', '7.0.4'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg', '>= 1.4.5'
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
+# gem 'jquery-rails'
+# gem 'jquery-ui-rails'
+gem 'fancybox2-rails'
+gem 'coffee-rails'
 
 gem 'fancybox2-rails'
 gem 'kaminari' # adds pagination to ActiveModels
@@ -28,7 +30,6 @@ gem "devise"
 gem 'devise_invitable'
 gem "cancan", "~> 1.6.10"
 
-gem 'state_machine'
 
 gem 'sidekiq'
 gem 'haml'
@@ -49,5 +50,6 @@ end
 
 gem "importmap-rails", "~> 1.1"
 
-# Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", require: false
+# gem "bootsnap", "~> 1.15"
+
+gem "state_machines", "~> 0.5.0"

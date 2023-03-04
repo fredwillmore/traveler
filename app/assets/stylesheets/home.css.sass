@@ -2,10 +2,45 @@
 // They will automatically be included in application.css.sass.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html, body, #map_canvas
+html, body, #app_canvas
   margin: 0
   padding: 0
   height: 100%
+
+#map_div
+  margin: 0
+  padding: 0
+  height: 100%
+  width: 100%
+
+#search
+  position: absolute
+  bottom: 10px
+  left: 10px
+  z-index: 99
+  padding: 5px
+
+.autocomplete
+  position: relative;
+
+.autocomplete-results
+  padding: 0
+  margin: 0
+  border: 1px solid #eeeeee
+  height: 120px
+  min-height: 1em
+  max-height: 6em    
+  overflow: auto
+
+.autocomplete-result
+  list-style: none
+  text-align: left
+  padding: 4px 2px
+  cursor: pointer
+
+.autocomplete-result:hover
+  background-color: #4AAE9B
+  color: white
 
 body
   font-family: Verdana, Arial, Helvetica, sans-serif
