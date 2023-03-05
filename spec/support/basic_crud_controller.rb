@@ -1,4 +1,8 @@
 shared_examples 'basic CRUD controller' do
+  let(:object_key) { described_class.name.demodulize.gsub('Controller', '').singularize.underscore }
+  let!(:thing) { create(object_key, id: 1) }
+  let(:base_path) { "admin/#{object_key.to_s.pluralize}" }
+
   before do
     sign_in(admin)
   end
