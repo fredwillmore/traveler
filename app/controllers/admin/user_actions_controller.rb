@@ -45,7 +45,7 @@ class Admin::UserActionsController < ApplicationController
     respond_to do |format|
       if @user_action.save
         format.html { redirect_to [:admin, @user_action], notice: 'Action was successfully created.' }
-        format.json { render json: @user_action, status: :created, location: @user_action }
+        format.json { render json: @user_action, status: :created }
       else
         format.html { render action: "new" }
         format.json { render json: @user_action.errors, status: :unprocessable_entity }

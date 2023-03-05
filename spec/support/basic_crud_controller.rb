@@ -1,5 +1,6 @@
 shared_examples 'basic CRUD controller' do
   let(:object_key) { described_class.name.demodulize.gsub('Controller', '').singularize.underscore }
+  let(:object_params) { { name: 'Thing' } }
   let!(:thing) { create(object_key, id: 1) }
   let(:base_path) { "admin/#{object_key.to_s.pluralize}" }
 
@@ -60,14 +61,14 @@ shared_examples 'basic CRUD controller' do
 
     context "with format=html" do
       it "responds with redirect" do
-        post :create, params: { object_key => { name: 'Thing' }, format: :html }
+        post :create, params: { object_key => object_params, format: :html }
         expect(response).to have_http_status(:redirect)
       end
     end
     
     context "with format=json" do
       it "responds with success" do
-        post :create, params: { object_key => { name: 'Thing' }, format: :json }
+        post :create, params: { object_key => object_params, format: :json }
         expect(response).to have_http_status(:success)
       end
     end
@@ -119,14 +120,14 @@ shared_examples 'basic CRUD controller' do
 
     context "with format=html" do
       it "responds with redirect" do
-        put :update, params: { id: 1, object_key => { name: 'Thing' }, format: :html }
+        put :update, params: { id: 1, object_key => object_params, format: :html }
         expect(response).to have_http_status(:redirect)
       end
     end
     
     context "with format=json" do
       it "responds with success" do
-        put :update, params: { id: 1, object_key => { name: 'Thing' }, format: :json }
+        put :update, params: { id: 1, object_key => object_params, format: :json }
         expect(response).to have_http_status(:success)
       end
     end

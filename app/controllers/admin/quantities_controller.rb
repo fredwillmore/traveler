@@ -45,7 +45,7 @@ class Admin::QuantitiesController < ApplicationController
     respond_to do |format|
       if @quantity.save
         format.html { redirect_to [:admin, @quantity], notice: 'Quantity was successfully created.' }
-        format.json { render json: @quantity, status: :created, location: @quantity }
+        format.json { render json: @quantity, status: :created }
       else
         format.html { render action: "new" }
         format.json { render json: @quantity.errors, status: :unprocessable_entity }

@@ -45,7 +45,7 @@ class Admin::RewardsController < ApplicationController
     respond_to do |format|
       if @reward.save
         format.html { redirect_to [:admin, @reward], notice: 'Reward was successfully created.' }
-        format.json { render json: @reward, status: :created, location: @reward }
+        format.json { render json: @reward, status: :created }
       else
         format.html { render action: "new" }
         format.json { render json: @reward.errors, status: :unprocessable_entity }
@@ -59,7 +59,7 @@ class Admin::RewardsController < ApplicationController
     @reward = Reward.find(params[:id])
 
     respond_to do |format|
-      if @reward.update_attributes(reward_params)
+      if @reward.update(reward_params)
         format.html { redirect_to [:admin, @reward], notice: 'Reward was successfully updated.' }
         format.json { head :no_content }
       else
