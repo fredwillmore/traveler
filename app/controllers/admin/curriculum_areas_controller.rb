@@ -45,7 +45,7 @@ class Admin::CurriculumAreasController < ApplicationController
     respond_to do |format|
       if @curriculum_area.save
         format.html { redirect_to [:admin, @curriculum_area], notice: 'Curriculum area was successfully created.' }
-        format.json { render json: @curriculum_area, status: :created, location: @curriculum_area }
+        format.json { render json: @curriculum_area, status: :created }
       else
         format.html { render action: "new" }
         format.json { render json: @curriculum_area.errors, status: :unprocessable_entity }

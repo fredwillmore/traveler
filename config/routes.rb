@@ -7,20 +7,20 @@ Traveler::Application.routes.draw do
   namespace :admin do
     root to: "dashboard#index"
     resources :action_types
-    resources :curriculum_areas
-    resources :place_types
-    resources :quantities
-    resources :users
-    resources :players
-    resources :item_types
-    resources :items
-    resources :reward_types
-    resources :rewards
     resources :challenge_types
     resources :challenges
-    resources :user_actions
+    resources :curriculum_areas
+    resources :item_types
+    resources :items
     resources :locations
+    resources :place_types
     resources :places
+    resources :players
+    resources :quantities
+    resources :reward_types
+    resources :rewards
+    resources :user_actions
+    resources :users
   end
 
   # get "login"
