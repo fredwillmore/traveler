@@ -6,15 +6,15 @@ export default {
     template: `
       <div id="top_nav" class="row">
         <div id="left" class="col-xs-4">
-          <a href="#" id="players_index">Player List</a>
-          Current Player:
+          <a href="#" id="players_index">{{I18n.get_players_index}}</a>
+          {{I18n.current_player}}:
           <span id="current_player">{{playerName}}</span>
         </div>
         <div class="center col-xs-4">
-          <a href="#" id="show_search" class="fancybox">Search Map</a>
+          <a href="#" id="show_search" class="fancybox">{{I18n.search_map}}</a>
         </div>
         <div class="right col-xs-4">
-          <a href="#" id="map_control_center" class="fancybox">Center Map</a>
+          <a href="#" id="map_control_center" class="fancybox">{{I18n.map_control_center}}</a>
         </div>
       </div>
       <div id="#map_div" ref="mapDiv" style=" height: 100%; width: 100%;"></div>
@@ -43,45 +43,45 @@ export default {
       <div id="place_info" v-if="showPlaceInfo">
         <div id="place_info_handle" class="handle">
           <a v-on:click="hidePlaceInfo" href="#">[ x ]</a>
-          Place Info
+          {{I18n.place_info.label}}
           <div id="place_info_content">
             <table>
               <tr>
-                <td>ID:</td>
+                <td>{{I18n.place_info.id}}:</td>
                 <td>{{placeInfo.id}}</td>
               </tr>
               <tr>
-                <td>Name:</td>
+                <td>{{I18n.place_info.name}}:</td>
                 <td>{{placeInfo.name}}</td>
               </tr>
               <tr>
-                <td>Rating:</td>
+                <td>{{I18n.place_info.rating}}:</td>
                 <td>{{placeInfo.rating}}</td>
               </tr>
               <tr>
-                <td>Travel Time Walking:</td>
+                <td>{{I18n.place_info.travel_time_walking}}:</td>
                 <td>{{placeInfo.travelTimeWalking}}</td>
               </tr>
               <tr>
-                <td>Travel Time Bicycling:</td>
+                <td>{{I18n.place_info.travel_time_bicycling}}:</td>
                 <td>{{placeInfo.travelTimeBicycling}}</td>
               </tr>
               <tr>
-                <td>Travel Time Driving:</td>
+                <td>{{I18n.place_info.travel_time_driving}}:</td>
                 <td>{{placeInfo.travelTimeDriving}}</td>
               </tr>
               <tr>
-                <td>Travel Time Transit:</td>
+                <td>{{I18n.place_info.travel_time_transit}}:</td>
                 <td>{{placeInfo.travelTimeTransit}}</td>
               </tr>
               <tr>
-                <td>Food Value/Food Cost:</td>
+                <td>{{I18n.place_info.food_value}}/{{I18n.place_info.food_cost}}:</td>
                 <td>
                   {{placeInfo.foodValue}} / {{placeInfo.foodCost}}
                 </td>
               </tr>
               <tr>
-                <td>Drink Value/Drink Cost:</td>
+                <td>{{I18n.place_info.drink_value}}/{{I18n.place_info.drink_cost}}:</td>
                 <td>
                   {{placeInfo.drinkValue}} / {{placeInfo.drinkCost}}
                 </td>
@@ -89,14 +89,14 @@ export default {
               <tr>
                 <td></td>
                 <td>
-                  <input id="place_info_go_walk" type="button" value="place_info.go_walk" />
+                  <input id="place_info_go_walk" type="button" :value="I18n.place_info.go_walk" />
                 </td>
                 <!-- allow player to have/rent a car - then add driving option -->
               </tr>
               <tr>
                 <td></td>
                 <td>
-                  <input id="place_info_go_taxi" type="button" value="place_info.go_taxi" />
+                  <input id="place_info_go_taxi" type="button" :value="I18n.place_info.go_taxi" />
                 </td>
               </tr>
             </table>
@@ -308,6 +308,9 @@ export default {
       },
     },
     computed: {
+      I18n: function() {
+        return I18n;
+      }
       // TODO: I don't think this needs to be a computed method
       // initializeMap() {
       //   const map = new google.maps.Map(element, {

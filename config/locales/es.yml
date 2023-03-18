@@ -9,13 +9,14 @@ es:
   get_players_index: "Lista de Jugadores"
 
   place_info:
+    label: "la informacion sobre lugar"
     id: "ID"
     name: "nombre"
     rating: "clasificación"
-    travelTimeWALKING: "el tiempo de viaje (a pie)"
-    travelTimeBICYCLING: "el tiempo de viaje (en bicicleta)"
-    travelTimeDRIVING: "el tiempo de viaje (auto)"
-    travelTimeTRANSIT: "el tiempo de viaje (Transporte público)"
+    travel_time_walking: "el tiempo de viaje (a pie)"
+    travel_time_bicycling: "el tiempo de viaje (en bicicleta)"
+    travel_time_driving: "el tiempo de viaje (auto)"
+    travel_time_transit: "el tiempo de viaje (Transporte público)"
     food_value: "Valor alimenticio"
     food_cost: "Costo de los alimentos"
     drink_value: "Beba Valor"

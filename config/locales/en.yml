@@ -10,13 +10,14 @@ en:
   get_players_index: "Player List"
 
   place_info:
+    label: "Place Info"
     id: "ID"
     name: "Name"
     rating: "Rating"
-    travelTimeWALKING: "Travel Time (Walk)"
-    travelTimeBICYCLING: "Travel Time (Bike)"
-    travelTimeDRIVING: "Travel Time (Car)"
-    travelTimeTRANSIT: "Travel Time (Public Transit)"
+    travel_time_walking: "Travel Time (Walk)"
+    travel_time_bicycling: "Travel Time (Bike)"
+    travel_time_driving: "Travel Time (Car)"
+    travel_time_transit: "Travel Time (Public Transit)"
     food_value: "Food Value"
     food_cost: "Food Cost"
     drink_value: "Drink Value"
