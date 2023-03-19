@@ -7,8 +7,7 @@ export default {
       <div id="top_nav" class="row">
         <div id="left" class="col-xs-4">
           <a href="#" id="players_index">{{I18n.get_players_index}}</a>
-          {{I18n.current_player}}:
-          <span id="current_player">{{playerName}}</span>
+          {{I18n.current_player}}: {{playerName}}
         </div>
         <div class="center col-xs-4">
           <a href="#" id="show_search" class="fancybox">{{I18n.search_map}}</a>
@@ -137,7 +136,6 @@ export default {
     },
     methods: {
       initializeMap() {
-        // this.gMap = new google.maps.Map(element, {
         this.gMap = new google.maps.Map(this.$refs.mapDiv, {
           center: {
             lat: this.lat,
@@ -152,14 +150,6 @@ export default {
         ).then(
           (response) => this.updateBoardForPlayer(response)
         )
-
-        // $("#prefix").autocomplete({
-        //   source: "/search_suggestions",
-        //   select: function() {
-        //     $.fancybox.close();
-        //     return $.searchMap();
-        //   }
-        // });
       },
       hidePlaceInfo: function() {
         this.showPlaceInfo = false
@@ -169,30 +159,22 @@ export default {
           '/places/' + this.placeReference
         ).then(
           (response) => {
-            // alert('hello')
-            
-            var len, results1;
-            results1 = [];
             var placeInfo = response.data
-            // for (var k = 0, len = placeInfo.length; k < len; k++) {
             this.placeInfo = {
-              id: placeInfo['id'],
-              name: placeInfo['name'],
-              rating: placeInfo['rating'],
+              id: placeInfo.id,
+              name: placeInfo.name,
+              rating: placeInfo.rating,
+              // TODO: get these values from the GoogleMaps API Distance Matrix service
               travelTimeWalking: '123 minutes',
               travelTimeBicycling: '30 minutes',
               travelTimeDriving: '8 minutes',
               travelTimeTransit: '15 minutes',
-              foodValue: placeInfo['food_value'],
-              foodCost: placeInfo['food_cost'],
-              drinkValue: placeInfo['drink_value'],
-              drinkCost: placeInfo['drink_cost']
+              foodValue: placeInfo.food_value,
+              foodCost: placeInfo.food_cost,
+              drinkValue: placeInfo.drink_value,
+              drinkCost: placeInfo.drink_cost
             }
             this.showPlaceInfo = true
-            // for (const key in placeInfo) {
-            //   results1.push($("#place_info_" + key).html(placeInfo[key]));
-            // }
-            // return results1;
           }
         )
   

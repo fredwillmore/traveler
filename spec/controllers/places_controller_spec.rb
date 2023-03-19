@@ -1,14 +1,58 @@
-require 'test_helper'
+require 'rails_helper'
 
-class PlacesControllerTest < ActionController::TestCase
-  setup do
-    @user = FactoryBot.create :user
-    @place = FactoryBot.create :place
-    sign_in User.first
+describe PlacesController do
+  let(:user) { create :user }
+  let!(:place) do
+    create(
+      :place,
+      id: 100,
+      external_id: 'ABCDEF1234567890abcdefghijk',
+      name: 'Ye Olde Bodye Shoppe',
+      rating: 4.5
+    )
   end
 
-  test "should show place" do
-    get :show, external_id: @place.external_id
-    assert_response :success
+  before do
+    sign_in user
+  end
+
+  describe "get :show" do
+    context "when place exists" do
+      let(:external_id) { 'ABCDEF1234567890abcdefghijk' }
+
+      it "responds with success" do
+        get :show, params: { external_id: external_id , format: :json}
+        expect(response).to have_http_status(:success)
+      end
+
+      render_views true
+
+      it "responds with json" do
+        get :show, params: { external_id: external_id }, format: :json
+        expect(JSON.parse(response.body)).to eq(
+          {
+            "id" => 100,
+            "external_id" => "ABCDEF1234567890abcdefghijk",
+            "name" => "Ye Olde Bodye Shoppe",
+            "rating" => 4.5,
+            "food_value" => 12,
+            "food_cost" => 10,
+            "drink_value" => 24,
+            "drink_cost" => 9,
+          }
+        )
+      end
+    end
+
+    context "when place doesn't exist" do
+      let(:external_id) { 'ABCDEF0000000000abcdefghijk' }
+
+      it "raises an error" do
+        expect do
+          get :show, params: { external_id: external_id }
+        end.to raise_error(GooglePlaces::InvalidRequestError)
+      end
+    end
+
   end
 end

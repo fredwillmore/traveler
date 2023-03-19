@@ -68,7 +68,7 @@ Traveler::Application.routes.draw do
 
   get "home/index"
 
-  get "places/:external_id", to: "places#show"
+  get "places/:external_id", defaults: { format: :json }, to: "places#show"
 
   # attempting a custom route:
   # resources :places do

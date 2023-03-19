@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_04_223843) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_18_190154) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -156,7 +156,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_04_223843) do
   create_table "places", id: :serial, force: :cascade do |t|
     t.string "name", limit: 255
     t.string "external_id", limit: 255
-    t.integer "player_id"
     t.integer "location_id"
     t.float "rating"
     t.datetime "created_at", precision: nil
