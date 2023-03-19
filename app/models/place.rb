@@ -2,6 +2,8 @@ class Place < ActiveRecord::Base
   belongs_to :location
   has_and_belongs_to_many :place_types
 
+  delegate :lat, :lng, to: :location
+
   API_KEY = Rails.application.credentials[:googlemaps_api_key]
 
   def self.find_or_create_by_external_id_and_player_id(external_id, player_id)

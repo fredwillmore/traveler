@@ -8,7 +8,8 @@ describe PlacesController do
       id: 100,
       external_id: 'ABCDEF1234567890abcdefghijk',
       name: 'Ye Olde Bodye Shoppe',
-      rating: 4.5
+      rating: 4.5,
+      location: create(:location, lat: 23, lng: 44)
     )
   end
 
@@ -39,6 +40,8 @@ describe PlacesController do
             "food_cost" => 10,
             "drink_value" => 24,
             "drink_cost" => 9,
+            "lat" => 23,
+            "lng" => 44,
           }
         )
       end
