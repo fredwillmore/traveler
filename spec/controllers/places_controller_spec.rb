@@ -40,8 +40,8 @@ describe PlacesController do
             "food_cost" => 10,
             "drink_value" => 24,
             "drink_cost" => 9,
-            "lat" => 23,
-            "lng" => 44,
+            "lat" => 23.0,
+            "lng" => 44.0,
           }
         )
       end
