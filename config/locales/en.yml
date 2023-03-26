@@ -22,6 +22,7 @@ en:
     food_cost: "Food Cost"
     drink_value: "Drink Value"
     drink_cost: "Drink Cost"
+    go: "Go"
     go_walk: "walk there"
     go_taxi: "take a taxi there"
 

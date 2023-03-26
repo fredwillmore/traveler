@@ -6,14 +6,18 @@ import App from './App.js'
 
 if (element !== null) {
 
-  // debugger
   const app = Vue.createApp(
     App, 
     {
       lat: Number(element.dataset.lat),
       lng: Number(element.dataset.lng),
       zoom: Number(element.dataset.zoom),
-      playersUrl: element.dataset.playersUrl
+      playerName: element.dataset.playerName,
+      icon: element.dataset.icon,
+      playersUrl: element.dataset.playersUrl,
+      playerUrl: element.dataset.playerUrl,
+      playerTravelUrl: element.dataset.playerTravelUrl,
+      playerAvatarUrl: element.dataset.playerAvatarUrl
     }
   )
   const vm = app.mount(app_canvas)
