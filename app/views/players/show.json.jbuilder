@@ -1,1 +1,24 @@
-json.extract! @player, :id, :created_at, :updated_at
+json.extract!(
+  @player,
+  :id,
+  :user_id,
+  :state,
+  :location_id,
+  :destination_id,
+  :level,
+  :name,
+  :gender,
+  :occupation,
+  :attractiveness,
+  :charisma,
+  :status,
+  :intelligence,
+  :luck,
+  :base_locale,
+  :target_locale,
+  :target_dialect,
+  :is_current_player,
+  :avatar_urls
+)
+
+json.dob(@player.dob.strftime('%Y-%m-%d'))
