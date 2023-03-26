@@ -53,4 +53,4 @@ gem "importmap-rails", "~> 1.1"
 
 # gem "bootsnap", "~> 1.15"
 
-gem "state_machines", "~> 0.5.0"
+gem "aasm"
