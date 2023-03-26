@@ -45,7 +45,7 @@ class Admin::LocationsController < ApplicationController
     respond_to do |format|
       if @location.save
         format.html { redirect_to [:admin, @location], notice: 'Location was successfully created.' }
-        format.json { render json: @location, status: :created, location: @location }
+        format.json { render json: @location, status: :created }
       else
         format.html { render action: "new" }
         format.json { render json: @location.errors, status: :unprocessable_entity }

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  player_id: 
+  quantity_id: 
+  value: 1.5
+
+two:
+  player_id: 
+  quantity_id: 
+  value: 1.5

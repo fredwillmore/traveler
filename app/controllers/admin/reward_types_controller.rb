@@ -45,7 +45,7 @@ class Admin::RewardTypesController < ApplicationController
     respond_to do |format|
       if @reward_type.save
         format.html { redirect_to [:admin, @reward_type], notice: 'Reward type was successfully created.' }
-        format.json { render json: @reward_type, status: :created, location: @reward_type }
+        format.json { render json: @reward_type, status: :created }
       else
         format.html { render action: "new" }
         format.json { render json: @reward_type.errors, status: :unprocessable_entity }

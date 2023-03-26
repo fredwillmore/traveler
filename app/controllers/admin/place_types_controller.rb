@@ -45,7 +45,7 @@ class Admin::PlaceTypesController < ApplicationController
     respond_to do |format|
       if @place_type.save
         format.html { redirect_to [:admin, @place_type], notice: 'Place type was successfully created.' }
-        format.json { render json: @place_type, status: :created, location: @place_type }
+        format.json { render json: @place_type, status: :created }
       else
         format.html { render action: "new" }
         format.json { render json: @place_type.errors, status: :unprocessable_entity }

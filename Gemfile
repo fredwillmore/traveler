@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.7.6'
-gem 'rails', '7.0.4'
+gem 'rails', '7.0.4.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -11,6 +11,7 @@ gem 'pg', '>= 1.4.5'
 # gem 'jquery-ui-rails'
 gem 'fancybox2-rails'
 gem 'coffee-rails'
+gem 'jbuilder'
 
 gem 'fancybox2-rails'
 gem 'kaminari' # adds pagination to ActiveModels
@@ -52,4 +53,4 @@ gem "importmap-rails", "~> 1.1"
 
 # gem "bootsnap", "~> 1.15"
 
-gem "state_machines", "~> 0.5.0"
+gem "aasm"

@@ -1,0 +1,13 @@
+json.extract!(
+  @place,
+  :id,
+  :external_id,
+  :drink_cost,
+  :drink_value,
+  :food_cost,
+  :food_value,
+  :name,
+  :rating
+)
+json.lat(@place.lat.to_f)
+json.lng(@place.lng.to_f)

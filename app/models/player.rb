@@ -1,4 +1,6 @@
 class Player < ActiveRecord::Base
+  include AASM
+
   belongs_to :user, class_name: 'User', foreign_key: 'user_id'
 
   has_many :player_quantities
@@ -24,17 +26,17 @@ class Player < ActiveRecord::Base
       xxlarge:  path.gsub('replace_me', '500')
     }
   end
+  
+  aasm column: :state do
+    state :normal, initial: true
+    state :travel
 
-  # state_machine :state, :initial => :normal do
-  #   state :normal
-  #   state :travel
+    event :start_travel do
+      transitions from: :normal, to: :travel
+    end
 
-  #   event :start_travel do
-  #     transition :normal => :travel
-  #   end
-
-  #   event :finish_travel do
-  #     transition :travel => :normal
-  #   end
-  # end
+    event :finish_travel do
+      transitions from: :travel, to: :normal
+    end
+  end
 end

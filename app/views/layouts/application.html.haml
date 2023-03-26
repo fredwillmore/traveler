@@ -4,6 +4,38 @@
     %title Traveler
     = stylesheet_link_tag    "application", :media => "all"
     = csrf_meta_tags
+    :ruby
+      keys = [
+        # :date,
+        # :time,
+        # :support,
+        # :number,
+        # :errors,
+        # :activerecord,
+        # :datetime,
+        # :helpers,
+        # :flash,
+        # :faker,
+        # :views,
+        # :devise,
+        # app-defined translations start here:
+        :hello,
+        :map_control_center,
+        :search_map,
+        :current_player,
+        :get_players_index,
+        :place_info,
+        :place_type_names
+      ]
+      # need to call I18n.t if any of the files have been changed
+      I18n.t(keys)
+      content = I18n.backend.translations[I18n.locale].slice(*keys).to_json.html_safe
+
+    // TODO: set up process to import this content from a file instead of loading it every time
+    :javascript
+      window.I18n = #{content}
+      // debugger
+
     = javascript_importmap_tags
 
     :javascript
