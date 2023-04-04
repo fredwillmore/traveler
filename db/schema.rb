@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_26_180602) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_28_025222) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -170,7 +170,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_26_180602) do
   end
 
   create_table "players", id: :serial, force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "user_id", null: false
     t.string "state", limit: 255, default: "normal", null: false
     t.integer "location_id"
     t.integer "destination_id"

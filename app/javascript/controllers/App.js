@@ -272,6 +272,7 @@ export default {
           query: searchTerm,
           bounds: this.gMap.getBounds()
         }, (results, status) => {
+          debugger
           for(let result of results) {
             this.addPlaceMarker(result)
           }

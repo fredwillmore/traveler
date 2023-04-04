@@ -86,14 +86,15 @@ class PlayersController < ApplicationController
   end
 
   def start_travel
+    debugger
     @player = Player.find(params[:id])
-    @player.start_travel
+    @player.start_travel!
     respond_with @player
   end
 
   def finish_travel
     @player = Player.find(params[:id])
-    @player.finish_travel
+    @player.finish_travel!
     respond_with @player
   end
 
