@@ -221,58 +221,59 @@ export default {
           // icon: markerInfo.icon
         })
       },
-  
+
+      searchResultsHandler(results, status) {
+        this.placeIds = results.map(result => result.place_id)
+        this.placesInfo = results.reduce((accumulator, result) => {
+          accumulator[result.place_id] ||= {
+            id: result.place_id,
+            name: result.name,
+            rating: result.rating,
+            foodValue: null,
+            foodCost: null,
+            drinkValue: null,
+            drinkCost: null,
+          }
+          return accumulator;
+        }, {})
+
+        // TODO: why does this break things
+        // results.forEach((result) => this.addPlaceMarker(result))
+        for(let result of results) {
+          this.addPlaceMarker(result)
+        }
+
+        ['Walking', 'Bicycling', 'Driving', 'Transit'].forEach((mode) => this.getDistances(mode, results))
+      },
+      getDistances(mode, results) {
+        this.distanceMatrix.getDistanceMatrix(
+          {
+            origins: [this.mapCenter],
+            destinations: results.map(result => result.geometry.location),
+            travelMode: google.maps.TravelMode[mode.toUpperCase()]
+          },
+          (result) => this.handleDistanceMatrixResult(result, mode)    
+        )
+      },
+      handleDistanceMatrixResult(result, mode) {
+        result.rows[0].elements.forEach((r, i) => {
+          this.placesInfo[this.placeIds[i]] ||= {}
+          this.placesInfo[this.placeIds[i]]['travelTimes'] ||= {}
+          this.placesInfo[this.placeIds[i]]['travelTimes'][mode.toLowerCase()] = {
+            distance: r.distance.text,
+            duration: r.duration.text
+          }
+        })
+      },
       searchMap(searchTerm) {
         this.clearSearchMarkers()
-        let searchResultsHandler = (results, status) => {
-          var origins = [this.mapCenter]
-          var destinations = []
-          var origin = this.mapCenter
-          for(let result of results) {
-            this.placeIds.push(result.place_id)
-            this.placesInfo[result.place_id] ||= {
-              id: result.place_id,
-              name: result.name,
-              rating: result.rating,
-              foodValue: null,
-              foodCost: null,
-              drinkValue: null,
-              drinkCost: null,
-            }
-            destinations.push(result.geometry.location)
-            this.addPlaceMarker(result)
-          }
-
-          ['Walking', 'Bicycling', 'Driving', 'Transit'].forEach((mode) => {
-            let currentMode = mode;
-            let distanceMatrixRequest = {
-              origins: origins,
-              destinations: destinations,
-              travelMode: google.maps.TravelMode[mode.toUpperCase()]
-            }
-            let handleMatrixRequestResults = (result) => {
-              result.rows[0].elements.forEach((r, i) => {
-                this.placesInfo[this.placeIds[i]] ||= {}
-                this.placesInfo[this.placeIds[i]]['travelTimes'] ||= {}
-                this.placesInfo[this.placeIds[i]]['travelTimes'][currentMode.toLowerCase()] = {
-                  distance: r.distance.text,
-                  duration: r.duration.text
-                }
-              })
-            }
-            this.distanceMatrix.getDistanceMatrix(
-              distanceMatrixRequest,
-              handleMatrixRequestResults
-            )
-          })
-        }
 
         this.placesService.textSearch(
           {
             query: searchTerm,
             bounds: this.gMap.getBounds()
           },
-          searchResultsHandler
+          this.searchResultsHandler
         )
       },
       // this is the main
