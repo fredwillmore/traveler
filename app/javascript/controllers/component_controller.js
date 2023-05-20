@@ -21,4 +21,5 @@ if (element !== null) {
     }
   )
   const vm = app.mount(app_canvas)
+  
 }

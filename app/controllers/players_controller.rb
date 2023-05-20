@@ -86,7 +86,6 @@ class PlayersController < ApplicationController
   end
 
   def start_travel
-    debugger
     @player = Player.find(params[:id])
     @player.start_travel!
     respond_with @player

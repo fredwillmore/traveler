@@ -1,7 +1,5 @@
 import axios from "axios"
 
-const element = document.querySelector("#app_canvas")
-
 export default {
     template: `
       <div id="top_nav" class="row">
@@ -39,80 +37,6 @@ export default {
           </ul>
         </div>
       </div>
-      <div id="place_info" v-if="showPlaceInfo">
-        <div id="place_info_handle" class="handle">
-          <a v-on:click="hidePlaceInfo" href="#">[ x ]</a>
-          {{I18n.place_info.label}}
-          <div id="place_info_content">
-            <table>
-              <tr>
-                <td>{{I18n.place_info.id}}:</td>
-                <td>{{placeInfo.id}}</td>
-              </tr>
-              <tr>
-                <td>{{I18n.place_info.name}}:</td>
-                <td>{{placeInfo.name}}</td>
-              </tr>
-              <tr>
-                <td>{{I18n.place_info.rating}}:</td>
-                <td>{{placeInfo.rating}}</td>
-              </tr>
-              <tr>
-                <td>{{I18n.place_info.travel_time_walking}}:</td>
-                <td>
-                  {{placeInfo.travelTimes.walking.distance}}
-                  {{placeInfo.travelTimes.walking.duration}}
-                </td>
-                <td>
-                  <input type="button" :value="I18n.place_info.go" data-travel-mode="walking" v-on:click="doAction" />
-                </td>
-              </tr>
-              <tr>
-                <td>{{I18n.place_info.travel_time_bicycling}}:</td>
-                <td>
-                  {{placeInfo.travelTimes.bicycling.distance}}
-                  {{placeInfo.travelTimes.bicycling.duration}}
-                </td>
-                <td>
-                  <input type="button" :value="I18n.place_info.go" data-travel-mode="bicycling" v-on:click="doAction" />
-                </td>
-              </tr>
-              <tr>
-                <td>{{I18n.place_info.travel_time_driving}}:</td>
-                <td>
-                  {{placeInfo.travelTimes.driving.distance}}
-                  {{placeInfo.travelTimes.driving.duration}}
-                </td>
-                <td>
-                  <input type="button" :value="I18n.place_info.go" data-travel-mode="driving" v-on:click="doAction" />
-                </td>
-              </tr>
-              <tr>
-                <td>{{I18n.place_info.travel_time_transit}}:</td>
-                <td>
-                  {{placeInfo.travelTimes.transit.distance}}
-                  {{placeInfo.travelTimes.transit.duration}}
-                </td>
-                <td>
-                  <input type="button" :value="I18n.place_info.go" data-travel-mode="transit" v-on:click="doAction" />
-                </td>
-              </tr>
-              <tr>
-                <td>{{I18n.place_info.food_value}}/{{I18n.place_info.food_cost}}:</td>
-                <td>
-                  {{placeInfo.foodValue}} / {{placeInfo.foodCost}}
-                </td>
-              </tr>
-              <tr>
-                <td>{{I18n.place_info.drink_value}}/{{I18n.place_info.drink_cost}}:</td>
-                <td>
-                  {{placeInfo.drinkValue}} / {{placeInfo.drinkCost}}
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
     `,
     props: [
       'lat',
@@ -134,10 +58,10 @@ export default {
         searchTerm: '',
         searchSuggestions: [],
         searchIsOpen: false,
-        showPlaceInfo: false,
         mapCenter: new google.maps.LatLng(this.lat, this.lng),
         placeIds: [],
         placesInfo: {},
+        showPlaceInfo: false,
         placeInfo: {
           id: null,
           name: null,
@@ -151,7 +75,7 @@ export default {
             bicycling: null,
             driving: null,
             transit: null
-          },
+          }
         }
       }
     },
@@ -161,6 +85,82 @@ export default {
       this.initializeMap()
     },
     methods: {
+      infowindowContent(clickAction) {
+        return `
+        <div id="content">
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">${this.placeInfo.name}</h1>
+          <div id="bodyContent">
+            <div id="place_info_content">
+              <table>
+                <tr>
+                  <td>${I18n.place_info.id}:</td>
+                  <td>${this.placeInfo.id}</td>
+                </tr>
+                <tr>
+                  <td>${I18n.place_info.name}:</td>
+                  <td>${this.placeInfo.name}</td>
+                </tr>
+                <tr>
+                  <td>${I18n.place_info.rating}:</td>
+                  <td>${this.placeInfo.rating}</td>
+                </tr>
+                <tr>
+                  <td>${I18n.place_info.travel_time_walking}:</td>
+                  <td>
+                    ${this.placeInfo.travelTimes.walking.distance}
+                    ${this.placeInfo.travelTimes.walking.duration}
+                  </td>
+                  <td>
+                    <button class="travelMode" data-travel-mode="walking">${I18n.place_info.go}</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>${I18n.place_info.travel_time_bicycling}:</td>
+                  <td>
+                    ${this.placeInfo.travelTimes.bicycling.distance}
+                    ${this.placeInfo.travelTimes.bicycling.duration}
+                  </td>
+                  <td>
+                    <button class="travelMode" data-travel-mode="bicycling">${I18n.place_info.go}</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>${I18n.place_info.travel_time_driving}:</td>
+                  <td>
+                    ${this.placeInfo.travelTimes.driving.distance}
+                    ${this.placeInfo.travelTimes.driving.duration}
+                  </td>
+                  <td>
+                    <button class="travelMode" data-travel-mode="driving">${I18n.place_info.go}</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>${I18n.place_info.travel_time_transit}:</td>
+                  <td>
+                    ${this.placeInfo.travelTimes.transit.distance}
+                    ${this.placeInfo.travelTimes.transit.duration}
+                  </td>
+                  <td>
+                    <button class="travelMode" data-travel-mode="transit">${I18n.place_info.go}</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>${I18n.place_info.food_value}/${I18n.place_info.food_cost}:</td>
+                  <td>
+                    ${this.placeInfo.foodValue} / ${this.placeInfo.foodCost}
+                  </td>
+                </tr>
+                <tr>
+                  <td>${I18n.place_info.drink_value}/${I18n.place_info.drink_cost}:</td>
+                  <td>
+                    ${this.placeInfo.drinkValue} / ${this.placeInfo.drinkCost}
+                  </td>
+                </tr>
+              </table>
+            </div>
+          `
+      },
       initializeMap() {
         this.gMap = new google.maps.Map(this.$refs.mapDiv, {
           center: this.mapCenter,
@@ -209,7 +209,21 @@ export default {
         this.$options.liveMarkers.push(marker)
         google.maps.event.addListener(marker, 'click', () => { 
           this.placeInfo = this.placesInfo[marker.placeId]
-          this.showPlaceInfo = true
+          const infowindow = new google.maps.InfoWindow({
+            content: this.infowindowContent(),
+            ariaLabel: this.placeInfo.name,
+          });
+          google.maps.event.addListener(infowindow, 'domready', (thing) => {
+            console.log("domready happened")
+            document.querySelectorAll('button.travelMode').forEach(
+              (el) => el.addEventListener("click", this.doAction)
+            )
+          })
+          infowindow.open({
+            anchor: marker,
+            map: this.gMap,
+          });
+          // this.showPlaceInfo = true
         });
       },
 
@@ -260,8 +274,8 @@ export default {
           this.placesInfo[this.placeIds[i]] ||= {}
           this.placesInfo[this.placeIds[i]]['travelTimes'] ||= {}
           this.placesInfo[this.placeIds[i]]['travelTimes'][mode.toLowerCase()] = {
-            distance: r.distance.text,
-            duration: r.duration.text
+            distance: r.distance?.text,
+            duration: r.duration?.text
           }
         })
       },
@@ -278,8 +292,8 @@ export default {
       },
       // this is the main
       doAction(e) {
-        let mode = e.target.getAttribute('data-travel-mode')
-        let travelTime=this.placeInfo['travelTimes'][mode.toLowerCase()]
+        let mode = e.target.dataset.travelMode.toLowerCase()
+        let travelTime=this.placeInfo['travelTimes'][mode]
 
         axios.request(
           this.playerTravelUrl
