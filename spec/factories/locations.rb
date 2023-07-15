@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :location do
-    lat { 99.99 }
-    lng { 88.88 }
+    lat { 45.5093545 }
+    lng { -122.7364463 }
   end
 end
