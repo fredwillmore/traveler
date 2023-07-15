@@ -39,4 +39,42 @@ class Player < ActiveRecord::Base
       transitions from: :travel, to: :normal
     end
   end
+
+  # TODO: using locations instead of places for player location/destination seems more complicated than necessary.
+  # can I just use Places?
+
+  def location_external_id
+    location&.place&.external_id
+  end
+
+  def destination_external_id
+    destination&.place&.external_id
+  end
+
+  def set_trip(destination_external_id, mode = 'driving')
+    destination = Place.find_or_create_by_external_id(destination_external_id).location
+    matrix = GoogleDistanceMatrix::Matrix.new
+    matrix.origins << location
+    matrix.destinations << destination
+    matrix.configure do |config|
+      config.google_api_key = Place::API_KEY
+      config.mode = "walking"
+    end
+    trip_time = matrix.data[0][0].duration_in_seconds
+    update(
+      arrival_time: Time.now + trip_time,
+      destination: destination
+    )
+    # debugger
+  end
+
+  def set_arrival
+    if travel?
+      if arrival_time <= Time.now
+        finish_travel!
+      end
+    else
+      update(arrival_time: nil)
+    end
+  end
 end

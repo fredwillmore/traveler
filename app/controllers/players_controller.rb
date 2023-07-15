@@ -3,13 +3,14 @@ class PlayersController < ApplicationController
   respond_to :html, :xml, :json
   # GET /players
   # GET /players.json
-  def index
-    @players = current_user.players
 
+  before_action :get_player, only: [:show, :edit, :update, :destroy, :start_travel, :finish_travel]
+
+  def index
     respond_to do |format|
       format.html # index.html.haml
       format.json do
-        render json: @players.to_json(include: :location, methods: :avatar_urls)
+        render json: current_user.players.to_json(include: :location, methods: :avatar_urls)
       end
     end
   end
@@ -17,8 +18,6 @@ class PlayersController < ApplicationController
   # GET /players/1
   # GET /players/1.json
   def show
-    @player = Player.find(params[:id])
-
     respond_to do |format|
       format.html
       format.json
@@ -38,7 +37,6 @@ class PlayersController < ApplicationController
 
   # GET /players/1/edit
   def edit
-    @player = Player.find(params[:id])
   end
 
   # POST /players
@@ -60,8 +58,6 @@ class PlayersController < ApplicationController
   # PUT /players/1
   # PUT /players/1.json
   def update
-    @player = Player.find(params[:id])
-
     respond_to do |format|
       if @player.update(player_params)
         format.html { redirect_to [:admin, @player], notice: 'Player was successfully updated.' }
@@ -76,7 +72,6 @@ class PlayersController < ApplicationController
   # DELETE /players/1
   # DELETE /players/1.json
   def destroy
-    @player = Player.find(params[:id])
     @player.destroy
 
     respond_to do |format|
@@ -86,19 +81,23 @@ class PlayersController < ApplicationController
   end
 
   def start_travel
-    @player = Player.find(params[:id])
+    @player.set_trip(params[:destination_external_id], params[:mode])
     @player.start_travel!
     respond_with @player
   end
 
   def finish_travel
-    @player = Player.find(params[:id])
     @player.finish_travel!
     respond_with @player
   end
-
-
+  
   private
+  
+  def get_player
+    @player = Player.find(params[:id])
+    @player.set_arrival
+  end
+
   def player_params
     params.require(:player).permit(
         :user_id,

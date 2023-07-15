@@ -2,10 +2,15 @@ require 'rails_helper'
 
 describe PlayersController do
   let(:user) { create :user, id: 101 }
+  let(:arrival_time) { "normal" }
+  let(:state) { "normal" }
+
   let!(:player) do
     create(
       :player,
       id: 100,
+      state: state,
+      arrival_time: arrival_time,
       is_current_player: is_current_player,
       location: create(:location, id: 102),
       level: 3,
@@ -76,6 +81,32 @@ describe PlayersController do
           }
         )
       end
+
+      context "when player is in travel mode" do
+        let(:state) { "travel" }
+
+        context "when arrival time is in the past" do
+          let(:arrival_time) { Time.now - 1.day }
+  
+          it "changes mode state travel to normal" do
+            expect do
+              get :show, params: { id: id }, format: :json
+              player.reload
+            end.to change(player, :travel?).from(true).to(false)
+          end
+        end
+
+        context "when arrival time is in the future" do
+          let(:arrival_time) { Time.now + 1.day }
+  
+          it "doesn't change state from travel" do
+            expect do
+              get :show, params: { id: id }, format: :json
+              player.reload
+            end.not_to change(player, :travel?)
+          end
+        end
+      end
     end
   end
 
@@ -83,6 +114,30 @@ describe PlayersController do
     it "responds with success" do
       get :index
       expect(response).to have_http_status(:success)
+    end
+  end
+
+  describe "get start_travel" do
+    let(:params) do
+      {
+        mode: "walking",
+        destination_external_id: "aaaaaaaaaZZZZZZZZZ111111111",
+        # travel_time: {
+        #   distance: "16.9 km",
+        #   duration: "3 hours 38 mins"
+        # },
+        # controller: "players",
+        # action: "start_travel",
+        id: "100",
+        format: "json",
+      }
+    end
+
+    it "calls set_trip" do
+      expect_any_instance_of(Player).to receive(:set_trip).with(
+        "aaaaaaaaaZZZZZZZZZ111111111", 'walking'
+      )
+      get :start_travel, params: params
     end
   end
 end

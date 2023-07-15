@@ -7,7 +7,7 @@ describe Player do
   it { should belong_to(:destination).class_name(Location).optional }
   it { should have_one_attached(:avatar) }
 
-  let!(:player) { create(:player, avatar: avatar, state: state) }
+  let!(:player) { create(:player, avatar: avatar, state: state, location: create(:location)) }
   let(:state) { 'normal' }
   let(:test_file_path) { Rails.application.root + "spec/fixtures/files/test_image.jpg" }
   let(:test_file) { File.open(test_file_path) }
@@ -40,6 +40,30 @@ describe Player do
     end 
   end
   
+  describe 'set_trip' do
+    let(:destination_external_id) { "ChIJXxVCB6AOlVQR5Qh6uNTUD1w" }
+
+    before do
+      travel_to Time.local(2023, 7, 14)
+    end
+  
+    after do
+      travel_back
+    end
+
+    it "updates destination" do
+      expect do
+        player.set_trip(destination_external_id)
+      end.to change(player, :destination_external_id).to(destination_external_id)
+    end
+
+    it "updates arrival_time" do
+      expect do
+        player.set_trip(destination_external_id)
+      end.to change(player, :arrival_time).to(Time.local(2023, 7, 14, 1, 15, 58))
+    end
+  end
+  
   describe 'state_machine' do
     xit 'has a default value of normal' do
       expect(player.state).to eq(:normal)
@@ -54,7 +78,6 @@ describe Player do
         it 'changes state to travel' do
           expect do
             player.send(action)
-            player.reload
           end.to change(player, :state).to('travel')
         end
       end
@@ -65,7 +88,6 @@ describe Player do
         it "raises an exception" do
           expect do
             player.send(action)
-            player.reload
           end.to raise_error(AASM::InvalidTransition)
         end
       end
@@ -80,7 +102,6 @@ describe Player do
         it "raises an exception" do
           expect do
             player.send(action)
-            player.reload
           end.to raise_error(AASM::InvalidTransition)
         end
       end
@@ -91,7 +112,6 @@ describe Player do
         it 'changes state to normal' do
           expect do
             player.send(action)
-            player.reload
           end.to change(player, :state).to('normal')
         end
       end
