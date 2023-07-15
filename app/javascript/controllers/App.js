@@ -2,42 +2,50 @@ import axios from "axios"
 
 export default {
     template: `
-      <div id="top_nav" class="row">
-        <div id="left" class="col-xs-4">
-          <a href="#" id="players_index">{{I18n.get_players_index}}</a>
-          {{I18n.current_player}}: {{playerName}}
-        </div>
-        <div class="center col-xs-4">
-          <a href="#" id="show_search" class="fancybox">{{I18n.search_map}}</a>
-        </div>
-        <div class="right col-xs-4">
-          <a href="#" id="map_control_center" class="fancybox">{{I18n.map_control_center}}</a>
+      <div v-if="localPlayerState=='travel'">
+        <div>
+          <div>Destination: </div>
+          <div>Time to destination: </div>
         </div>
       </div>
-      <div id="#map_div" ref="mapDiv" style=" height: 100%; width: 100%;"></div>
-      <div id="search">
-        <div class="field">
-          <label for="term_"></label>
-          <input
-            v-model="searchTerm"
-            @input="getSearchSuggestions"
-          />
-          <ul
-            v-show="searchIsOpen"
-            class="autocomplete-results"
-          >
-            <li
-              v-for="(result, i) in searchSuggestions"
-              :key="i"
-              class="autocomplete-result"
-              @click="searchMap(result)"
+      <div v-else style="height: 100%; width: 100%;">
+        <div id="top_nav" class="row">
+          <div id="left" class="col-xs-4">
+            <a href="#" id="players_index">{{I18n.get_players_index}}</a>
+            {{I18n.current_player}}: {{playerName}}
+          </div>
+          <div class="center col-xs-4">
+            <a href="#" id="show_search" class="fancybox">{{I18n.search_map}}</a>
+          </div>
+          <div class="right col-xs-4">
+            <a href="#" id="map_control_center" class="fancybox">{{I18n.map_control_center}}</a>
+          </div>
+        </div>
+        <div ref="mapDiv" style="height: 100%; width: 100%;"></div>
+        <div id="search">
+          <div class="field">
+            <label for="term_"></label>
+            <input
+              v-model="searchTerm"
+              @input="getSearchSuggestions"
+            />
+            <ul
+              v-show="searchIsOpen"
+              class="autocomplete-results"
             >
-              {{ result }}
-            </li>
-          </ul>
+              <li
+                v-for="(result, i) in searchSuggestions"
+                :key="i"
+                class="autocomplete-result"
+                @click="searchMap(result)"
+              >
+                {{ result }}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    `,
+      `,
     props: [
       'lat',
       'lng',
@@ -47,7 +55,8 @@ export default {
       'playerUrl',
       'playersUrl',
       'playerTravelUrl',
-      'playerAvatarUrl'
+      'playerAvatarUrl',
+      'playerState'
     ],
     data() {
       return {
@@ -61,6 +70,7 @@ export default {
         mapCenter: new google.maps.LatLng(this.lat, this.lng),
         placeIds: [],
         placesInfo: {},
+        localPlayerState: this.playerState,
         showPlaceInfo: false,
         placeInfo: {
           id: null,
@@ -76,7 +86,8 @@ export default {
             driving: null,
             transit: null
           }
-        }
+        },
+        infoWindow: null
       }
     },
     liveMarkers: [],
@@ -112,7 +123,7 @@ export default {
                     ${this.placeInfo.travelTimes.walking.duration}
                   </td>
                   <td>
-                    <button class="travelMode" data-travel-mode="walking">${I18n.place_info.go}</button>
+                    <button class="travelMode" data-travel-mode="walking" data-destination-place-id=${this.placeInfo.id}>${I18n.place_info.go}</button>
                   </td>
                 </tr>
                 <tr>
@@ -209,17 +220,20 @@ export default {
         this.$options.liveMarkers.push(marker)
         google.maps.event.addListener(marker, 'click', () => { 
           this.placeInfo = this.placesInfo[marker.placeId]
-          const infowindow = new google.maps.InfoWindow({
+          if(this.infoWindow) {
+            this.infoWindow.close()
+          }
+          this.infoWindow = new google.maps.InfoWindow({
             content: this.infowindowContent(),
             ariaLabel: this.placeInfo.name,
           });
-          google.maps.event.addListener(infowindow, 'domready', (thing) => {
+          google.maps.event.addListener(this.infoWindow, 'domready', (thing) => {
             console.log("domready happened")
             document.querySelectorAll('button.travelMode').forEach(
               (el) => el.addEventListener("click", this.doAction)
             )
           })
-          infowindow.open({
+          this.infoWindow.open({
             anchor: marker,
             map: this.gMap,
           });
@@ -296,9 +310,18 @@ export default {
         let travelTime=this.placeInfo['travelTimes'][mode]
 
         axios.request(
-          this.playerTravelUrl
+          this.playerTravelUrl,
+          {
+            params: {
+              mode: mode,
+              destination_external_id: e.target.dataset.destinationPlaceId,
+              // travel_time: travelTime
+            }
+          }
         ).then(
-          (response) => { /* something */ }
+          (response) => {
+            debugger
+          }
         )
       }
     },

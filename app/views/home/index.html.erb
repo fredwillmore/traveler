@@ -14,6 +14,7 @@
     data-player-url="<%= player_url(current_user.current_player.id, format: :json) %>"
     data-player-travel-url="<%= start_travel_player_url(current_user.current_player.id, format: :json) %>"
     data-player-avatar-url="<%= current_user.current_player.avatar_urls[:small] %>"
+    data-player-state="<%= current_user.current_player.state %>"
 ></div>
 
 <%=
