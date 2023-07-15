@@ -24,6 +24,7 @@ group :assets do
 end
 
 gem 'google_places'
+gem 'google_distance_matrix'
 
 gem 'globalize'
 
