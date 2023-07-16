@@ -1,22 +1,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<%
-    # debugger
-    player = current_user.current_player
-%>
+<% player = current_user.current_player %>
 <div
     id="app_canvas"
-    data-lat="<%= current_user.current_player.location.lat %>"
-    data-lng="<%= current_user.current_player.location.lng %>"
+    data-lat="<%= player.location.lat %>"
+    data-lng="<%= player.location.lng %>"
     data-zoom="10"
-    data-icon="<%= current_user.current_player.avatar_urls[:small] %>"
-    data-player-name="<%= current_user.current_player.name %>"
+    data-icon="<%= player.avatar_urls[:small] %>"
+    data-player-name="<%= player.name %>"
     data-players-url="<%= players_url(format: :json) %>"
-    data-player-url="<%= player_url(current_user.current_player.id, format: :json) %>"
-    data-player-travel-url="<%= start_travel_player_url(current_user.current_player.id, format: :json) %>"
-    data-player-avatar-url="<%= current_user.current_player.avatar_urls[:small] %>"
-    data-player-state="<%= current_user.current_player.state %>"
+    data-player-url="<%= player_url(player.id, format: :json) %>"
+    data-player-travel-url="<%= start_travel_player_url(player.id, format: :json) %>"
+    data-player-avatar-url="<%= player.avatar_urls[:small] %>"
+    data-player-state="<%= player.state %>"
+    data-player-destination="<%= player.destination_name %>"
+    data-player-travel-time="<%= player.travel_time %>"
+    data-player-arrival-time="<%= player.arrival_time %>"
 ></div>
-
 <%=
     # render "speech"
 %>

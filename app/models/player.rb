@@ -51,6 +51,14 @@ class Player < ActiveRecord::Base
     destination&.place&.external_id
   end
 
+  def destination_name
+    destination&.place&.name
+  end
+
+  def travel_time
+    arrival_time - Time.now
+  end
+
   def set_trip(destination_external_id, mode = 'driving')
     destination = Place.find_or_create_by_external_id(destination_external_id).location
     matrix = GoogleDistanceMatrix::Matrix.new

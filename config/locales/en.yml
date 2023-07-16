@@ -9,6 +9,10 @@ en:
   current_player: "Active Player"
   get_players_index: "Player List"
 
+  travel:
+    destination: "Destination"
+    travel_time: "Travel Time"
+
   place_info:
     label: "Place Info"
     id: "ID"

@@ -4,8 +4,8 @@ export default {
     template: `
       <div v-if="localPlayerState=='travel'">
         <div>
-          <div>Destination: </div>
-          <div>Time to destination: </div>
+          <div>{{I18n.travel.destination}}: {{playerDestination}}</div>
+          <div>{{I18n.travel.travel_time}}: {{displayPlayerTravelTime}}</div>
         </div>
       </div>
       <div v-else style="height: 100%; width: 100%;">
@@ -56,7 +56,10 @@ export default {
       'playersUrl',
       'playerTravelUrl',
       'playerAvatarUrl',
-      'playerState'
+      'playerState',
+      'playerDestination',
+      'playerTravelTime',
+      'playerArrivalTime'
     ],
     data() {
       return {
@@ -71,6 +74,7 @@ export default {
         placeIds: [],
         placesInfo: {},
         localPlayerState: this.playerState,
+        displayPlayerTravelTime: null,
         showPlaceInfo: false,
         placeInfo: {
           id: null,
@@ -94,6 +98,7 @@ export default {
 
     mounted() {
       this.initializeMap()
+      this.startTimer(this.playerTravelTime)
     },
     methods: {
       infowindowContent(clickAction) {
@@ -173,6 +178,8 @@ export default {
           `
       },
       initializeMap() {
+        // TODO: make this better
+        if(!this.$refs.mapDiv) { return }
         this.gMap = new google.maps.Map(this.$refs.mapDiv, {
           center: this.mapCenter,
           zoom: this.zoom,
@@ -303,6 +310,26 @@ export default {
           },
           this.searchResultsHandler
         )
+      },
+
+      startTimer(duration) {
+        // TODO: make this better
+        if(this.$refs.mapDiv) { return }
+        
+        var timer = duration, minutes, seconds;
+        setInterval( () => {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+    
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+            this.displayPlayerTravelTime = minutes + ":" + seconds;
+    
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
       },
       // this is the main
       doAction(e) {

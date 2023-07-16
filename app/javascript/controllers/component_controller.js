@@ -18,7 +18,10 @@ if (element !== null) {
       playerUrl: element.dataset.playerUrl,
       playerTravelUrl: element.dataset.playerTravelUrl,
       playerAvatarUrl: element.dataset.playerAvatarUrl,
-      playerState: element.dataset.playerState
+      playerState: element.dataset.playerState,
+      playerDestination: element.dataset.playerDestination,
+      playerTravelTime: element.dataset.playerTravelTime,
+      playerArrivalTime: element.dataset.playerArrivalTime
     }
   )
   const vm = app.mount(app_canvas)
