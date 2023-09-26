@@ -3,7 +3,7 @@
 one:
   location_id:
   level: 1
-  sex: MyString
+  gender: MyString
   dob: 2012-09-10 18:59:22
   occupation: MyString
   level: 1
@@ -22,7 +22,7 @@ one:
 two:
   location_id:
   level: 1
-  sex: MyString
+  gender: MyString
   dob: 2012-09-10 18:59:22
   occupation: MyString
   level: 1

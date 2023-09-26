@@ -105,7 +105,7 @@ class PlayersController < ApplicationController
         :state,
         :location_id,
         :level,
-        :sex,
+        :gender,
         :dob,
         :occupation,
         :attractiveness,

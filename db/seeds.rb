@@ -40,7 +40,7 @@ ActiveRecord::Base.transaction do
     location: location,
     level: '1',
     name: 'Fizznuckle',
-    sex: 'M',
+    gender: 'M',
     dob: '1967-06-26',
     occupation: 'software guy',
     player_quantities: [
@@ -72,7 +72,7 @@ ActiveRecord::Base.transaction do
     location: location,
     level: '1',
     name: 'Fizznucklois',
-    sex: 'M',
+    gender: 'M',
     dob: '1967-06-26',
     occupation: 'software guy',
     player_quantities: [
