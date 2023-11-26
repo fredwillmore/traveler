@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.7.8'
+ruby '3.2.2'
 gem 'rails', '7.0.4.1'
 
 # Bundle edge Rails instead:
@@ -23,7 +23,8 @@ group :assets do
   gem 'coffee-rails'
 end
 
-gem 'google_places'
+# gem 'google_places'
+gem 'google-maps', '~> 2.2'
 
 gem 'globalize'
 
