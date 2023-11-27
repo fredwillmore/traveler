@@ -51,10 +51,10 @@ jobs:
           bundler-cache: true
       # Add or replace any other lints here
 
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install --jobs 4 --retry 3
+      # - name: Install dependencies
+      #   run: |
+      #     gem install bundler
+      #     bundle install --jobs 4 --retry 3
 
       - name: Security audit dependencies
         run: bundle exec bundler-audit --update
