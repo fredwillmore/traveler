@@ -247,23 +247,23 @@ ActiveRecord::Base.transaction do
   locales = language_content.keys - ['en']
   english_content = language_content['en']
 
-  english_content.each_with_index {|ca, ca_index|
-    I18n.locale = 'en'
-    curriculum_area = CurriculumArea.create( { title: ca['curriculum_area'] } );
-    level = english_content[ca_index]['level']
-    locales.each { |locale|
-      I18n.locale = locale
-      curriculum_area.title = language_content[locale][ca_index]['curriculum_area']
-      curriculum_area.save
-    }
-    english_content[ca_index]['challenges'].each_with_index {|ch, ch_index|
-      I18n.locale = 'en'
-      challenge = Challenge.create({ challenge_text: ch, curriculum_area_id: curriculum_area.id, level: level})
-      locales.each { |locale|
-        I18n.locale = locale
-        challenge.challenge_text = language_content[locale][ca_index]['challenges'][ch_index]
-        challenge.save
-      }
-    }
-  }
+  # english_content.each_with_index {|ca, ca_index|
+  #   I18n.locale = 'en'
+  #   curriculum_area = CurriculumArea.create( { title: ca['curriculum_area'] } );
+  #   level = english_content[ca_index]['level']
+  #   locales.each { |locale|
+  #     I18n.locale = locale
+  #     curriculum_area.title = language_content[locale][ca_index]['curriculum_area']
+  #     curriculum_area.save
+  #   }
+  #   english_content[ca_index]['challenges'].each_with_index {|ch, ch_index|
+  #     I18n.locale = 'en'
+  #     challenge = Challenge.create({ challenge_text: ch, curriculum_area_id: curriculum_area.id, level: level})
+  #     locales.each { |locale|
+  #       I18n.locale = locale
+  #       challenge.challenge_text = language_content[locale][ca_index]['challenges'][ch_index]
+  #       challenge.save
+  #     }
+  #   }
+  # }
 end
