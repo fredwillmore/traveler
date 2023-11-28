@@ -5,9 +5,9 @@ class ApiControllerTest < ActionController::TestCase
   setup do
     @user = FactoryBot.create :user
     @player = FactoryBot.create :player
-    @player.update(user_id: @user.id, is_current_player: TRUE)
+    @player.update(user_id: @user.id, is_current_player: true)
     @player2 = FactoryBot.create(:player)
-    @player2.update(user_id: @user.id, is_current_player: FALSE)
+    @player2.update(user_id: @user.id, is_current_player: true)
     @location = FactoryBot.create :location
     @location2 = FactoryBot.create :location, lat: 101, lng: 88
     sign_in @user

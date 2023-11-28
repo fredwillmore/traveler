@@ -60,7 +60,7 @@ ActiveRecord::Base.transaction do
     base_locale: 'en', # I'm english
     target_locale: 'es', # trying to learn spanish
     target_dialect: 'ES',
-    is_current_player: TRUE,
+    is_current_player: true,
     avatar: ActiveStorage::Blob.create_and_upload!(
       io: File.open(Rails.application.root + "db/avatars/IMG_2753.jpg").to_io,
       filename: "IMG_2753.jpg"
@@ -92,7 +92,7 @@ ActiveRecord::Base.transaction do
     base_locale: 'en', # I'm english
     target_locale: 'fr', # trying to learn french
     target_dialect: 'FR',
-    is_current_player: FALSE,
+    is_current_player: true,
     avatar: ActiveStorage::Blob.create_and_upload!(
       io: File.open(Rails.application.root + "db/avatars/IMG_2775.jpg").to_io,
       filename: "IMG_2775.jpg"
