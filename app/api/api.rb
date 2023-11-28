@@ -1,4 +1,5 @@
-class API < Grape::API
-  prefix 'api'
-  mount Login
+# class API < Grape::API
+class Api
+  # prefix 'api'
+  # mount Login
 end
