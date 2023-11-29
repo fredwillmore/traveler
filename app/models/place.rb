@@ -14,16 +14,21 @@ class Place < ActiveRecord::Base
     end
   end
 
+  def self.get_google_place(external_id = nil)
+    Google::Maps.place(external_id)
+  end
+
   def self.find_or_create_by_external_id(external_id)
-    unless place = Place.find_by_external_id(external_id)
-      spot = GooglePlaces::Client.new(API_KEY).spot(external_id)
+    unless place = Place.find_by(external_id: external_id)
+      spot = Place.get_google_place(external_id)
+
       place = Place.new({
         external_id: external_id,
-        name: spot.name,
-        rating: spot.rating,
-        location: Location.find_or_create_by(lat: spot.lat, lng: spot.lng)
+        name: spot.data.name,
+        rating: spot.data.rating,
+        location: Location.find_or_create_by(lat: spot.data.lat, lng: spot.data.lng)
       })
-      spot.types.each do |t|
+      spot.data.types.each do |t|
         place.place_types << PlaceType.find_or_create_by(name: t)
       end
       place.save!
