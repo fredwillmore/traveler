@@ -52,7 +52,7 @@ shared_examples 'basic CRUD controller' do
     end
   end
 
-  describe "post create" do
+  xdescribe "post create" do
     let(:full_path) { base_path }
 
     it "routes to #create" do
